@@ -1,0 +1,93 @@
+/* Header Component Style */
+.HeaderMain{
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  align-items: center;
+  height: 100%;
+}
+.HeaderTypo{
+  padding: 4%;
+}
+.HeaderHeading{
+  font-size: 2.1rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  color: black !important;
+  padding-top: 5%!important;
+}
+.HeaderPara{
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
+  margin: 5% 0 !important;
+  color: black;
+  width: 90%;
+}
+.HeaderBtn{
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  font-family: Raleway !important;
+  color: #003B7E !important;
+  border: 2px solid #003B7E !important;
+  margin: 5% 0 !important;
+  border-radius: 8px !important;
+  padding: 3% 5% !important;
+}
+.HeaderBtn:hover{
+  color: #fff !important;
+  background-color: #003B7E !important;
+
+}
+/* MEDIA QUERIES*/
+
+@media only screen and (max-width: 900px) {
+  .HeaderTypo{
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+    align-items: center;
+  }
+  .HeaderHeading{
+    width: 60%;
+  }
+  .HeaderPara{
+    width: 70%;
+  margin: 4% 0 !important;
+}
+}
+
+
+/* @media only screen and (max-width: 1440px) {
+  .btn_main {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .btn_main {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .btn_main {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .btn_main {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+  }
+  .stepper {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+} */
