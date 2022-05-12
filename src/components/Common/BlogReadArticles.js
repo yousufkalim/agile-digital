@@ -13,37 +13,21 @@ export default function BlogReadArticles(props) {
         <div className="BlogArticleMain">
           <Grid container spacing={1} className="BlogArticleContainer2">
             <Grid xs={12} sm={10} md={6}>
-              <img width={props.width || "100%"} src={props.src} />
+              <img
+                className="BlogReadImg"
+                width={props.width}
+                src={props.src}
+              />
             </Grid>
             <Grid xs={12} sm={10} md={6}>
               <div className="BlogTypo">
-                <Typography
-                  sx={{
-                    color: "#0F52BA",
-                    fontSize: "1.3rem",
-                    fontWeight: "800",
-                  }}
-                >
+                <Typography className="BlogReadTitle">
                   {props.title || "Manager une équipe en télétravail"}
                 </Typography>
-                <Typography
-                  sx={{
-                    color: "#000000",
-                    fontSize: ".7rem",
-                    fontWeight: "500",
-                    opacity: "50%",
-                    margin: "3% 0%",
-                  }}
-                >
+                <Typography className="BlogReadDate">
                   {props.PublishDate || "Published on Wed Oct 06 2021"}
                 </Typography>
-                <Typography
-                  sx={{
-                    fontSize: ".7rem",
-                    fontWeight: "400",
-                    width: "95%",
-                  }}
-                >
+                <Typography className="BlogReadPara">
                   Dans le passé, il était facile de gérer une équipe d'employés
                   qui ne travaillaient pas à des milliers de kilomètres de chez
                   soi. Aujourd'hui, les entreprises adoptent la tendance à
@@ -62,11 +46,7 @@ export default function BlogReadArticles(props) {
                   d'une équipe à distance et de la manière de surmonter ces
                   obstacles
                 </Typography>
-                <Button
-                  size="small"
-                  sx={{ color: "#42C2FF !important", marginTop: "2%" }}
-                  variant="text"
-                >
+                <Button className="BlogReadBtn" variant="text">
                   {props.BtnTexr || "READ MORE"}
                 </Button>
               </div>
@@ -78,33 +58,13 @@ export default function BlogReadArticles(props) {
           <Grid container spacing={1} className="BlogArticleContainer1">
             <Grid xs={12} sm={10} md={6}>
               <div className="BlogTypo">
-                <Typography
-                  sx={{
-                    color: "#0F52BA",
-                    fontSize: "1.3rem",
-                    fontWeight: "800",
-                  }}
-                >
+                <Typography className="BlogReadTitle">
                   {props.title || "Manager une équipe en télétravail"}
                 </Typography>
-                <Typography
-                  sx={{
-                    color: "#000000",
-                    fontSize: ".7rem",
-                    fontWeight: "500",
-                    opacity: "50%",
-                    margin: "3% 0%",
-                  }}
-                >
+                <Typography className="BlogReadDate">
                   {props.PublishDate || "Published on Wed Oct 06 2021"}
                 </Typography>
-                <Typography
-                  sx={{
-                    fontSize: ".7rem",
-                    fontWeight: "400",
-                    width: "95%",
-                  }}
-                >
+                <Typography className="BlogReadPara">
                   Dans le passé, il était facile de gérer une équipe d'employés
                   qui ne travaillaient pas à des milliers de kilomètres de chez
                   soi. Aujourd'hui, les entreprises adoptent la tendance à
@@ -123,17 +83,17 @@ export default function BlogReadArticles(props) {
                   d'une équipe à distance et de la manière de surmonter ces
                   obstacles
                 </Typography>
-                <Button
-                  size="small"
-                  sx={{ color: "#42C2FF !important", marginTop: "2%" }}
-                  variant="text"
-                >
+                <Button className="BlogReadBtn" variant="text">
                   {props.BtnTexr || "READ MORE"}
                 </Button>
               </div>
             </Grid>
             <Grid xs={12} sm={10} md={6}>
-              <img width={props.width || "100%"} src={props.src} />
+              <img
+                className="BlogReadImg"
+                width={props.width}
+                src={props.src}
+              />
             </Grid>
           </Grid>
         </div>

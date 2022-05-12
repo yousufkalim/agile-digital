@@ -1,27 +1,106 @@
 .BlogArticleMain{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    /* width: 90%; */
+    /* justify-content: space-between; */
+    width: 100%;
     margin:2%;
 }
 .BlogArticleContainer1{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 .BlogArticleContainer2{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 .BlogTypo{
     margin: 5% !important;
-    /* text-align: center; */
+    /* width: 90% !important; */
+}
+.BlogReadTitle{
+   
+        color: #0F52BA;
+        font-size: 2rem !important;
+        font-weight: 800 !important;
+}
+.BlogReadDate{
+   
+        color: #000000 !important;
+        font-size: .9rem !important;
+        font-weight: 500 !important;
+        opacity: 60%;
+        margin: 2% 0% !important;
+}
+.BlogReadPara{
+   
+        font-size: 1rem !important;
+        font-weight: 500 !important;
+        width: 90%;
+}
+.BlogReadBtn{
+   
+     color: #42C2FF !important;
+      margin-top: 2% !important; 
+      font-weight: 500 !important;
+
+}
+.BlogReadImg{
+    width: 90%;
+}
+@media only screen and (max-width: 1400px) {
+    .BlogReadTitle{
+   
+        font-size: 1.8rem !important;
+}
+.BlogReadDate{
+   
+        font-size: .8rem !important;
+}
+.BlogReadPara{
+   
+        font-size: .8rem !important;
+}
+
+
+}
+@media only screen and (max-width: 1200px) {
+    .BlogReadTitle{
+   
+        font-size: 1.5rem !important;
+}
+.BlogReadDate{
+   
+        font-size: .7rem !important;
+}
+.BlogReadPara{
+   
+        font-size: .6rem !important;
+}
+.BlogReadBtn{
+   
+    font-size: .8rem !important;
+
+}
+
+
+
+
 }
 @media only screen and (max-width: 900px) {
+
     .BlogArticleContainer1{
         flex-direction: column-reverse !important;
+        align-items: center;
+    }
+    .BlogReadImg{
+        width: 100%;
+    }
+    .BlogReadBtn{
+   
+        font-size: 1rem !important;
+    
     }
 
 
@@ -29,7 +108,13 @@
 
 @media only screen and (max-width: 600px) {
     .BlogTypo{
-        margin: 5% !important;
         text-align: center;
+    }
+    .BlogReadImg{
+        width: 97%;
+    }
+    .BlogReadPara{
+        width: 100%;
+
     }
 }
