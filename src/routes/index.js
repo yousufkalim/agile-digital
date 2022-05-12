@@ -8,7 +8,6 @@ import About from "../containers/About.js";
 import ContactUs from "../containers/ContactUs.js";
 import Blog from "../containers/Blog";
 import OurProjects from "../containers/OurProjects";
-import Services from "../containers/Services.js";
 import WebDev from "../components/Services/WebDev.js";
 import AppDev from "../components/Services/AppDev.js";
 import SoftwareDev from "../components/Services/SoftwareDev.js";

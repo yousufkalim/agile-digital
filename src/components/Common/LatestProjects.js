@@ -4,7 +4,6 @@ import { Carousel } from "@trendyol-js/react-carousel";
 import KidCab from "../../assets/images/kidcab.svg";
 import Permispop from "../../assets/images/permispop.svg";
 import QB from "../../assets/images/quadrabase.svg";
-import Slider from "./Slider";
 import { Typography } from "@mui/material";
 
 export default function LatestProjects(props) {
