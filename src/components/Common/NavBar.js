@@ -277,10 +277,7 @@ export default function NavBar(props) {
                 </div>
               </div>
             ) : (
-              <Toolbar
-                className="NavToolbar"
-                sx={{ display: "flex", justifyContent: "space-between" }}
-              >
+              <Toolbar className="NavToolbar">
                 <a href="http://localhost:3000/">
                   <img alt="logo" src={Logo} style={{ width: "120px" }} />
                 </a>
