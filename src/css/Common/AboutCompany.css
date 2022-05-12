@@ -1,0 +1,34 @@
+.AboutCompanySection{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    background-color: #F8F8F8;
+}
+.AboutCompanyTypo{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 3%;
+    width: 85%;
+}
+/* .AboutCompanyImg{
+    width: 80% !important;
+} */
+
+@media only screen and (max-width: 600px) {
+    .AboutCompanySection{
+        justify-content: center;
+    }
+    .AboutCompanyTypo{
+        justify-content: center ;
+        text-align: center ;
+        align-items: center ;
+        width: 100%;
+    }
+    .AboutCompanyImg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    width: 100% !important;
+}
+  }
