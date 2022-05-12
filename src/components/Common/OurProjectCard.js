@@ -21,13 +21,7 @@ export default function OurProjectCard(props) {
             </Grid>
             <Grid xs={12} sm={10} md={3}>
               <div className="ProjectCardTypo">
-                <Typography
-                  sx={{
-                    color: "#000",
-                    fontSize: "1.3rem",
-                    fontWeight: "800",
-                  }}
-                >
+                <Typography className="ProjectCardTitle">
                   {props.title || "Permispop."}
                 </Typography>
                 <Divider
@@ -41,14 +35,7 @@ export default function OurProjectCard(props) {
                   }}
                 />
 
-                <Typography
-                  sx={{
-                    fontSize: ".7rem",
-                    fontWeight: "400",
-                    width: "95%",
-                    margin: "2% 0%",
-                  }}
-                >
+                <Typography className="ProjectCardDesp">
                   {props.description}
                 </Typography>
                 <Button className="ProjectCardBtn" variant="outlined">
@@ -63,13 +50,7 @@ export default function OurProjectCard(props) {
           <Grid container spacing={1} className="ProjectCardContainer1">
             <Grid xs={12} sm={10} md={3}>
               <div className="ProjectCardTypo">
-                <Typography
-                  sx={{
-                    color: "#000",
-                    fontSize: "1.3rem",
-                    fontWeight: "800",
-                  }}
-                >
+                <Typography className="ProjectCardTitle">
                   {props.title || "Permispop."}
                 </Typography>
                 <Divider
@@ -83,14 +64,7 @@ export default function OurProjectCard(props) {
                   }}
                 />
 
-                <Typography
-                  sx={{
-                    fontSize: ".7rem",
-                    fontWeight: "400",
-                    width: "95%",
-                    margin: "2% 0%",
-                  }}
-                >
+                <Typography className="ProjectCardDesp">
                   {props.description}
                 </Typography>
                 <Button className="ProjectCardBtn" variant="outlined">

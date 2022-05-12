@@ -21,13 +21,26 @@
     /* text-align: center; */
 
 }
+.ProjectCardTitle{
+        color: #000 !important;
+        font-size: 2.2rem !important;
+        font-weight: 800 !important;
+}
+.ProjectCardDesp{
+        font-size: 1.2rem !important;
+        font-weight: 400 !important;
+        width: 95% !important;
+        margin: 2% 0% !important;
+}
 .ProjectCardBtn{
     border: 3px solid #003B7E !important;
     border-radius: 10px !important;
     color:#003B7E !important;
-    font-size: .8rem !important;
+    font-size: .9rem !important;
     font-weight: 700 !important;
     margin-top: 5% !important;
+    text-transform: capitalize !important;
+    width: 35%;
 
 }
 
