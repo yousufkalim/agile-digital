@@ -1,0 +1,58 @@
+.ProjectCardMain{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* width: 90%; */
+    margin:2%;
+}
+.ProjectCardContainer1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ProjectCardContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ProjectCardTypo{
+    margin-left:15% !important;
+    width: 80%;
+    /* text-align: center; */
+
+}
+.ProjectCardBtn{
+    border: 3px solid #003B7E !important;
+    border-radius: 10px !important;
+    color:#003B7E !important;
+    font-size: .8rem !important;
+    font-weight: 700 !important;
+    margin-top: 5% !important;
+
+}
+
+/* .ProjectCardImg{
+    max-height: 50vh;
+} */
+@media only screen and (max-width: 900px) {
+    .ProjectCardContainer1{
+        flex-direction: column-reverse !important;
+    }
+    .ProjectCardTypo{
+        margin: 5% 0% !important;
+    width: 100%;
+
+        text-align: center;
+
+    }
+
+
+}
+
+/* @media only screen and (max-width: 600px) {
+    .ProjectCardTypo{
+    }
+    .ProjectCardDivider{
+
+    }
+} */
