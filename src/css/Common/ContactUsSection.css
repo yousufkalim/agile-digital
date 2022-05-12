@@ -1,0 +1,169 @@
+.ContactUsDiv{
+    background-color: #003B7E;
+    padding: 5%;
+}
+.ContactUsGrid{
+    width: 100%;
+    display: flex;
+    margin: 5% 3%;
+    align-items: center;
+    justify-content: center;
+}
+.ContactContainerGrid{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+}
+.ContactFormGrid{
+    
+    background-color: #24548b;
+    display: flex;
+    align-items: center;
+    padding:  1% 2%;
+    margin: 3% 0%;
+    border-radius: 10px;
+}
+.ContactMedia{
+    display: flex;
+    margin: 5% 0%;
+}
+.ContactMediaIcons{
+    width:20%;
+    margin-right: 5%;
+}
+.ContactMediaDiv{
+    display: flex;
+    align-items: center;
+}
+
+/* ============================================== */
+
+
+
+
+.ContactsectionDiv{
+    
+    background: linear-gradient(to left,#2632380B,#263238B0);
+    background-color: #003B7E;
+    padding: 5%;
+    /* height: 100vh; */
+}
+.ContactSectionGrid{
+    /* display: flex; */
+    margin: 5% 3%;
+    text-align: center;
+    /* height: 100%; */
+}
+.ContainerGrid{
+    display: flex;
+    align-items: center;
+}
+.SocialMediaDiv{
+    display: flex;
+    align-items: center;
+}
+
+.SocialMediaIcons{
+    width: 12%;
+    margin: 2% 5%;
+}
+.SocialMediaText{
+    text-align: left;
+    color: white;
+}
+.FormGrid{
+    /* background: linear-gradient(#ffffff,#F0F0F0); */
+    /* opacity: 10%; */
+    background-color: #204a79;
+    display: flex;
+    align-items: center;
+    padding:  1% 2%;
+    border-radius: 10px;
+}
+.InputField{
+    color: white;
+    font-size: .7rem;
+    padding: 4%;
+    margin: 4% 2%;
+    background: transparent;
+    border: 1px solid rgb(223, 214, 214, 70%);
+    border-radius: 3px;
+    width: 90%;
+     
+}
+.textField{
+    color: white;
+    font-size: .7rem;
+    padding: 2%;
+    margin: 3% 2%;
+    background: transparent;
+    border: .5px solid rgb(223, 214, 214,70%);
+    border-radius: 3px;
+    width: 95%;
+    height: 17vh;
+    resize: none;
+    
+}
+input:focus ,textarea:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+.ContactUsBtn{
+    color: white;
+    background-color: #003B7E;
+    margin: 10% 2% 1% 2%;
+    border: none;
+    border-radius: 5px;
+    padding: 4%;
+    width: 80%;
+    height: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .InputField{
+        font-size: .5rem;
+    }
+    .textField{
+        font-size: .5rem;
+        height: 15vh;
+}
+}
+@media only screen and (max-width: 600px) {
+    .ContainerGrid{
+        flex-direction: column-reverse !important;
+        
+    }
+ 
+    .FormGrid{
+        width: 80% !important;
+        margin: 10%;
+    }
+    .InputField{
+        font-size: .7rem;
+        margin: 2%;
+    }
+    .textField{
+        font-size: .7rem;
+        height: 17vh;
+        margin: 2%;
+        width: 90%;
+    }
+    .ContactUsBtn{
+        margin-left: 15%;
+        border: none;
+        border-radius: 5px;
+        padding: 4%;
+        width: 80%;
+        height: 2rem;
+    }
+    .ContactMedia{
+        flex-direction: column !important;
+    }
+    .ContactMediaDiv{
+        margin: 3% 0%;
+        
+    }
+  }

@@ -1,0 +1,98 @@
+.AboutSectionDiv{
+    padding: 5%;
+    height: 100%;
+}
+.AboutSectionLower{
+    margin-top: 5%;
+}
+.AboutTopGrid{
+    display: flex;
+    margin-left: 10%;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.AboutbottomGrid{
+    display: flex;
+    align-items: center;
+
+
+}
+.AboutTypo{
+    width: 80%;
+    margin: 8% 0% 1% 12%;
+
+}
+.AboutImg img{
+    width: 110%;
+}
+.AboutSectionBtn{
+    color: #42C2FF;
+    border: none;
+    background-color: transparent;
+    font-size: 100%;
+    font-weight: 600;
+    margin-top: 5%;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+.InfoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    margin: 1%;
+    background-color: #0F52BA14;
+    border-radius: 10px;
+}
+.InfoDiv img{
+    width: 40%;
+
+}
+.InfoDiv h2{
+    color:#003B7E;
+
+}
+.InfoDiv p{
+    font-size: 70%;
+    color:#003B7E;
+}
+
+@media only screen and (max-width: 600px) {
+    .AboutSectionDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /* .AboutSectionLower{
+        margin-top: 5%;
+        display: flex !important;
+        justify-content: center;
+        align-items: center !important;
+    } */
+    .AboutTopGrid{
+        margin-left: 0%;
+        justify-content: center;
+    }
+    .AboutBottomMain{
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        
+    }
+    .AboutbottomGrid{
+
+        justify-content: center;
+    }
+    .AboutTypo{
+        text-align: left;
+    
+    }
+    }

@@ -1,0 +1,27 @@
+.LatestProjectDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    /* height: 100vh; */
+}
+.LatestProjectsSlider{
+    margin: 5% 0;
+    width: 95%;
+}
+.styles-module_item-container__a8zaY{
+    width:100%;
+}
+.SliderImgs{
+    width: 95%;
+}
+.ProjectsCompletedDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003B7E;
+    width: 90%;
+    padding: 5% 15%;
+    border-radius: 10px;
+    margin: 5%;
+}

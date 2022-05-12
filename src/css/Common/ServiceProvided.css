@@ -1,0 +1,41 @@
+.ServiceProvidedDiv{
+  padding: 2% ;
+/* height: 100vh; */
+background-color: #F8F8F8;
+
+}
+/* .ServiceProvidedTypo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 2% 0% 3% 0%;
+}
+.ServiceProvidedH1{
+    text-transform: uppercase;
+    color: #42C2FF;
+    font-weight: 600;
+}
+.ServiceProvidedH2{
+    font-size: 1.3rem !important;
+    text-transform: capitalize;
+    color: #003B7E;
+    font-weight: 800 !important;
+}
+.ServiceProvidedDesp{
+    font-size: .8rem !important;
+    color: #404040B2 !important;
+    font-weight: 400 !important;
+} */
+.VerticleCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CardGridMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

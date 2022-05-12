@@ -1,0 +1,84 @@
+.FooterMain{
+    display: flex;
+  padding: 5% 5% 1% 5%;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+}
+.footerBg{
+
+    background-color: #F8F8F8;
+}
+.FooterMainBg{
+    display: flex;
+  padding: 5% 5% 1% 5%;
+  justify-content: center;
+  align-items: center;
+}
+.FooterDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.FooterLeft{
+    width: 45%;
+}
+.FooterLogo {
+    width: 40%;
+    margin-bottom: 3%;
+}
+.IconsDiv{
+    margin-top: 6%;
+}
+.FooterIcons{
+    width: 6%;
+    margin-right: 2%;
+}
+.FooterRight{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+.FooterRight ul {
+    list-style: none;
+    font-weight: 700;
+    font-size: .8rem;
+}
+.FooterRight ul li{
+    padding-bottom: 5px;
+}
+.CopyRightDiv{
+    padding: 1% 9%;
+  background-color: #F8F8F8;
+
+}
+@media only screen and (max-width: 900px) {
+    .FooterRight ul {
+        font-size: .7rem;
+    }
+    .FooterListHeading{
+        font-size: .8rem !important;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .FooterRight ul {
+        font-size: .6rem;
+    }
+    .FooterTypo {
+        font-size: .8rem !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .FooterTypo {
+        font-size: .7rem !important;
+    }
+    .FooterListHeading{
+        font-size: .7rem !important;
+
+    }
+    .FooterRight ul {
+        font-size: .5rem;
+    }
+  }

@@ -1,0 +1,49 @@
+.SectionHeaderTypo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 2% 0% 3% 0%;
+}
+.SectionHeaderH1{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.SectionHeaderH2{
+    font-size: 1.3rem !important;
+    text-transform: capitalize;
+    font-weight: 800 !important;
+}
+.SectionHeaderDesp{
+    font-size: .7rem !important;
+    font-weight: 400 !important;
+    opacity: 50%;
+}
+.LeftSectionHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    text-align: left;
+    align-items: left;
+    margin: 2% 0% 3% 0%;
+}
+
+@media only screen and (max-width: 600px) {
+    .LeftSectionHeader{
+
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important;
+        text-align: center;
+        align-items: center;
+        margin: 2% 0% 3% 0%;
+    }
+    /* .SectionHeaderDivider{
+        display: flex !important;
+        text-align: center;
+        align-items: center !important;
+        justify-content: center !important;
+
+    } */
+}

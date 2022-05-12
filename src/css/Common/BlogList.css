@@ -1,0 +1,38 @@
+.BlogListMain{
+    margin: 2%;
+}
+.BlogListContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BlogListGrid{
+    margin: 4%;
+}
+.BlogBtnGrid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh !important;
+}
+.BlogBtn{
+    border: 2.5px solid #0F52BA !important;
+    color: #0F52BA !important;
+    width: 11%;
+    font-size: 90%;
+    font-weight: 700 !important;
+    text-transform: capitalize !important;
+
+}
+@media only screen and (max-width: 900px) {
+    .BlogBtn{
+        width: 18%;
+    
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .BlogBtn{
+        width: 25%;
+    
+    }
+  }

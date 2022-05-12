@@ -1,0 +1,18 @@
+.BlogSectionMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.BlogCardMain img{
+ width: 100%;
+}
+.BlogContainerGrid{
+    display: flex;
+   align-items: center;
+    width: 80%;
+}
+.BlogGrid{
+    margin: 2%;
+}

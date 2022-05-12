@@ -1,0 +1,23 @@
+.ClientSectionMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    /* height: 100vh; */
+    background-color: #F8F8F8;
+}
+.ClientsDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0% 2% 5%;
+}
+ .ClientsGrid{
+    width: 80% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.ClientLogo{
+    width: 70%;
+}

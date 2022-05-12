@@ -1,0 +1,124 @@
+/* NavBar Component Style */
+/* .css-1u4elim-MuiPaper-root-MuiAppBar-root {
+    box-shadow: 0px 2px 7px -1px rgb(0 0 0 / 20%) !important;
+  } */
+  .MenuDiv{
+    height: 100vh;
+    background:  linear-gradient(180deg, #003B7E 0%, #003B7E 21.35%, #003B7E 100%);;
+    z-index:1000;
+    /* position: absolute;
+    top:100%;
+    width: 100%; */
+  }
+  .NavToolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:  0% 3%;
+    /* width: 90%; */
+  }
+  .MenuSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 2%;
+  }
+  .MenuImgDiv{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    height: 75vh;
+  }
+  .MenuImg{
+    width: 100%;
+  }
+  .MenuTypoDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    color: #fff;
+    height: 80vh;
+  }
+  .ServiceOptionDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: #fff;
+    height: 80vh;
+  }
+  .ServicesFields li{
+    list-style: none;
+    color: #E5E5E5;
+    font-size: 75%;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  .ServicesFields li a{
+    color: #E5E5E5;
+    text-decoration: none;
+  }
+  .MainMenuList li{
+    color: #E5E5E5;
+    line-height: 1.8;
+    font-weight: 700;
+  }
+  .MainMenuList li a{
+    color: #E5E5E5;
+    text-decoration: none;
+  }
+  .css-1ts5xjn-MuiPaper-root-MuiAppBar-root{
+    padding:0% !important;
+  }
+
+@media only screen and (max-width: 900px) {
+  .MenuSection{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 100%;
+    margin: 2%;
+  }
+  .MenuImgDiv{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    height: 50vh;
+  }
+  .MenuImg{
+    width: 100%;
+  }
+  .MenuTypoDiv{
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 40%;
+    height: 30vh;
+  }
+  .MainMenu{
+    display: flex;
+    width: fit-content;
+  }
+  .ServiceOptionDiv{
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 50%;
+    /* color: #fff; */
+    /* height: 80vh; */
+  }
+
+
+}
+@media only screen and (max-width: 600px) {
+  .MenuTypoDiv{
+    width: 80%;
+  }
+}

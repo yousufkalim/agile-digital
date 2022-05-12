@@ -1,0 +1,30 @@
+.BlogHeaderMain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    
+}
+::placeholder{
+    color: rgb(211, 204, 204);
+}
+@media only screen and (max-width: 900px) {
+.BlogHeaderInput{
+    width: 60% !important;
+}
+.BlogHeaderTypo{
+    width: 50% !important;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+    .BlogHeaderInput{
+        width: 80% !important;
+    }
+    .BlogHeaderTypo{
+        width: 70% !important;
+    }
+}
