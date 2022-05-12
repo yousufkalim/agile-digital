@@ -1,0 +1,35 @@
+.BlogArticleMain{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* width: 90%; */
+    margin:2%;
+}
+.BlogArticleContainer1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BlogArticleContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.BlogTypo{
+    margin: 5% !important;
+    /* text-align: center; */
+}
+@media only screen and (max-width: 900px) {
+    .BlogArticleContainer1{
+        flex-direction: column-reverse !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .BlogTypo{
+        margin: 5% !important;
+        text-align: center;
+    }
+}
