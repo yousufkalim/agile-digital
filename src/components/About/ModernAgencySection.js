@@ -53,14 +53,27 @@ export default function ModernAgencySection() {
           <div className="HistoryMain">
             <div className="HistoryDiv">
               <div className="HistoryImgDiv">
-                <img className="HistoryImg" src={Tick2} />
+                <img className="HistoryImg" src={Tick1} />
               </div>
 
               <Typography
                 className="HistoryTypoH"
-                sx={{ color: "#fff", fontSize: "1.1rem", marginTop: "3%" }}
+                sx={{
+                  color: "#fff",
+                  fontSize: "1.1rem",
+                  marginTop: "3%",
+                  // alignItems: "center",
+                  // display: "flex",
+                }}
               >
-                85
+                95+
+                {/* <span
+                  style={{
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  +
+                </span> */}
               </Typography>
               <Typography
                 className="HistoryTypoP"
@@ -76,7 +89,7 @@ export default function ModernAgencySection() {
           <div className="HistoryMain">
             <div className="HistoryDiv">
               <div className="HistoryImgDiv">
-                <img className="HistoryImg" src={Tick3} />
+                <img className="HistoryImg" src={Tick1} />
               </div>
               <Typography
                 className="HistoryTypoH"
