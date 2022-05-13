@@ -57,28 +57,28 @@ export default function NavBar(props) {
                               <a
                                 href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}
                               >
-                                WEB DEVELOPMENT1
+                                WEB DEVELOPMENT
                               </a>
                             </li>
                             <li>
                               <a
                                 href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}
                               >
-                                APP DEVELOPMENT1
+                                APP DEVELOPMENT
                               </a>
                             </li>
                             <li>
                               <a
                                 href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}
                               >
-                                SOFTWARE DEVELOPMENT1
+                                SOFTWARE DEVELOPMENT
                               </a>
                             </li>
                             <li>
                               <a
                                 href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}
                               >
-                                ON DEMAND DEVELOPERS1
+                                ON DEMAND DEVELOPERS
                               </a>
                             </li>
                             <li>
@@ -207,35 +207,35 @@ export default function NavBar(props) {
                                 <a
                                   href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}
                                 >
-                                  WEB DEVELOPMENT2
+                                  WEB DEVELOPMENT
                                 </a>
                               </li>
                               <li>
                                 <a
                                   href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}
                                 >
-                                  APP DEVELOPMENT22
+                                  APP DEVELOPMENT
                                 </a>
                               </li>
                               <li>
                                 <a
                                   href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}
                                 >
-                                  SOFTWARE DEVELOPMENT2
+                                  SOFTWARE DEVELOPMENT
                                 </a>
                               </li>
                               <li>
                                 <a
                                   href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}
                                 >
-                                  ON DEMAND DEVELOPERS2
+                                  ON DEMAND DEVELOPERS
                                 </a>
                               </li>
                               <li>
                                 <a
                                   href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}
                                 >
-                                  UI/UX DEVELOPMENT2
+                                  UI/UX DEVELOPMENT
                                 </a>
                               </li>
                             </ul>
