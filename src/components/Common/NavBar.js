@@ -34,13 +34,13 @@ export default function NavBar(props) {
                   className="NavToolbar"
                   sx={{ display: "flex", justifyContent: "space-between" }}
                 >
-                  <a href="http://localhost:3000/">
-                    <img alt="logo" src={LogoWhite} style={{ width: "60%" }} />
+                  <a href={`${process.env.REACT_APP_DEMO}/`}>
+                    <img alt="logo" src={LogoWhite} style={{ width: "70%" }} />
                   </a>
                   <img
                     alt="menu"
                     src={CloseIcon}
-                    style={{ width: "4%", color: "white" }}
+                    style={{ width: "2.5%", color: "white" }}
                     onClick={(e) => SetMenu(!Menu)}
                   />
                 </Toolbar>
@@ -54,27 +54,37 @@ export default function NavBar(props) {
                         <div className="ServicesDropDown">
                           <ul className="ServicesFields">
                             <li>
-                              <a href="http://localhost:3000/services/WebDevelopment">
-                                WEB DEVELOPMENT
+                              <a
+                                href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}
+                              >
+                                WEB DEVELOPMENT1
                               </a>
                             </li>
                             <li>
-                              <a href="http://localhost:3000/services/AppDevelopment">
-                                APP DEVELOPMENT
+                              <a
+                                href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}
+                              >
+                                APP DEVELOPMENT1
                               </a>
                             </li>
                             <li>
-                              <a href="http://localhost:3000/services/SoftwareDevelopment">
-                                SOFTWARE DEVELOPMENT
+                              <a
+                                href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}
+                              >
+                                SOFTWARE DEVELOPMENT1
                               </a>
                             </li>
                             <li>
-                              <a href="http://localhost:3000/services/OnDemandDevelopers">
-                                ON DEMAND DEVELOPERS
+                              <a
+                                href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}
+                              >
+                                ON DEMAND DEVELOPERS1
                               </a>
                             </li>
                             <li>
-                              <a href="http://localhost:3000/services/UiDevelopment">
+                              <a
+                                href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}
+                              >
                                 UI/UX DEVELOPMENT
                               </a>
                             </li>
@@ -104,10 +114,13 @@ export default function NavBar(props) {
                     marginTop: "-13%",
                   }}
                 /> */}
+                    {/* {console.log("processlink", process.env.REACT_APP_DEMO)} */}
                     <div className="MainMenu">
                       <ul className="MainMenuList">
                         <li>
-                          <a href="http://localhost:3000/about">About</a>
+                          <a href={`${process.env.REACT_APP_DEMO}/about`}>
+                            About
+                          </a>
                         </li>
                         <li
                           onClick={(e) => SetServiceDropDown(!ServiceDropDown)}
@@ -115,15 +128,17 @@ export default function NavBar(props) {
                           Services
                         </li>
                         <li>
-                          <a href="http://localhost:3000/blog">Blog</a>
+                          <a href={`${process.env.REACT_APP_DEMO}/blog`}>
+                            Blog
+                          </a>
                         </li>
                         <li>
-                          <a href="http://localhost:3000/ourprojects">
+                          <a href={`${process.env.REACT_APP_DEMO}/ourprojects`}>
                             Our Projects
                           </a>
                         </li>
                         <li>
-                          <a href="http://localhost:3000/contactus">
+                          <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
                             Contact Us
                           </a>
                         </li>
@@ -137,13 +152,13 @@ export default function NavBar(props) {
                 className="NavToolbar"
                 sx={{ display: "flex", justifyContent: "space-between" }}
               >
-                <a href="http://localhost:3000/">
-                  <img alt="logo" src={LogoWhite} style={{ width: "60%" }} />
+                <a href={`${process.env.REACT_APP_DEMO}/`}>
+                  <img alt="logo" src={LogoWhite} style={{ width: "70%" }} />
                 </a>
                 <img
                   alt="menu"
                   src={WhiteMenuIcon}
-                  style={{ width: "4%" }}
+                  style={{ width: "2.5%" }}
                   onClick={(e) => SetMenu(!Menu)}
                 />
               </Toolbar>
@@ -168,13 +183,13 @@ export default function NavBar(props) {
                   className="NavToolbar"
                   sx={{ display: "flex", justifyContent: "space-between" }}
                 >
-                  <a href="http://localhost:3000/">
-                    <img alt="logo" src={LogoWhite} style={{ width: "60%" }} />
+                  <a href={`${process.env.REACT_APP_DEMO}/`}>
+                    <img alt="logo" src={LogoWhite} style={{ width: "70%" }} />
                   </a>
                   <img
                     alt="menu"
                     src={CloseIcon}
-                    style={{ width: "4%", color: "white" }}
+                    style={{ width: "2.5%", color: "white" }}
                     onClick={(e) => SetMenu(!Menu)}
                   />
                 </Toolbar>
@@ -189,28 +204,38 @@ export default function NavBar(props) {
                           <div className="ServicesDropDown">
                             <ul className="ServicesFields">
                               <li>
-                                <a href="http://localhost:3000/services/WebDevelopment">
-                                  WEB DEVELOPMENT
+                                <a
+                                  href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}
+                                >
+                                  WEB DEVELOPMENT2
                                 </a>
                               </li>
                               <li>
-                                <a href="http://localhost:3000/services/AppDevelopment">
-                                  APP DEVELOPMENT
+                                <a
+                                  href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}
+                                >
+                                  APP DEVELOPMENT22
                                 </a>
                               </li>
                               <li>
-                                <a href="http://localhost:3000/services/SoftwareDevelopment">
-                                  SOFTWARE DEVELOPMENT
+                                <a
+                                  href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}
+                                >
+                                  SOFTWARE DEVELOPMENT2
                                 </a>
                               </li>
                               <li>
-                                <a href="http://localhost:3000/services/OnDemandDevelopers">
-                                  ON DEMAND DEVELOPERS
+                                <a
+                                  href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}
+                                >
+                                  ON DEMAND DEVELOPERS2
                                 </a>
                               </li>
                               <li>
-                                <a href="http://localhost:3000/services/UiDevelopment">
-                                  UI/UX DEVELOPMENT
+                                <a
+                                  href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}
+                                >
+                                  UI/UX DEVELOPMENT2
                                 </a>
                               </li>
                             </ul>
@@ -243,7 +268,9 @@ export default function NavBar(props) {
                     <div className="MainMenu">
                       <ul className="MainMenuList">
                         <li>
-                          <a href="http://localhost:3000/about">About</a>
+                          <a href={`${process.env.REACT_APP_DEMO}/about`}>
+                            About
+                          </a>
                         </li>
                         <li
                           onClick={(e) => SetServiceDropDown(!ServiceDropDown)}
@@ -251,15 +278,17 @@ export default function NavBar(props) {
                           Services
                         </li>
                         <li>
-                          <a href="http://localhost:3000/blog">Blog</a>
+                          <a href={`${process.env.REACT_APP_DEMO}/blog`}>
+                            Blog
+                          </a>
                         </li>
                         <li>
-                          <a href="http://localhost:3000/ourprojects">
+                          <a href={`${process.env.REACT_APP_DEMO}/ourprojects`}>
                             Our Projects
                           </a>
                         </li>
                         <li>
-                          <a href="http://localhost:3000/contactus">
+                          <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
                             Contact Us
                           </a>
                         </li>
@@ -270,14 +299,14 @@ export default function NavBar(props) {
               </div>
             ) : (
               <Toolbar className="NavToolbar">
-                <a href="http://localhost:3000/">
-                  <img alt="logo" src={Logo} style={{ width: "60%" }} />
+                <a href={`${process.env.REACT_APP_DEMO}/`}>
+                  <img alt="logo" src={Logo} style={{ width: "70%" }} />
                 </a>
 
                 <img
                   alt="menu"
                   src={NavMenu}
-                  style={{ width: "4%" }}
+                  style={{ width: "2.5%" }}
                   onClick={(e) => SetMenu(!Menu)}
                 />
               </Toolbar>
