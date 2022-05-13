@@ -35,16 +35,12 @@ export default function NavBar(props) {
                   sx={{ display: "flex", justifyContent: "space-between" }}
                 >
                   <a href="http://localhost:3000/">
-                    <img
-                      alt="logo"
-                      src={LogoWhite}
-                      style={{ width: "120px" }}
-                    />
+                    <img alt="logo" src={LogoWhite} style={{ width: "60%" }} />
                   </a>
                   <img
                     alt="menu"
                     src={CloseIcon}
-                    style={{ width: "35px", color: "white" }}
+                    style={{ width: "4%", color: "white" }}
                     onClick={(e) => SetMenu(!Menu)}
                   />
                 </Toolbar>
@@ -142,12 +138,12 @@ export default function NavBar(props) {
                 sx={{ display: "flex", justifyContent: "space-between" }}
               >
                 <a href="http://localhost:3000/">
-                  <img alt="logo" src={LogoWhite} style={{ width: "120px" }} />
+                  <img alt="logo" src={LogoWhite} style={{ width: "60%" }} />
                 </a>
                 <img
                   alt="menu"
                   src={WhiteMenuIcon}
-                  style={{ width: "25px" }}
+                  style={{ width: "4%" }}
                   onClick={(e) => SetMenu(!Menu)}
                 />
               </Toolbar>
@@ -173,16 +169,12 @@ export default function NavBar(props) {
                   sx={{ display: "flex", justifyContent: "space-between" }}
                 >
                   <a href="http://localhost:3000/">
-                    <img
-                      alt="logo"
-                      src={LogoWhite}
-                      style={{ width: "120px" }}
-                    />
+                    <img alt="logo" src={LogoWhite} style={{ width: "60%" }} />
                   </a>
                   <img
                     alt="menu"
                     src={CloseIcon}
-                    style={{ width: "35px", color: "white" }}
+                    style={{ width: "4%", color: "white" }}
                     onClick={(e) => SetMenu(!Menu)}
                   />
                 </Toolbar>
@@ -279,13 +271,13 @@ export default function NavBar(props) {
             ) : (
               <Toolbar className="NavToolbar">
                 <a href="http://localhost:3000/">
-                  <img alt="logo" src={Logo} style={{ width: "120px" }} />
+                  <img alt="logo" src={Logo} style={{ width: "60%" }} />
                 </a>
 
                 <img
                   alt="menu"
                   src={NavMenu}
-                  style={{ width: "25px" }}
+                  style={{ width: "4%" }}
                   onClick={(e) => SetMenu(!Menu)}
                 />
               </Toolbar>
