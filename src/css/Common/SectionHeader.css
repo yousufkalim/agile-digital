@@ -8,10 +8,11 @@
 }
 .SectionHeaderH1{
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 600 !important;
+    font-size: 1.2rem !important;
 }
 .SectionHeaderH2{
-    font-size: 1.3rem !important;
+    font-size: 1.8rem !important;
     text-transform: capitalize;
     font-weight: 800 !important;
 }
@@ -28,22 +29,10 @@
     align-items: left;
     margin: 2% 0% 3% 0%;
 }
-
-@media only screen and (max-width: 600px) {
-    .LeftSectionHeader{
-
-        display: flex !important;
-        flex-direction: column;
-        justify-content: center !important;
-        text-align: center;
-        align-items: center;
-        margin: 2% 0% 3% 0%;
-    }
-    /* .SectionHeaderDivider{
-        display: flex !important;
-        text-align: center;
-        align-items: center !important;
-        justify-content: center !important;
-
-    } */
+.SectionHeaderDivider{
+        height: 5px;
+        background-color: #42C2FF;
+        border-radius: 4px;
+        margin: .7% 0% !important;
 }
+
