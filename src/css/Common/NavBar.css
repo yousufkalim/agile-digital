@@ -6,6 +6,7 @@
     height: 100vh;
     background:  linear-gradient(180deg, #003B7E 0%, #003B7E 21.35%, #003B7E 100%);;
     z-index:1000;
+    margin: 0%;
     /* position: absolute;
     top:100%;
     width: 100%; */

@@ -114,12 +114,24 @@ input:focus ,textarea:focus{
 .ContactUsBtn{
     color: white;
     background-color: #003B7E;
-    margin: 10% 2% 1% 2%;
+    margin: 5%;
     border: none;
     border-radius: 5px;
     padding: 4%;
     width: 80%;
     height: 2rem;
+    cursor: pointer;
+    transition: 1s;
+}
+.ContactUsBtn:hover{
+    color: #003B7E;
+    background-color:white ;
+    font-weight: 600;
+}
+.ContactForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -149,7 +161,7 @@ input:focus ,textarea:focus{
         font-size: .7rem;
         height: 17vh;
         margin: 2%;
-        width: 90%;
+        width: 95%;
     }
     .ContactUsBtn{
         margin-left: 15%;

@@ -16,12 +16,14 @@
     height: 20vh !important;
 }
 .BlogBtn{
-    border: 2.5px solid #0F52BA !important;
+    border: 3px solid #0F52BA !important;
+    border-radius: 10px !important;
     color: #0F52BA !important;
     width: 11%;
-    font-size: 90%;
+    font-size: 1.1rem !important;
     font-weight: 700 !important;
     text-transform: capitalize !important;
+    padding: .8% 0% !important;
 
 }
 @media only screen and (max-width: 900px) {

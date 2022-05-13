@@ -42,11 +42,19 @@
 .HistoryMain{
     display: flex;
     align-items: center;
+    padding-right: 1%;
     /* justify-content: center; */
 }
 .ArrowMain{
-    height: 10vh;
+    height: 13vh;
 }
+@media only screen and (max-width: 2000px) {
+  
+    .ArrowMain{
+        height: 7vh;
+    }
+}
+
 @media only screen and (max-width: 778px) {
     .HistoryTypoH{
         font-size: .8rem !important;
@@ -54,6 +62,7 @@
     .HistoryTypoP{
         font-size: .7rem !important;
     }
+  
 }
 @media only screen and (max-width: 600px) {
     .HistoryTypoH{
@@ -63,6 +72,6 @@
         font-size: .5rem !important;
     }
     .ArrowMain{
-        height: 8vh;
+        height: 5vh;
     }
 }

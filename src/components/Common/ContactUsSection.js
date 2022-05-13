@@ -1,11 +1,31 @@
 import { Grid, Typography } from "@mui/material";
-import React from "react";
+import React, { useRef } from "react";
 import SectionHeader from "./SectionHeader";
 import WhatsappIcon from "../../assets/images/whatsapp.svg";
 import EmailIcon from "../../assets/images/emailIcon.svg";
 import CallIcon from "../../assets/images/callIcon.svg";
 import TextField from "@mui/material/TextField";
+import emailjs from "emailjs-com";
 export default function ContactUsSection(props) {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_p9t3cg6",
+        "template_imi9dne",
+        e.target,
+        "user_Dh0YsMnLOPp5ckc48VOcP"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       {props.ContactUs ? (
@@ -23,27 +43,55 @@ export default function ContactUsSection(props) {
           <div className="ContactUsGrid">
             <Grid container spacing={1} className="ContactContainerGrid">
               <Grid container sm={8} md={6} className="ContactFormGrid">
-                <Grid xs={12} sm={6}>
-                  <input placeholder="Your Name" className="InputField" />
-                </Grid>
-                <Grid xs={12} sm={6}>
-                  <input placeholder="Email" className="InputField" />
-                </Grid>
-                <Grid xs={12} sm={6}>
-                  <input placeholder="Phone" className="InputField" />
-                </Grid>
-                <Grid xs={12} sm={6}>
-                  <input placeholder="Budget" className="InputField" />
-                </Grid>
-                <Grid xs={12} sm={12}>
-                  <textarea
-                    placeholder="Type Your Message"
-                    className="textField"
-                  />
-                </Grid>
-                <Grid xs={3}>
-                  <button className="ContactUsBtn">Send</button>
-                </Grid>
+                <form onSubmit={sendEmail} className="ContactForm">
+                  <div style={{ display: "flex", width: "100%" }}>
+                    <Grid xs={12} sm={6}>
+                      <input
+                        name="name"
+                        placeholder="Your Name"
+                        className="InputField"
+                      />
+                    </Grid>
+                    <Grid xs={12} sm={6}>
+                      <input
+                        name="email"
+                        placeholder="Email"
+                        className="InputField"
+                      />
+                    </Grid>
+                  </div>
+                  <div style={{ display: "flex" }}>
+                    <Grid xs={12} sm={6}>
+                      <input
+                        name="phone"
+                        placeholder="Phone"
+                        className="InputField"
+                      />
+                    </Grid>
+                    <Grid xs={12} sm={6}>
+                      <input
+                        name="budget"
+                        placeholder="Budget"
+                        className="InputField"
+                      />
+                    </Grid>
+                  </div>
+                  <div>
+                    <Grid xs={12}>
+                      <textarea
+                        name="message"
+                        placeholder="Type Your Message"
+                        className="textField"
+                        style={{ marginLeft: "1%" }}
+                      />
+                    </Grid>
+                  </div>
+                  <Grid xs={3}>
+                    <button type="submit" className="ContactUsBtn">
+                      Send
+                    </button>
+                  </Grid>
+                </form>
               </Grid>
               <Grid sm={10} md={10} className="ContactMedia">
                 <div className="ContactMediaDiv">
@@ -116,27 +164,54 @@ export default function ContactUsSection(props) {
                 </div>
               </Grid>
               <Grid container sm={6} className="FormGrid">
-                <Grid xs={12} sm={6}>
-                  <input placeholder="Your Name" className="InputField" />
-                </Grid>
-                <Grid xs={12} sm={6}>
-                  <input placeholder="Email" className="InputField" />
-                </Grid>
-                <Grid xs={12} sm={6}>
-                  <input placeholder="Phone" className="InputField" />
-                </Grid>
-                <Grid xs={12} sm={6}>
-                  <input placeholder="Budget" className="InputField" />
-                </Grid>
-                <Grid xs={12} sm={12}>
-                  <textarea
-                    placeholder="Type Your Message"
-                    className="textField"
-                  />
-                </Grid>
-                <Grid xs={3}>
-                  <button className="ContactUsBtn">Send</button>
-                </Grid>
+                <form onSubmit={sendEmail} className="ContactForm">
+                  <div style={{ display: "flex", width: "100%" }}>
+                    <Grid xs={12} sm={6}>
+                      <input
+                        name="name"
+                        placeholder="Your Name"
+                        className="InputField"
+                      />
+                    </Grid>
+                    <Grid xs={12} sm={6}>
+                      <input
+                        name="email"
+                        placeholder="Email"
+                        className="InputField"
+                      />
+                    </Grid>
+                  </div>
+                  <div style={{ display: "flex" }}>
+                    <Grid xs={12} sm={6}>
+                      <input
+                        name="phone"
+                        placeholder="Phone"
+                        className="InputField"
+                      />
+                    </Grid>
+                    <Grid xs={12} sm={6}>
+                      <input
+                        name="budget"
+                        placeholder="Budget"
+                        className="InputField"
+                      />
+                    </Grid>
+                  </div>
+                  <div>
+                    <Grid xs={12}>
+                      <textarea
+                        name="message"
+                        placeholder="Type Your Message"
+                        className="textField"
+                      />
+                    </Grid>
+                  </div>
+                  <Grid xs={3}>
+                    <button type="submit" className="ContactUsBtn">
+                      Send
+                    </button>
+                  </Grid>
+                </form>
               </Grid>
             </Grid>
           </div>

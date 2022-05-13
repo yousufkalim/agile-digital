@@ -1,12 +1,15 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import { Divider } from "@mui/material";
-
+// AOS.init();
 export default function SectionHeader(props) {
   return (
     <>
       {props.WorkProcess ? (
-        <div className={props.LeftSectionHeader || "SectionHeaderTypo"}>
+        <div
+          className={props.LeftSectionHeader || "SectionHeaderTypo"}
+          // data-aos="fade-down-left"
+        >
           <Typography
             className="SectionHeaderH1"
             color={props.colorH1 || "#fff"}
@@ -40,7 +43,10 @@ export default function SectionHeader(props) {
           </Typography>
         </div>
       ) : (
-        <div className={props.LeftSectionHeader || "SectionHeaderTypo"}>
+        <div
+          className={props.LeftSectionHeader || "SectionHeaderTypo"}
+          // data-aos="fade-down-left"
+        >
           <Typography
             className="SectionHeaderH1"
             color={props.colorH1 || "#42C2FF"}
@@ -50,12 +56,6 @@ export default function SectionHeader(props) {
           <Divider
             className="SectionHeaderDivider"
             width={props.width || "10%"}
-            sx={{
-              height: "5px",
-              backgroundColor: "#42C2FF",
-              borderRadius: "4px",
-              margin: ".7% 0",
-            }}
           />
           <Typography
             className="SectionHeaderH2"

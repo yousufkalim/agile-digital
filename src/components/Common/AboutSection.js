@@ -2,7 +2,7 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import InfoBox from "./InfoBox";
-import AboutImg from "../../assets/images/AboutImg.svg";
+import AboutImg from "../../assets/images/CartoonImg.svg";
 export default function AboutSection() {
   return (
     <>
