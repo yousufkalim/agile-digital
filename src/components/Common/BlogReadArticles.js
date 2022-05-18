@@ -1,7 +1,7 @@
 // Init
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-
+import { motion } from "framer-motion";
 // Importing Components
 import Button from "@mui/material/Button";
 
@@ -10,7 +10,13 @@ export default function BlogReadArticles(props) {
   return (
     <>
       {props.Reverse ? (
-        <div className="BlogArticleMain">
+        <motion.div
+          initial={{ x: 500 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="BlogArticleMain"
+        >
           <Grid container spacing={1} className="BlogArticleContainer2">
             <Grid xs={12} sm={10} md={6}>
               <img
@@ -52,9 +58,15 @@ export default function BlogReadArticles(props) {
               </div>
             </Grid>
           </Grid>
-        </div>
+        </motion.div>
       ) : (
-        <div className="BlogArticleMain">
+        <motion.div
+          initial={{ x: -500 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="BlogArticleMain"
+        >
           <Grid container spacing={1} className="BlogArticleContainer1">
             <Grid xs={12} sm={10} md={6}>
               <div className="BlogTypo">
@@ -96,7 +108,7 @@ export default function BlogReadArticles(props) {
               />
             </Grid>
           </Grid>
-        </div>
+        </motion.div>
       )}
     </>
   );

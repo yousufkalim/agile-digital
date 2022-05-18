@@ -1,6 +1,7 @@
 // Init
 import { Typography } from "@mui/material";
 import React from "react";
+import { motion } from "framer-motion";
 
 // Importing Components
 
@@ -8,7 +9,13 @@ import React from "react";
 export default function BlogHeader() {
   return (
     <>
-      <div className="BlogHeaderMain">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="BlogHeaderMain"
+      >
         <Typography
           className="BlogHeaderTypo"
           sx={{ color: "#263238", fontSize: "1.7rem", fontWeight: "800" }}
@@ -78,7 +85,7 @@ export default function BlogHeader() {
             SUBSCRIBE
           </button>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
