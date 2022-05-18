@@ -1,19 +1,22 @@
 .ProjectCardMain{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     /* width: 90%; */
-    margin:2%;
+    margin:3% 2%;
 }
 .ProjectCardContainer1{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 90% !important;
 }
 .ProjectCardContainer2{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 90% !important;
+
 }
 .ProjectCardTypo{
     margin-left:15% !important;
