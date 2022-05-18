@@ -15,7 +15,7 @@ import ReviewSection from "../components/Common/ReviewsSection";
 // Home Component
 export default function Home() {
   return (
-    <div>
+    <div className="HomeContainer">
       <NavBar />
       <Header
         Title="WE PROVIDE GREAT SERVICES AT THE BEST PRICE."
