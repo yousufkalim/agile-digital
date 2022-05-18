@@ -1,7 +1,7 @@
 // Init
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-
+import { motion } from "framer-motion";
 // Importing Components
 import Button from "@mui/material/Button";
 import { Divider } from "@mui/material";
@@ -10,7 +10,13 @@ export default function OurProjectCard(props) {
   return (
     <>
       {props.Reverse ? (
-        <div className="ProjectCardMain">
+        <motion.div
+          initial={{ x: 500 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="ProjectCardMain"
+        >
           <Grid container spacing={1} className="ProjectCardContainer2">
             <Grid xs={12} sm={10} md={9}>
               <img
@@ -44,9 +50,15 @@ export default function OurProjectCard(props) {
               </div>
             </Grid>
           </Grid>
-        </div>
+        </motion.div>
       ) : (
-        <div className="ProjectCardMain">
+        <motion.div
+          initial={{ x: -500 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+          className="ProjectCardMain"
+        >
           <Grid container spacing={1} className="ProjectCardContainer1">
             <Grid xs={12} sm={10} md={3}>
               <div className="ProjectCardTypo">
@@ -67,9 +79,16 @@ export default function OurProjectCard(props) {
                 <Typography className="ProjectCardDesp">
                   {props.description}
                 </Typography>
-                <Button className="ProjectCardBtn" variant="outlined">
-                  {props.BtnText || "View"}
-                </Button>
+                <a
+                  href={
+                    props.href ||
+                    "http://localhost:3000/projectdetails/permispop"
+                  }
+                >
+                  <Button className="ProjectCardBtn" variant="outlined">
+                    {props.BtnText || "View"}
+                  </Button>
+                </a>
               </div>
             </Grid>
             <Grid xs={12} sm={10} md={9}>
@@ -80,7 +99,7 @@ export default function OurProjectCard(props) {
               />
             </Grid>
           </Grid>
-        </div>
+        </motion.div>
       )}
     </>
   );

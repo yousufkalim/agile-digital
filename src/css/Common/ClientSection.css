@@ -20,4 +20,8 @@
 } 
 .ClientLogo{
     width: 70%;
+    transition: .5s;
+}
+.ClientLogo:hover{
+    width: 80%;
 }

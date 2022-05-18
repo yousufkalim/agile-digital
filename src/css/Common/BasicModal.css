@@ -1,0 +1,29 @@
+.ModalBox{
+    max-height: 80%;
+    overflow-y: scroll;
+    /* padding: 3%; */
+}
+.ModalBox::-webkit-scrollbar {
+    display: none;
+  }
+.Modal_Top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0%;
+}
+.Modal_Logo{
+    width: 20%;
+
+}
+.ModalHeading{
+    font-weight: 800 !important;
+}
+.Modal_SubHeading{
+    margin: 2% 0% !important;
+    font-weight: 600 !important;
+}
+.Modal_Para{
+    margin-top: 1% !important;
+    font-size: .9rem !important;
+}

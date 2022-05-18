@@ -6,14 +6,15 @@
   align-items: center;
   height: 100%;
 }
+
 .HeaderTypo{
   padding: 4%;
 }
 .HeaderHeading{
-  font-size: 2.1rem !important;
+  font-size: 2.5rem !important;
   font-weight: 800 !important;
   line-height: 1.2 !important;
-  color: black !important;
+  /* color: black !important; */
   padding-top: 5%!important;
 }
 .HeaderPara{
@@ -39,6 +40,21 @@
   background-color: #003B7E !important;
 
 }
+.ProjectDetailBtn{
+  color: white !important;
+  background-color: #FFA333 !important;
+  border: none !important;
+  padding: 2% 3% !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  border-radius: 10px !important;
+  width: 40%;
+}
+.DetailHeaderImg{
+  display: flex;
+  justify-content: right;
+}
+
 /* MEDIA QUERIES*/
 
 @media only screen and (max-width: 900px) {

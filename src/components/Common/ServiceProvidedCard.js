@@ -26,31 +26,33 @@ export default function ServiceProvidedCard(props) {
             >
               {props.CardTitle}
             </Typography>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                marginTop: "20%",
-              }}
-            >
-              <button
+            <a href={props.href}>
+              <div
                 style={{
-                  border: "none",
-                  backgroundColor: "#F8F8F8",
-                  margin: "10% 0% 10% 10%",
-                  color: "#003B7E",
-                  fontWeight: 600,
+                  display: "flex",
+                  alignItems: "center",
+                  marginTop: "20%",
                 }}
               >
-                {props.BtnText ? props.BtnText : "Get Details"}
-              </button>
-              <img
-                style={{
-                  marginLeft: "2%",
-                }}
-                src={ArrowForward}
-              />
-            </div>
+                <button
+                  style={{
+                    border: "none",
+                    backgroundColor: "#F8F8F8",
+                    margin: "10% 0% 10% 10%",
+                    color: "#003B7E",
+                    fontWeight: 600,
+                  }}
+                >
+                  {props.BtnText ? props.BtnText : "Get Details"}
+                </button>
+                <img
+                  style={{
+                    marginLeft: "2%",
+                  }}
+                  src={ArrowForward}
+                />
+              </div>
+            </a>
           </div>
           <div style={{ width: "100%" }}>
             <img
@@ -63,6 +65,7 @@ export default function ServiceProvidedCard(props) {
         <div
           style={{
             display: "flex",
+            justifyContent: "space-between",
             width: "100%",
             border: "1px solid #003B7E",
             borderRadius: "20px",
@@ -81,31 +84,33 @@ export default function ServiceProvidedCard(props) {
             >
               {props.CardTitle}
             </Typography>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                // marginTop: "30%",
-              }}
-            >
-              <button
+            <a href={props.href}>
+              <div
                 style={{
-                  border: "none",
-                  backgroundColor: "#F8F8F8",
-                  margin: "10% 0% 10% 10%",
-                  color: "#003B7E",
-                  fontWeight: 600,
+                  display: "flex",
+                  alignItems: "center",
+                  // marginTop: "30%",
                 }}
               >
-                {props.BtnText ? props.BtnText : "Get Details"}
-              </button>
-              <img
-                style={{
-                  marginLeft: "2%",
-                }}
-                src={ArrowForward}
-              />
-            </div>
+                <button
+                  style={{
+                    border: "none",
+                    backgroundColor: "#F8F8F8",
+                    margin: "10% 0% 10% 10%",
+                    color: "#003B7E",
+                    fontWeight: 600,
+                  }}
+                >
+                  {props.BtnText ? props.BtnText : "Get Details"}
+                </button>
+                <img
+                  style={{
+                    marginLeft: "2%",
+                  }}
+                  src={ArrowForward}
+                />
+              </div>
+            </a>
           </div>
           <div style={{ width: "60%" }}>
             <img

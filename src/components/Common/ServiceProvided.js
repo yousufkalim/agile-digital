@@ -33,6 +33,7 @@ export default function ServiceProvided() {
               sx={{ margin: "1%" }}
             >
               <ServiceProvidedCard
+                href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}
                 CardTitle="Mobile Application Development"
                 // CardImgSrc={UiDev}
               />
@@ -47,6 +48,7 @@ export default function ServiceProvided() {
               sx={{ margin: "1%" }}
             >
               <ServiceProvidedCard
+                href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}
                 CardTitle="Website Development"
                 // CardImgSrc={WebDev}
                 // width="80%"
@@ -61,6 +63,7 @@ export default function ServiceProvided() {
               sx={{ margin: "1%" }}
             >
               <ServiceProvidedCard
+                href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}
                 CardTitle="Software Development"
                 CardImgSrc={SoftDev}
               />
@@ -74,6 +77,7 @@ export default function ServiceProvided() {
               sx={{ margin: "1%" }}
             >
               <ServiceProvidedCard
+                href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}
                 CardTitle="On Demand Developers"
                 CardImgSrc={OnDemand}
               />
@@ -89,6 +93,7 @@ export default function ServiceProvided() {
             <ServiceProvidedCard
               verticleCard
               CardImgSrc={UiDev}
+              href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}
               CardTitle="UI/UX Development"
             />
           </Grid>

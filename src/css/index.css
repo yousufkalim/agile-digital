@@ -19,15 +19,26 @@
 @import url("./Common/BlogList.css");
 @import url("./Common/OurProjectTabs.css");
 @import url("./Common/OurProjectCard.css");
+@import url("./Common/ProjectDetails.css");
+@import url("./Common/OverviewSection.css");
+@import url("./Common/BasicModal.css");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
+
 /* Defaults */
 * {
-  padding: 0;
+  padding:  0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Raleway ,Montserrat!important;
+  font-family:  Raleway, Montserrat  !important;
+  /* overflow-x: hidden; */
+}
+a{
+  text-decoration: none;
+}
+.HomeContainer{
+  overflow-x: hidden !important;
 }
 
 /* Primary Variables */

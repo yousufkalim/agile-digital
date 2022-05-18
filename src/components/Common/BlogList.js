@@ -7,6 +7,7 @@ import BlogList1 from "../../assets/images/bloglist1.svg";
 import BlogList2 from "../../assets/images/bloglist2.svg";
 import BlogList3 from "../../assets/images/bloglist3.svg";
 import BlogList4 from "../../assets/images/bloglist4.svg";
+import { motion } from "framer-motion";
 // Importing Components
 
 // Home Component
@@ -15,7 +16,13 @@ export default function BlogList() {
 
   return (
     <>
-      <div className="BlogListMain">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="BlogListMain"
+      >
         <Grid container spacing={1} className="BlogListContainer">
           <Grid md={5} className="BlogListGrid">
             <BlogCard
@@ -89,7 +96,7 @@ export default function BlogList() {
             </Button>
           </Grid>
         </Grid>
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -5,11 +5,17 @@ import FB from "../../assets/images/FooterFB.svg";
 import Twitter from "../../assets/images/FooterTwitter.svg";
 import LinkedIn from "../../assets/images/FooterLinkedIn.svg";
 import WhatsApp from "../../assets/images/FooterWhatsApp.svg";
-
+import { motion } from "framer-motion";
 export default function (props) {
   return (
     <>
-      <div className="FooterMain">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="FooterMain"
+      >
         <div className="FooterDiv">
           <div className="FooterLeft">
             <img className="FooterLogo" src={Logo} alt="logo" />
@@ -72,7 +78,7 @@ export default function (props) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       <Divider />
       <div className="CopyRightDiv">
         <Typography sx={{ fontSize: "80%", fontWeight: "700" }}>
