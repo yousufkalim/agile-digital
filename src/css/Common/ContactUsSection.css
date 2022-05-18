@@ -35,6 +35,17 @@
 .ContactMediaDiv{
     display: flex;
     align-items: center;
+    transform: scale(1);
+    transition: .5s;
+}
+.ContactMediaDiv:hover{
+    transform: scale(1.2);
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* ============================================== */
