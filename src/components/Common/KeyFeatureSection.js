@@ -9,6 +9,7 @@ import keyIcon2 from "../../assets/images/keyIcon2.svg";
 import keyIcon3 from "../../assets/images/keyIcon3.svg";
 import keyIcon4 from "../../assets/images/keyIcon4.svg";
 import keyIcon6 from "../../assets/images/keyIcon6.svg";
+import { motion } from "framer-motion";
 // Importing Components
 
 // Home Component
@@ -20,6 +21,7 @@ export default function KeyFeatureSection(props) {
         flexDirection: "column",
         // alignItems: "center",
         justifyContent: "center",
+        backgroundColor: "#F8F8F8",
       }}
     >
       <SectionHeader
@@ -27,7 +29,11 @@ export default function KeyFeatureSection(props) {
         decription="This sounds simple, but it is beneficial to your business success."
         colorDesp
       />
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
         style={{
           width: "100%",
           display: "flex",
@@ -88,7 +94,7 @@ export default function KeyFeatureSection(props) {
             />
           </Grid>
         </Grid>
-      </div>
+      </motion.div>
     </div>
   );
 }
