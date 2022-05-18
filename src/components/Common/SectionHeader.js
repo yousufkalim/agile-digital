@@ -1,14 +1,18 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import { Divider } from "@mui/material";
+import { motion } from "framer-motion";
+import { AOS } from "aos";
 // AOS.init();
 export default function SectionHeader(props) {
   return (
     <>
       {props.WorkProcess ? (
-        <div
+        <motion.div
           className={props.LeftSectionHeader || "SectionHeaderTypo"}
           // data-aos="fade-down-left"
+          // animate={{ scale: 2 }}
+          // transition={{ duration: 0.5 }}
         >
           <Typography
             className="SectionHeaderH1"
@@ -41,11 +45,14 @@ export default function SectionHeader(props) {
           >
             {props.decription}
           </Typography>
-        </div>
+        </motion.div>
       ) : (
-        <div
+        <motion.div
           className={props.LeftSectionHeader || "SectionHeaderTypo"}
-          // data-aos="fade-down-left"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
         >
           <Typography
             className="SectionHeaderH1"
@@ -69,7 +76,7 @@ export default function SectionHeader(props) {
           >
             {props.decription}
           </Typography>
-        </div>
+        </motion.div>
       )}
     </>
   );
