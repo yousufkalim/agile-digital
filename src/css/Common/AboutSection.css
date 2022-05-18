@@ -23,8 +23,14 @@
     margin: 8% 0% 1% 12%;
 
 }
+.AboutImg{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 .AboutImg img{
-    width: 110%;
+    width: 90%;
+    margin-top: 5%;
 }
 .AboutSectionBtn{
     color: #42C2FF;
@@ -44,12 +50,18 @@
 .InfoDiv{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    justify-content: space-between;
     text-align: center;
     padding: 2%;
     margin: 1%;
     background-color: #0F52BA14;
     border-radius: 10px;
+   min-height: 130px;
+    max-height: 130px;
+    max-width: 130px;
+    min-width: 130px;
+    /* width: 130px 130px; */
 }
 .InfoDiv img{
     width: 40%;
