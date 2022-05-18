@@ -9,6 +9,7 @@ import WhiteMenuIcon from "../../assets/images/WhiteMenuIcon.svg";
 import CloseIcon from "../../assets/images/close_White.png";
 import MenuImg from "../../assets/images/MenuImg.svg";
 import { Divider, Typography } from "@mui/material";
+import { motion } from "framer-motion";
 
 export default function NavBar(props) {
   const [Menu, SetMenu] = React.useState(false);
@@ -29,7 +30,11 @@ export default function NavBar(props) {
             }}
           >
             {Menu ? (
-              <div className="MenuDiv">
+              <motion.div
+                className="MenuDiv"
+                animate={{ y: [-1000, 0] }}
+                transition={{ ease: "easeOut", duration: 1 }}
+              >
                 <Toolbar
                   className="NavToolbar"
                   sx={{ display: "flex", justifyContent: "space-between" }}
@@ -38,74 +43,77 @@ export default function NavBar(props) {
                     <img alt="logo" src={LogoWhite} style={{ width: "70%" }} />
                   </a>
                   <img
+                    className="MenuIconMob"
                     alt="menu"
                     src={CloseIcon}
                     style={{ width: "2.5%", color: "white" }}
                     onClick={(e) => SetMenu(!Menu)}
                   />
                 </Toolbar>
-                <div className="MenuSection">
-                  <div className="MenuImgDiv">
-                    <img className="MenuImg" src={MenuImg} />
-                  </div>
-                  <div className="MenuTypoDiv">
-                    {ServiceDropDown ? (
-                      <>
-                        <div className="ServicesDropDown">
-                          <ul className="ServicesFields">
-                            <li>
-                              <a
-                                href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}
-                              >
-                                WEB DEVELOPMENT
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}
-                              >
-                                APP DEVELOPMENT
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}
-                              >
-                                SOFTWARE DEVELOPMENT
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}
-                              >
-                                ON DEMAND DEVELOPERS
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}
-                              >
-                                UI/UX DEVELOPMENT
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <Divider
-                          orientation="vertical"
-                          sx={{
-                            width: ".5%",
-                            height: "25%",
-                            backgroundColor: "#fff",
-                            borderRadius: "4px",
-                            // marginRight: "-8%",
-                          }}
-                        />
-                      </>
-                    ) : (
-                      ""
-                    )}
-
-                    {/* <Divider
+                <div className="MenuSectionMain">
+                  <div className="MenuSection">
+                    <div className="MenuImgDiv">
+                      <img className="MenuImg" src={MenuImg} />
+                    </div>
+                    <div className="MenuTypoDiv">
+                      <div className="ServiceOptionDiv">
+                        {ServiceDropDown ? (
+                          <>
+                            <div className="ServicesDropDown">
+                              <ul className="ServicesFields">
+                                <li>
+                                  <a
+                                    href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}
+                                  >
+                                    WEB DEVELOPMENT
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}
+                                  >
+                                    APP DEVELOPMENT
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}
+                                  >
+                                    SOFTWARE DEVELOPMENT
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}
+                                  >
+                                    ON DEMAND DEVELOPERS
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}
+                                  >
+                                    UI/UX DEVELOPMENT
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <Divider
+                              orientation="vertical"
+                              sx={{
+                                width: ".5%",
+                                height: "35%",
+                                backgroundColor: "#fff",
+                                borderRadius: "4px",
+                                marginLeft: "5%",
+                              }}
+                            />
+                          </>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                      {/* <Divider
                   sx={{
                     width: "25%",
                     height: ".5%",
@@ -114,39 +122,44 @@ export default function NavBar(props) {
                     marginTop: "-13%",
                   }}
                 /> */}
-                    {/* {console.log("processlink", process.env.REACT_APP_DEMO)} */}
-                    <div className="MainMenu">
-                      <ul className="MainMenuList">
-                        <li>
-                          <a href={`${process.env.REACT_APP_DEMO}/about`}>
-                            About
-                          </a>
-                        </li>
-                        <li
-                          onClick={(e) => SetServiceDropDown(!ServiceDropDown)}
-                        >
-                          Services
-                        </li>
-                        <li>
-                          <a href={`${process.env.REACT_APP_DEMO}/blog`}>
-                            Blog
-                          </a>
-                        </li>
-                        <li>
-                          <a href={`${process.env.REACT_APP_DEMO}/ourprojects`}>
-                            Our Projects
-                          </a>
-                        </li>
-                        <li>
-                          <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
-                            Contact Us
-                          </a>
-                        </li>
-                      </ul>
+                      {/* {console.log("processlink", process.env.REACT_APP_DEMO)} */}
+                      <div className="MainMenu">
+                        <ul className="MainMenuList">
+                          <li>
+                            <a href={`${process.env.REACT_APP_DEMO}/about`}>
+                              About
+                            </a>
+                          </li>
+                          <li
+                            onClick={(e) =>
+                              SetServiceDropDown(!ServiceDropDown)
+                            }
+                          >
+                            Services
+                          </li>
+                          <li>
+                            <a href={`${process.env.REACT_APP_DEMO}/blog`}>
+                              Blog
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href={`${process.env.REACT_APP_DEMO}/ourprojects`}
+                            >
+                              Our Projects
+                            </a>
+                          </li>
+                          <li>
+                            <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
+                              Contact Us
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ) : (
               <Toolbar
                 className="NavToolbar"
@@ -156,6 +169,7 @@ export default function NavBar(props) {
                   <img alt="logo" src={LogoWhite} style={{ width: "70%" }} />
                 </a>
                 <img
+                  className="MenuIconMob"
                   alt="menu"
                   src={WhiteMenuIcon}
                   style={{ width: "2.5%" }}
@@ -178,7 +192,11 @@ export default function NavBar(props) {
             }}
           >
             {Menu ? (
-              <div className="MenuDiv">
+              <motion.div
+                className="MenuDiv"
+                animate={{ y: [-1000, 0] }}
+                transition={{ ease: "easeOut", duration: 1 }}
+              >
                 <Toolbar
                   className="NavToolbar"
                   sx={{ display: "flex", justifyContent: "space-between" }}
@@ -187,116 +205,131 @@ export default function NavBar(props) {
                     <img alt="logo" src={LogoWhite} style={{ width: "70%" }} />
                   </a>
                   <img
+                    className="MenuIconMob"
                     alt="menu"
                     src={CloseIcon}
                     style={{ width: "2.5%", color: "white" }}
                     onClick={(e) => SetMenu(!Menu)}
                   />
                 </Toolbar>
-                <div className="MenuSection">
-                  <div className="MenuImgDiv">
-                    <img className="MenuImg" src={MenuImg} />
-                  </div>
-                  <div className="MenuTypoDiv">
-                    <div className="ServiceOptionDiv">
-                      {ServiceDropDown ? (
-                        <>
-                          <div className="ServicesDropDown">
-                            <ul className="ServicesFields">
-                              <li>
-                                <a
-                                  href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}
-                                >
-                                  WEB DEVELOPMENT
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}
-                                >
-                                  APP DEVELOPMENT
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}
-                                >
-                                  SOFTWARE DEVELOPMENT
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}
-                                >
-                                  ON DEMAND DEVELOPERS
-                                </a>
-                              </li>
-                              <li>
-                                <a
-                                  href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}
-                                >
-                                  UI/UX DEVELOPMENT
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                          <Divider
-                            orientation="vertical"
+                <div className="MenuSectionMain">
+                  <div className="MenuSection">
+                    <div className="MenuImgDiv">
+                      <img className="MenuImg" src={MenuImg} />
+                    </div>
+                    <div className="MenuTypoDiv">
+                      <div className="ServiceOptionDiv">
+                        {ServiceDropDown ? (
+                          <>
+                            <div className="ServicesDropDown">
+                              <ul className="ServicesFields">
+                                <li>
+                                  <a
+                                    href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}
+                                  >
+                                    WEB DEVELOPMENT
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}
+                                  >
+                                    APP DEVELOPMENT
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}
+                                  >
+                                    SOFTWARE DEVELOPMENT
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}
+                                  >
+                                    ON DEMAND DEVELOPERS
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}
+                                  >
+                                    UI/UX DEVELOPMENT
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                            <Divider
+                              orientation="vertical"
+                              sx={{
+                                width: ".5%",
+                                height: "35%",
+                                backgroundColor: "#fff",
+                                borderRadius: "4px",
+                                marginLeft: "5%",
+                              }}
+                            />
+
+                            {/* <Divider
                             sx={{
-                              width: ".5%",
-                              height: "25%",
+                              width: "25%",
+                              height: ".5%",
                               backgroundColor: "#fff",
                               borderRadius: "4px",
-                              marginLeft: "5%",
+                              marginTop: "-13%",
                             }}
-                          />
-                          {/* <Divider
-                          sx={{
-                            width: "25%",
-                            height: ".5%",
-                            backgroundColor: "#fff",
-                            borderRadius: "4px",
-                            marginTop: "-13%",
-                          }}
-                        /> */}
-                        </>
-                      ) : (
-                        ""
-                      )}
-                    </div>
+                          /> */}
+                          </>
+                        ) : (
+                          ""
+                        )}
+                      </div>
 
-                    <div className="MainMenu">
-                      <ul className="MainMenuList">
-                        <li>
-                          <a href={`${process.env.REACT_APP_DEMO}/about`}>
-                            About
-                          </a>
-                        </li>
-                        <li
-                          onClick={(e) => SetServiceDropDown(!ServiceDropDown)}
-                        >
-                          Services
-                        </li>
-                        <li>
-                          <a href={`${process.env.REACT_APP_DEMO}/blog`}>
-                            Blog
-                          </a>
-                        </li>
-                        <li>
-                          <a href={`${process.env.REACT_APP_DEMO}/ourprojects`}>
-                            Our Projects
-                          </a>
-                        </li>
-                        <li>
-                          <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
-                            Contact Us
-                          </a>
-                        </li>
-                      </ul>
+                      <div className="MainMenu">
+                        <ul className="MainMenuList">
+                          <li>
+                            <a href={`${process.env.REACT_APP_DEMO}/about`}>
+                              About
+                            </a>
+                          </li>
+                          <div
+                            style={{
+                              display: "flex",
+                              alignItems: "center",
+                            }}
+                          >
+                            <li
+                              onClick={(e) =>
+                                SetServiceDropDown(!ServiceDropDown)
+                              }
+                            >
+                              Services
+                            </li>
+                          </div>
+                          <li>
+                            <a href={`${process.env.REACT_APP_DEMO}/blog`}>
+                              Blog
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href={`${process.env.REACT_APP_DEMO}/ourprojects`}
+                            >
+                              Our Projects
+                            </a>
+                          </li>
+                          <li>
+                            <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
+                              Contact Us
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ) : (
               <Toolbar className="NavToolbar">
                 <a href={`${process.env.REACT_APP_DEMO}/`}>
@@ -304,6 +337,7 @@ export default function NavBar(props) {
                 </a>
 
                 <img
+                  className="MenuIconMob"
                   alt="menu"
                   src={NavMenu}
                   style={{ width: "2.5%" }}
