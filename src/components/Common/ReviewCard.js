@@ -2,7 +2,7 @@ import React from "react";
 import Avatar from "@mui/material/Avatar";
 import { Typography } from "@mui/material";
 import Rating from "@mui/material/Rating";
-import img from "../../assets/images/muh_ali.jpg";
+import img from "../../assets/images/muh_ali.webp";
 export default function ReviewCard(props) {
   const [value, setValue] = React.useState(2);
   return (

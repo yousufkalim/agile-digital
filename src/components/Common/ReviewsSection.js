@@ -3,19 +3,19 @@ import SectionHeader from "./SectionHeader";
 import { Carousel } from "@trendyol-js/react-carousel";
 import KidCab from "../../assets/images/kidcab.svg";
 import Permispop from "../../assets/images/permispop.svg";
-import QB from "../../assets/images/quadrabase.svg";
+import ReviewBg from "../../assets/images/ReviewBg.svg";
 import ReviewCard from "./ReviewCard";
 export default function ReviewSection() {
   return (
     <>
-      <div>
+      <div className="ReviewSectionMain">
         <SectionHeader
           colorH2="#0F52BA"
           h1="your feedback matters"
           h2="Client Reviews"
         />
         <div className="ReviewCardSlider">
-          <Carousel className="SliderDiv" show={5} slide={1} swiping={true}>
+          <Carousel className="SliderDiv2" show={5} slide={1} swiping={true}>
             <ReviewCard
               name="Farhan Shakir"
               review=" It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
@@ -35,6 +35,7 @@ export default function ReviewSection() {
             <ReviewCard
               name=" Mam Zunaira"
               review=" It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+              style={{ height: "600px", width: "120%" }}
             />
             <ReviewCard
               name="Adeel Baig"
