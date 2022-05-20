@@ -105,7 +105,7 @@ export default function ContactUsSection(props) {
                 </form>
               </Grid>
               <Grid sm={10} md={10} className="ContactMedia">
-                <a href="https://wa.me/03241013344">
+                {/* <a href="https://wa.me/03241013344">
                   <div className="ContactMediaDiv">
                     <img className="ContactMediaIcons" src={WhatsappIcon} />
                     <div className="SocialMediaText">
@@ -114,7 +114,7 @@ export default function ContactUsSection(props) {
                       </Typography>
                     </div>
                   </div>
-                </a>
+                </a> */}
                 <a href="mailto:contact@falconconsulting.fr">
                   <div className="ContactMediaDiv">
                     <img className="ContactMediaIcons" src={EmailIcon} />
@@ -126,7 +126,7 @@ export default function ContactUsSection(props) {
                     </div>
                   </div>
                 </a>
-                <a href="tel:0318-4310639">
+                {/* <a href="tel:0318-4310639">
                   <div className="ContactMediaDiv">
                     <img className="ContactMediaIcons" src={CallIcon} />
                     <div className="SocialMediaText">
@@ -136,7 +136,7 @@ export default function ContactUsSection(props) {
                       </Typography>
                     </div>
                   </div>
-                </a>
+                </a> */}
               </Grid>
             </Grid>
           </div>
@@ -157,20 +157,20 @@ export default function ContactUsSection(props) {
           <div className="ContactSectionGrid">
             <Grid container spacing={1} className="ContainerGrid">
               <Grid sm={6} className="SocialMediaMain">
-                <a href="https://wa.me/03241013344">
-                  <div className="SocialMediaDiv">
-                    <img className="SocialMediaIcons" src={WhatsappIcon} />
-                    <div className="SocialMediaText">
-                      <Typography>Goto WhatsApp</Typography>
-                    </div>
-                  </div>
-                </a>
                 <a href="mailto:contact@falconconsulting.fr">
                   <div className="SocialMediaDiv">
                     <img className="SocialMediaIcons" src={EmailIcon} />
                     <div className="SocialMediaText">
                       <Typography>Email</Typography>
                       <Typography>contact@falconconsulting.fr</Typography>
+                    </div>
+                  </div>
+                </a>
+                {/* <a href="https://wa.me/03241013344">
+                  <div className="SocialMediaDiv">
+                    <img className="SocialMediaIcons" src={WhatsappIcon} />
+                    <div className="SocialMediaText">
+                      <Typography>Goto WhatsApp</Typography>
                     </div>
                   </div>
                 </a>
@@ -184,7 +184,7 @@ export default function ContactUsSection(props) {
                       </Typography>
                     </div>
                   </div>
-                </a>
+                </a> */}
               </Grid>
               <Grid container sm={6} className="FormGrid">
                 <form onSubmit={sendEmail} className="ContactForm">

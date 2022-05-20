@@ -2,8 +2,8 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
 import HeaderImg from "../../assets/images/HeaderImg.svg";
-import WhatsappIcon from "../../assets/images/whatsappIcon.svg";
-import ChatIcon from "../../assets/images/ChatIcon.svg";
+import ChatIcon from "../../assets/images/whatsappIcon.svg";
+import WhatsappIcon from "../../assets/images/ChatIcon.svg";
 import Divider from "@mui/material/Divider";
 import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
@@ -12,8 +12,9 @@ import { motion } from "framer-motion";
 export default function Header(props) {
   return (
     <Grid className={props.DetailHeader || "HeaderMain"} container spacing={1}>
-      <Grid className="HeaderTypo" xs={12} sm={12} md={5}>
+      <Grid xs={12} sm={12} md={5}>
         <motion.div
+          className="HeaderTypo"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -61,7 +62,7 @@ export default function Header(props) {
         md={7}
       >
         <motion.img
-          initial={{ x: 700 }}
+          initial={{ x: 400 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
@@ -84,12 +85,14 @@ export default function Header(props) {
           >
             <a href="https://wa.me/03241013344">
               <img
-                alt="chat"
-                src={ChatIcon}
+                alt="whatsapp"
+                src={WhatsappIcon}
                 style={{ width: "8%", marginBottom: "5px" }}
               />
             </a>
-            <img alt="whatsapp" src={WhatsappIcon} style={{ width: "8%" }} />
+            <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
+              <img alt="chat" src={ChatIcon} style={{ width: "8%" }} />
+            </a>
           </div>
         ) : null}
       </Grid>

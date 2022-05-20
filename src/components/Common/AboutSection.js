@@ -25,7 +25,7 @@ export default function AboutSection() {
           <Grid container spacing={1}>
             <Grid xs={12}>
               <motion.div
-                initial={{ x: -500 }}
+                initial={{ x: -400 }}
                 whileInView={{ x: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
@@ -58,7 +58,7 @@ export default function AboutSection() {
               </Grid>
               <Grid sm={6}>
                 <motion.div
-                  initial={{ x: 500 }}
+                  initial={{ x: 400 }}
                   whileInView={{ x: 0 }}
                   transition={{ duration: 1 }}
                   viewport={{ once: true }}

@@ -5,6 +5,7 @@ import React from "react";
 import NavBar from "../components/Common/NavBar";
 
 import ContactUsSection from "../components/Common/ContactUsSection";
+import LocationSection from "../components/Common/LocationSection";
 import Footer from "../components/Common/Footer";
 // Home Component
 export default function ContactUs() {
@@ -12,6 +13,7 @@ export default function ContactUs() {
     <>
       <NavBar ContactUs />
       <ContactUsSection ContactUs />
+      <LocationSection />
       <Footer />
     </>
   );

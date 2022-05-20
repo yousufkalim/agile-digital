@@ -27,3 +27,15 @@
     margin-top: 1% !important;
     font-size: .9rem !important;
 }
+.ModalOpenBtn{
+    width: 100% !important;
+    border-radius: 10px !important;
+    text-transform: capitalize !important;
+    font-weight: 600 !important;
+    /* font-weight: 500 !important; */
+}
+/* .ModalProjectBtn{
+    width: 100% !important;
+    border-radius: 10px !important;
+    text-transform: capitalize !important;
+} */

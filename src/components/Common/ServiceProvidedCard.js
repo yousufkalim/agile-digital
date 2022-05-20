@@ -2,12 +2,16 @@ import { Typography } from "@mui/material";
 import React from "react";
 import MobileApp from "../../assets/images/MobileApp.svg";
 import ArrowForward from "../../assets/images/arrowForward.svg";
-
+import { motion } from "framer-motion";
 export default function ServiceProvidedCard(props) {
   return (
     <>
       {props.verticleCard ? (
-        <div
+        <motion.div
+          initial={{ x: 200 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
           style={{
             // display: "flex",
             width: "100%",
@@ -60,9 +64,13 @@ export default function ServiceProvidedCard(props) {
               style={{ width: "100%" }}
             />
           </div>
-        </div>
+        </motion.div>
       ) : (
-        <div
+        <motion.div
+          initial={{ x: -400 }}
+          whileInView={{ x: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -112,14 +120,15 @@ export default function ServiceProvidedCard(props) {
               </div>
             </a>
           </div>
-          <div style={{ width: "60%" }}>
+          <div style={{ objectFit: "fill" }}>
             <img
               src={props.CardImgSrc || MobileApp}
-              // style={{ width: "100%" }}
+              // style={{  }}
               width={props.width || "100%"}
+              // width="200"
             />
           </div>
-        </div>
+        </motion.div>
       )}
     </>
   );

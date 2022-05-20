@@ -17,13 +17,25 @@ export default function ClientSection() {
       <div className="ClientSectionMain">
         <SectionHeader
           width="40%"
-          h1="With yours trust"
-          h2="Amazing Partners"
+          h1="SINCERELY YOURS"
+          h2="Some Amazing Partners We Worked With"
           // decription="This sounds simple, but it is beneficial to your business success."
         />
         <div className="ClientsDiv">
           <Grid container spacing={1} className="ClientsGrid">
-            <Grid xs={4} sm={3} md={2.4}>
+            <Grid className="ClientLogoGrid" xs={6} sm={3}>
+              <img className="ClientLogo" src={Client6} alt="client" />
+            </Grid>
+            <Grid className="ClientLogoGrid" xs={6} sm={3}>
+              <img className="ClientLogo" src={Client7} alt="client" />
+            </Grid>
+            <Grid className="ClientLogoGrid" xs={6} sm={3}>
+              <img className="ClientLogo" src={Client4} alt="client" />
+            </Grid>
+            <Grid className="ClientLogoGrid" xs={6} sm={3}>
+              <img className="ClientLogo" src={Client5} alt="client" />
+            </Grid>
+            {/* <Grid xs={4} sm={3} md={2.4}>
               <img className="ClientLogo" src={Client1} alt="client" />
             </Grid>
             <Grid xs={4} sm={3} md={2.4}>
@@ -33,18 +45,6 @@ export default function ClientSection() {
               <img className="ClientLogo" src={Client3} alt="client" />
             </Grid>
             <Grid xs={4} sm={3} md={2.4}>
-              <img className="ClientLogo" src={Client4} alt="client" />
-            </Grid>
-            <Grid xs={4} sm={3} md={2.4}>
-              <img className="ClientLogo" src={Client5} alt="client" />
-            </Grid>
-            <Grid xs={4} sm={3} md={2.4}>
-              <img className="ClientLogo" src={Client6} alt="client" />
-            </Grid>
-            <Grid xs={4} sm={3} md={2.4}>
-              <img className="ClientLogo" src={Client7} alt="client" />
-            </Grid>
-            <Grid xs={4} sm={3} md={2.4}>
               <img className="ClientLogo" src={Client8} alt="client" />
             </Grid>
             <Grid xs={4} sm={3} md={2.4}>
@@ -52,7 +52,7 @@ export default function ClientSection() {
             </Grid>
             <Grid xs={4} sm={3} md={2.4}>
               <img className="ClientLogo" src={Client10} alt="client" />
-            </Grid>
+            </Grid> */}
           </Grid>
         </div>
       </div>

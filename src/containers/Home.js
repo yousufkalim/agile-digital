@@ -2,16 +2,17 @@
 import React from "react";
 
 // Importing Components
-import Header from "../components/Common/Header";
 import NavBar from "../components/Common/NavBar";
+import Header from "../components/Common/Header";
 import ServiceProvided from "../components/Common/ServiceProvided";
 import LatestProjects from "../components/Common/LatestProjects";
 import AboutSection from "../components/Common/AboutSection";
 import ClientSection from "../components/Common/ClientSection";
-import ContactUsSection from "../components/Common/ContactUsSection";
-import Footer from "../components/Common/Footer";
-import BlogSection from "../components/Common/BlogSection";
 import ReviewSection from "../components/Common/ReviewsSection";
+import BlogSection from "../components/Common/BlogSection";
+import ContactUsSection from "../components/Common/ContactUsSection";
+import LocationSection from "../components/Common/LocationSection";
+import Footer from "../components/Common/Footer";
 // Home Component
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <ReviewSection />
       <BlogSection />
       <ContactUsSection />
+      <LocationSection />
       <Footer />
     </div>
   );

@@ -26,14 +26,14 @@ export default function BasicModal(props) {
   return (
     <div>
       <Button
+        className="ModalOpenBtn"
         sx={{
-          color: "white",
-          textTransform: "capitalize",
-          backgroundColor: "#f2851e",
+          backgroundColor: `${props.ModalBtnTheme || "#47B9B4"}`,
+          color: `${props.ModalBtntextColor || "white"}`,
         }}
         onClick={handleOpen}
       >
-        See More
+        {props.ModalBtnText || "View More"}
       </Button>
       <Modal
         open={open}
@@ -64,7 +64,7 @@ export default function BasicModal(props) {
           </Typography>
           <Divider
             width={props.Dividerwidth || "12%"}
-            color={props.DividerBG || "#0097A7"}
+            color={props.DividerTheme || "#0097A7"}
             sx={{
               height: "4px",
               borderRadius: "4px",

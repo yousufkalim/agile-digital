@@ -57,11 +57,10 @@
     margin: 1%;
     background-color: #0F52BA14;
     border-radius: 10px;
-   min-height: 130px;
-    max-height: 130px;
-    max-width: 130px;
-    min-width: 130px;
-    /* width: 130px 130px; */
+   min-height: 180px;
+    max-height: 180px;
+    max-width: 180px;
+    min-width: 180px;
 }
 .InfoDiv img{
     width: 40%;
@@ -75,8 +74,37 @@
     font-size: 70%;
     color:#003B7E;
 }
-
+@media only screen and (max-width: 1366px) {
+    .InfoDiv{
+        min-height: 150px;
+         max-height: 150px;
+         max-width: 150px;
+         min-width: 150px;
+     }
+}
+@media only screen and (max-width: 992px) {
+    .InfoDiv{
+        min-height: 120px;
+         max-height: 120px;
+         max-width: 120px;
+         min-width: 120px;
+     }
+}
+@media only screen and (max-width: 768px) {
+    .InfoDiv{
+       min-height: 110px;
+        max-height: 110px;
+        max-width: 110px;
+        min-width: 110px;
+    }
+}
 @media only screen and (max-width: 600px) {
+    .InfoDiv{
+        min-height: 120px;
+         max-height: 120px;
+         max-width: 120px;
+         min-width: 120px;
+     }
     .AboutSectionDiv{
         display: flex !important;
         flex-direction: column !important;

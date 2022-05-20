@@ -47,6 +47,9 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.css-ahj2mt-MuiTypography-root{
+    font-weight: 600!important;
+}
 
 /* ============================================== */
 
@@ -57,27 +60,30 @@ input::-webkit-inner-spin-button {
     
     background: linear-gradient(to left,#2632380B,#263238B0);
     background-color: #003B7E;
-    padding: 5%;
+    padding: 5% 10%;
     /* height: 100vh; */
 }
 .ContactSectionGrid{
     /* display: flex; */
-    margin: 5% 3%;
+    margin-top: 5%;
     text-align: center;
     /* height: 100%; */
 }
 .ContainerGrid{
     display: flex;
-    align-items: center;
+    align-items:flex-end;
 }
+/* .SocialMediaMain{
+   
+} */
 .SocialMediaDiv{
     display: flex;
     align-items: center;
 }
 
 .SocialMediaIcons{
-    width: 12%;
-    margin: 2% 5%;
+    width: 10%;
+    margin-right: 5%;
 }
 .SocialMediaText{
     text-align: left;
@@ -157,7 +163,8 @@ input:focus ,textarea:focus{
 @media only screen and (max-width: 600px) {
     .ContainerGrid{
         flex-direction: column-reverse !important;
-        
+        align-items:center;
+
     }
  
     .FormGrid{
