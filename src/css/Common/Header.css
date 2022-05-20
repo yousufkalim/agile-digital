@@ -1,10 +1,10 @@
 /* Header Component Style */
 .HeaderMain{
-  display: flex;
-  justify-content: space-between;
-  padding: 2%;
-  align-items: center;
-  height: 100%;
+  display: flex !important;
+  justify-content: space-between !important;
+  padding: 2% 4%;
+  align-items: center !important;
+  width: 100% !important;
 }
 
 .HeaderTypo{
@@ -49,6 +49,10 @@
   font-weight: 700 !important;
   border-radius: 10px !important;
   width: 40%;
+}
+.HeaderImg{
+  display: flex;
+  justify-content: center;
 }
 .DetailHeaderImg{
   display: flex;
