@@ -4,7 +4,7 @@ import Tabs from "@mui/material/Tabs";
 import OurProjectCard from "../Common/OurProjectCard";
 import PermispopImg from "../../assets/images/PermispopImg.svg";
 import DesignConf from "../../assets/images/DesignImg.svg";
-import MediaPipe from "../../assets/images/MediaPipeImg.svg";
+import Movement from "../../assets/images/movement.svg";
 import Quadra from "../../assets/images/QuadraImg.svg";
 import BarberShop from "../../assets/images/BarberShopImg.svg";
 import Blsh from "../../assets/images/BlshImg.svg";
@@ -12,6 +12,12 @@ import Kidcap from "../../assets/images/KidcapImg.svg";
 import Tajweed from "../../assets/images/TajweedImg.svg";
 import EZbox from "../../assets/images/EZboxImg.svg";
 import BeautySalon from "../../assets/images/BeautySalonImg.svg";
+import RealEstate from "../../assets/images/RealEstate.svg";
+import Orgaplan from "../../assets/images/Orgaplan.svg";
+import Tilt from "../../assets/images/Tilt.svg";
+import Microsoft from "../../assets/images/Microsoft.svg";
+import Fnac from "../../assets/images/Fnac.svg";
+import Canon from "../../assets/images/Canon.svg";
 import { Grid } from "@mui/material";
 import { Button } from "@mui/material";
 import Tab from "@mui/material/Tab";
@@ -85,55 +91,102 @@ export default function BasicTabs() {
           <Tab className="ProjectListLabel" label="UI/UX" {...a11yProps(4)} />
         </Tabs>
       </Box>
-      <TabPanel value={value} index={0}></TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={0}>
         <OurProjectCard
           Reverse
-          src={DesignConf}
-          title="Design Confection Ethiques"
+          src={Microsoft}
+          title="Microsoft"
           description="A revolutionary approach to mobile giving, fundraising, and donation collection."
         />
         <OurProjectCard
-          title="EZbox"
-          description="A revolutionary approach to mobile giving, fundraising, and donation collection."
-          src={EZbox}
-        />
-
-        <OurProjectCard
-          Reverse
-          src={MediaPipe}
-          title="MediaPipe"
-          description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
-        />
-        <OurProjectCard
-          src={Quadra}
-          title="Quadrabase"
+          src={Canon}
+          title="Canon"
           description="A revolutionary approach to mobile giving, fundraising, and donation collection."
         />
         {MoreProjects ? (
           <>
             <OurProjectCard
               Reverse
-              src={DesignConf}
-              title="Design Confection Ethiques"
-              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={Fnac}
+              title="Fnac"
+              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+            />
+          </>
+        ) : (
+          ""
+        )}
+        <Grid xs={12} className="BlogBtnGrid">
+          <Button
+            className="BlogBtn"
+            variant="outlined"
+            onClick={(e) => SetMoreProjects(!MoreProjects)}
+          >
+            {MoreProjects ? "Show less" : "See more"}
+          </Button>
+        </Grid>
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        <OurProjectCard
+          Reverse
+          src={DesignConf}
+          title="Design Confection Ethiques"
+          description="Marketplace allowing sewing professional to design their work online for their clients"
+        />
+        <OurProjectCard
+          src={PermispopImg}
+          title="Permispop"
+          description="Website and mobile application with tens of features for driving schools, teachers, students, inspectors."
+        />
+
+        <OurProjectCard
+          Reverse
+          src={Movement}
+          title="Movement detection for health providers"
+          description="Cutting-Edge technology allowing health professional to assess their patients remotely,"
+        />
+        <OurProjectCard
+          src={Quadra}
+          title="Quadrabase"
+          description="A revolutionary approach to construction document generation for big companies."
+        />
+        {MoreProjects ? (
+          <>
+            <OurProjectCard
+              Reverse
+              src={Orgaplan}
+              title="OrgaPlan"
+              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
             />
             <OurProjectCard
-              title="EZbox"
+              title="Tilt"
               description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={Tilt}
+            />
+
+            <OurProjectCard
+              Reverse
+              src={Kidcap}
+              title="Kidcab"
+              description="Website and mobile application for kids needing a safe ride."
+            />
+
+            <OurProjectCard
+              title="EZbox"
+              description="Website for promoting and interacting with a brand new hardware."
               src={EZbox}
             />
 
             <OurProjectCard
               Reverse
-              src={MediaPipe}
-              title="MediaPipe"
-              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
-            />
-            <OurProjectCard
-              src={Quadra}
-              title="Quadrabase"
+              src={Blsh}
+              title="Blsh Delivery"
               description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+            />
+
+            <OurProjectCard
+              src={Tajweed}
+              title="Tajweed"
+              description="Mobile application allowing students to learn easily the Tajweed."
             />
           </>
         ) : (
@@ -154,47 +207,95 @@ export default function BasicTabs() {
           Reverse
           src={DesignConf}
           title="Design Confection Ethiques"
-          description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+          description="Marketplace allowing sewing professional to design their work online for their clients"
         />
         <OurProjectCard
-          description="A revolutionary approach to mobile giving, fundraising, and donation collection."
           src={PermispopImg}
+          title="Permispop"
+          description="Website and mobile application with tens of features for driving schools, teachers, students, inspectors."
         />
 
         <OurProjectCard
           Reverse
-          src={MediaPipe}
-          title="MediaPipe"
-          description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+          src={Movement}
+          title="Movement detection for health providers"
+          description="Cutting-Edge technology allowing health professional to assess their patients remotely,"
         />
         <OurProjectCard
           src={Quadra}
           title="Quadrabase"
-          description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+          description="A revolutionary approach to construction document generation for big companies."
         />
         {MoreProjects ? (
           <>
             <OurProjectCard
               Reverse
-              src={DesignConf}
-              title="Design Confection Ethiques"
-              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={Orgaplan}
+              title="OrgaPlan"
+              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
             />
             <OurProjectCard
+              title="Tilt"
               description="A revolutionary approach to mobile giving, fundraising, and donation collection."
-              src={PermispopImg}
+              src={Tilt}
             />
 
             <OurProjectCard
               Reverse
-              src={MediaPipe}
-              title="MediaPipe"
+              src={Microsoft}
+              title="Microsoft"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+            />
+            <OurProjectCard
+              src={Canon}
+              title="Canon"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+            />
+            <OurProjectCard
+              Reverse
+              src={Kidcap}
+              title="Kidcab"
+              description="Website and mobile application for kids needing a safe ride."
+            />
+            <OurProjectCard
+              src={Fnac}
+              title="Fnac"
               description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
             />
             <OurProjectCard
-              src={Quadra}
-              title="Quadrabase"
+              Reverse
+              src={BeautySalon}
+              title="Beauty Salon"
+              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+            />
+            <OurProjectCard
+              title="EZbox"
+              description="Website for promoting and interacting with a brand new hardware."
+              src={EZbox}
+            />
+
+            <OurProjectCard
+              Reverse
+              src={Blsh}
+              title="Blsh Delivery"
               description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+            />
+            <OurProjectCard
+              title="Barber Shop"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={BarberShop}
+            />
+
+            <OurProjectCard
+              Reverse
+              src={RealEstate}
+              title="Real Estate"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+            />
+            <OurProjectCard
+              src={Tajweed}
+              title="Tajweed"
+              description="Mobile application allowing students to learn easily the Tajweed."
             />
           </>
         ) : (
@@ -213,41 +314,66 @@ export default function BasicTabs() {
       <TabPanel value={value} index={3}>
         <OurProjectCard
           Reverse
-          src={Tajweed}
-          title="Tajweed"
+          src={RealEstate}
+          title="Real Estate"
           description="A revolutionary approach to mobile giving, fundraising, and donation collection."
         />
         <OurProjectCard
-          title="Permispop"
-          description="A revolutionary approach to mobile giving, fundraising, and donation collection."
           src={PermispopImg}
+          title="Permispop"
+          description="Website and mobile application with tens of features for driving schools, teachers, students, inspectors."
         />
 
         <OurProjectCard
           Reverse
-          src={Kidcap}
-          title="Kidcap"
-          description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+          src={Movement}
+          title="Movement detection for health providers"
+          description="Cutting-Edge technology allowing health professional to assess their patients remotely,"
         />
 
         {MoreProjects ? (
           <>
             <OurProjectCard
-              src={Tajweed}
-              title="Tajweed"
-              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={Orgaplan}
+              title="OrgaPlan"
+              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
             />
             <OurProjectCard
               Reverse
-              title="Permispop"
+              title="Tilt"
               description="A revolutionary approach to mobile giving, fundraising, and donation collection."
-              src={PermispopImg}
+              src={Tilt}
             />
 
             <OurProjectCard
               src={Kidcap}
-              title="Kidcap"
+              title="Kidcab"
+              description="Website and mobile application for kids needing a safe ride."
+            />
+            <OurProjectCard
+              Reverse
+              title="Barber Shop"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={BarberShop}
+            />
+
+            <OurProjectCard
+              src={BeautySalon}
+              title="Beauty Salon"
               description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+            />
+
+            <OurProjectCard
+              Reverse
+              src={Blsh}
+              title="Blsh Delivery"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+            />
+
+            <OurProjectCard
+              src={Tajweed}
+              title="Tajweed"
+              description="Mobile application allowing students to learn easily the Tajweed."
             />
           </>
         ) : (
@@ -266,41 +392,70 @@ export default function BasicTabs() {
       <TabPanel value={value} index={4}>
         <OurProjectCard
           Reverse
-          src={Blsh}
-          title="Blsh Delivery"
-          description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+          src={DesignConf}
+          title="Design Confection Ethiques"
+          description="Marketplace allowing sewing professional to design their work online for their clients"
         />
         <OurProjectCard
-          title="Barber Shop"
-          description="A revolutionary approach to mobile giving, fundraising, and donation collection."
-          src={BarberShop}
+          src={PermispopImg}
+          title="Permispop"
+          description="Website and mobile application with tens of features for driving schools, teachers, students, inspectors."
         />
 
         <OurProjectCard
           Reverse
-          src={BeautySalon}
-          title="Beauty Salon"
-          description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+          src={Movement}
+          title="Movement detection for health providers"
+          description="Cutting-Edge technology allowing health professional to assess their patients remotely,"
         />
-
+        <OurProjectCard
+          src={Quadra}
+          title="Quadrabase"
+          description="A revolutionary approach to construction document generation for big companies."
+        />
         {MoreProjects ? (
           <>
             <OurProjectCard
-              src={Blsh}
-              title="Blsh Delivery"
-              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              Reverse
+              src={Kidcap}
+              title="Kidcab"
+              description="Website and mobile application for kids needing a safe ride."
             />
             <OurProjectCard
+              title="EZbox"
+              description="Website for promoting and interacting with a brand new hardware."
+              src={EZbox}
+            />
+
+            <OurProjectCard
               Reverse
+              src={BeautySalon}
+              title="Beauty Salon"
+              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+            />
+
+            <OurProjectCard
               title="Barber Shop"
               description="A revolutionary approach to mobile giving, fundraising, and donation collection."
               src={BarberShop}
             />
+            <OurProjectCard
+              Reverse
+              src={Blsh}
+              title="Blsh Delivery"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+            />
 
             <OurProjectCard
-              src={BeautySalon}
-              title="Beauty Salon"
-              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+              src={RealEstate}
+              title="Real Estate"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+            />
+            <OurProjectCard
+              Reverse
+              src={Tajweed}
+              title="Tajweed"
+              description="Mobile application allowing students to learn easily the Tajweed."
             />
           </>
         ) : (
