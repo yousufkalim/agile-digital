@@ -1,0 +1,56 @@
+/* .LocationSectionMain{
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+  align-items: center;
+  height: 80vh;
+} */
+.LocationSliderDiv{
+    width: 100%;
+  padding: 2%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+}
+.LocationCarouselDiv{
+    width: 95%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between  !important;
+}
+.LocationDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0% 10%;
+
+}
+.LocationDiv_Typo{
+    width: 45%;
+    /* margin-left: 2%; */
+}
+.LocationDiv_Typo img{
+    width: 30%;
+}
+.Location_Country{
+    color: #003B7E ;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
+    margin: 1% 0% !important;
+}
+.Location_Address{
+    color: #282828;
+    font-weight: 600  !important;
+    font-size: 1rem !important;
+    width: 80%;
+    
+}
+.LocationDiv_Img{
+    width: 55%;
+}
+.Location_Img{
+    width: 100%;
+}
