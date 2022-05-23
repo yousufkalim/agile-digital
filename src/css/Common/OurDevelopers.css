@@ -1,0 +1,81 @@
+/* .LocationSectionMain{
+    display: flex;
+    flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+  align-items: center;
+  height: 80vh;
+} */
+.OurDevelopersMain{
+    background-color: #f8f8f8;
+    padding: 2% ;
+}
+.DeveloperSliderDiv{
+    width: 100%;
+  padding: 2%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+}
+.DeveloperCarouselDiv{
+    width: 95%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between  !important;
+}
+.DeveloperDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0% 5%;
+
+}
+.DeveloperDiv_Img{
+    width: 60%;
+}
+.Developer_Img{
+    width: 70%;
+}
+
+/* .Developer_Img img{
+    width: 100%;
+} */
+.DeveloperDiv_Typo{
+    width: 40%;
+}
+.DeveloperTypo_H{
+    color: #003B7E ;
+    font-weight: 800 !important;
+    font-size: 2rem !important;
+    margin: 1% 0% !important;
+}
+.DeveloperTypo_Desp{
+    color: #003B7E;
+    font-weight: 400  !important;
+    font-size: 1rem !important;
+    width: 70%;
+    
+}
+.DeveloperTypo_Btn{
+    color: #003B7E !important;
+    text-transform: capitalize !important;
+    border: 2px solid #003B7E !important;
+    margin: 5% 0%!important;
+    padding: 2% 4%!important;
+    font-weight: 700 !important;
+}
+.DeveloperTypo_Btn a{
+    color: #003B7E;
+
+}
+.LocationDiv_Img{
+    width: 55%;
+}
+.Location_Img{
+    width: 100%;
+}
+/* .carousel {
+    width: 0%;
+} */
