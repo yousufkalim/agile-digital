@@ -68,7 +68,8 @@ export default function LatestProjects(props) {
                 <div className="HoverDivBtn">
                   <BasicModal
                     LogoSrc={PP_logo}
-                    theme="#11A283"
+                    DividerTheme="#11A283"
+                    ModalBtnTheme="#11A283"
                     Heading="Permispop"
                   />
                 </div>
@@ -88,7 +89,8 @@ export default function LatestProjects(props) {
                 <button className="HoverDivBtn">
                   <BasicModal
                     LogoSrc={QB_logo}
-                    theme="#FF8616"
+                    DividerTheme="#FF8616"
+                    ModalBtnTheme="#FF8616"
                     Heading="Quadrabase"
                   />
                 </button>
@@ -109,7 +111,8 @@ export default function LatestProjects(props) {
                 <button className="HoverDivBtn">
                   <BasicModal
                     LogoSrc={Desine_Logo}
-                    theme="#CC8E9C"
+                    DividerTheme="#CC8E9C"
+                    ModalBtnTheme="#CC8E9C"
                     Heading="Design Confection"
                   />
                 </button>
@@ -130,7 +133,8 @@ export default function LatestProjects(props) {
                 <button className="HoverDivBtn">
                   <BasicModal
                     LogoSrc={RealEstate_Logo}
-                    theme="#837C6B"
+                    DividerTheme="#837C6B"
+                    ModalBtnTheme="#837C6B"
                     Heading="Real Estate"
                   />
                 </button>
@@ -151,7 +155,8 @@ export default function LatestProjects(props) {
                 <button className="HoverDivBtn">
                   <BasicModal
                     LogoSrc={EzBox_Logo}
-                    theme="#3399FE"
+                    DividerTheme="#3399FE"
+                    ModalBtnTheme="#3399FE"
                     Heading="Box Media"
                   />
                 </button>
