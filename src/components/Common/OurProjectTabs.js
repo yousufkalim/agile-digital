@@ -3,7 +3,12 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import OurProjectCard from "../Common/OurProjectCard";
 import PermispopImg from "../../assets/images/PermispopImg.svg";
+import PP_logo from "../../assets/images/permisLogo.png";
 import DesignConf from "../../assets/images/DesignImg.svg";
+import Desine_Logo from "../../assets/images/desineLogo.png";
+import QB_logo from "../../assets/images/quadraLogo.png";
+import RealEstate_Logo from "../../assets/images/realestateLogo.png";
+import EzBox_Logo from "../../assets/images/ezBoxLogo.png";
 import Movement from "../../assets/images/movement.svg";
 import Quadra from "../../assets/images/QuadraImg.svg";
 import BarberShop from "../../assets/images/BarberShopImg.svg";
@@ -18,6 +23,8 @@ import Tilt from "../../assets/images/Tilt.svg";
 import Microsoft from "../../assets/images/Microsoft.svg";
 import Fnac from "../../assets/images/Fnac.svg";
 import Canon from "../../assets/images/Canon.svg";
+import AccorHotel from "../../assets/images/AccorHotels.svg";
+import Toyota from "../../assets/images/Toyota.svg";
 import { Grid } from "@mui/material";
 import { Button } from "@mui/material";
 import Tab from "@mui/material/Tab";
@@ -89,6 +96,11 @@ export default function BasicTabs() {
             {...a11yProps(3)}
           />
           <Tab className="ProjectListLabel" label="UI/UX" {...a11yProps(4)} />
+          <Tab
+            className="ProjectListLabel"
+            label="Data & Cloud"
+            {...a11yProps(5)}
+          />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -97,33 +109,19 @@ export default function BasicTabs() {
           src={Microsoft}
           title="Microsoft"
           description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+          // ModalHeading="Microsoft"
         />
         <OurProjectCard
           src={Canon}
           title="Canon"
           description="A revolutionary approach to mobile giving, fundraising, and donation collection."
         />
-        {MoreProjects ? (
-          <>
-            <OurProjectCard
-              Reverse
-              src={Fnac}
-              title="Fnac"
-              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
-            />
-          </>
-        ) : (
-          ""
-        )}
-        <Grid xs={12} className="BlogBtnGrid">
-          <Button
-            className="BlogBtn"
-            variant="outlined"
-            onClick={(e) => SetMoreProjects(!MoreProjects)}
-          >
-            {MoreProjects ? "Show less" : "See more"}
-          </Button>
-        </Grid>
+        <OurProjectCard
+          Reverse
+          src={Fnac}
+          title="Fnac"
+          description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+        />
       </TabPanel>
       <TabPanel value={value} index={1}>
         <OurProjectCard
@@ -205,11 +203,17 @@ export default function BasicTabs() {
       <TabPanel value={value} index={2}>
         <OurProjectCard
           Reverse
+          LogoSrc={Desine_Logo}
+          // ModalHeading="Design Confection Ethiques"
+          DividerTheme="#CC8E9C"
           src={DesignConf}
           title="Design Confection Ethiques"
           description="Marketplace allowing sewing professional to design their work online for their clients"
         />
         <OurProjectCard
+          LogoSrc={PP_logo}
+          // ModalHeading="Permispop"
+          DividerTheme="#11A283"
           src={PermispopImg}
           title="Permispop"
           description="Website and mobile application with tens of features for driving schools, teachers, students, inspectors."
@@ -288,9 +292,25 @@ export default function BasicTabs() {
 
             <OurProjectCard
               Reverse
+              LogoSrc={RealEstate_Logo}
+              // ModalHeading="Real Estate"
+              DividerTheme="#11A283"
+              RealEstate_Logo
               src={RealEstate}
               title="Real Estate"
               description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+            />
+            <OurProjectCard
+              title="Accor Hotels"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={AccorHotel}
+            />
+
+            <OurProjectCard
+              Reverse
+              src={Toyota}
+              title="Toyota"
+              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
             />
             <OurProjectCard
               src={Tajweed}
@@ -470,6 +490,19 @@ export default function BasicTabs() {
             {MoreProjects ? "Show less" : "See more"}
           </Button>
         </Grid>
+      </TabPanel>
+      <TabPanel value={value} index={5}>
+        <OurProjectCard
+          Reverse
+          src={Toyota}
+          title="Toyota"
+          description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+        />
+        <OurProjectCard
+          title="Accor Hotels"
+          description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+          src={AccorHotel}
+        />
       </TabPanel>
     </Box>
   );

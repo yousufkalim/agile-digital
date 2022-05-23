@@ -47,9 +47,9 @@
 
 }
 
-/* .ProjectCardImg{
-    max-height: 50vh;
-} */
+.ProjectCardImg{
+    border-radius: 15px;
+}
 @media only screen and (max-width: 900px) {
     .ProjectCardContainer1{
         flex-direction: column-reverse !important;
