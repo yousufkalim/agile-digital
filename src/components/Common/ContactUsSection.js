@@ -3,9 +3,11 @@ import React, { useRef } from "react";
 import SectionHeader from "./SectionHeader";
 import WhatsappIcon from "../../assets/images/whatsapp.svg";
 import EmailIcon from "../../assets/images/emailIcon.svg";
+import Robot from "../../assets/images/notRobort.svg";
 import CallIcon from "../../assets/images/callIcon.svg";
 import TextField from "@mui/material/TextField";
 import emailjs from "emailjs-com";
+import { Checkbox } from "@mui/material";
 import { motion } from "framer-motion";
 export default function ContactUsSection(props) {
   const sendEmail = (e) => {
@@ -97,6 +99,40 @@ export default function ContactUsSection(props) {
                       />
                     </Grid>
                   </div>
+                  <Grid xs={12}>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        width: "40%",
+                        backgroundColor: "rgba(255, 255, 255, 0.912)",
+                        padding: "0.5% 2%",
+                        margin: "3% 1%",
+                        opacity: ".9",
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          width: "60%",
+                        }}
+                      >
+                        <input type="checkbox" />
+                        <Typography
+                          sx={{
+                            marginLeft: "5%",
+                            fontSize: ".8rem",
+                            fontWeight: "600",
+                          }}
+                        >
+                          I'm not a robot
+                        </Typography>
+                      </div>
+                      <img src={Robot} />
+                    </div>
+                  </Grid>
                   <Grid xs={3}>
                     <button type="submit" className="ContactUsBtn">
                       Send
@@ -119,8 +155,8 @@ export default function ContactUsSection(props) {
                   <div className="ContactMediaDiv">
                     <img className="ContactMediaIcons" src={EmailIcon} />
                     <div className="SocialMediaText">
-                      <Typography sx={{ fontSize: ".8rem" }}>Email</Typography>
-                      <Typography sx={{ fontSize: ".7rem" }}>
+                      <Typography sx={{ fontSize: "1rem" }}>Email</Typography>
+                      <Typography sx={{ fontSize: ".8rem" }}>
                         contact@falconconsulting.fr
                       </Typography>
                     </div>
@@ -239,6 +275,40 @@ export default function ContactUsSection(props) {
                       />
                     </Grid>
                   </div>
+                  <Grid xs={12}>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        width: "40%",
+                        backgroundColor: "rgba(255, 255, 255, 0.912)",
+                        padding: "0.5% 2%",
+                        margin: "3% 2.5%",
+                        opacity: ".9",
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          width: "60%",
+                        }}
+                      >
+                        <input type="checkbox" />
+                        <Typography
+                          sx={{
+                            marginLeft: "5%",
+                            fontSize: ".8rem",
+                            fontWeight: "600",
+                          }}
+                        >
+                          I'm not a robot
+                        </Typography>
+                      </div>
+                      <img src={Robot} />
+                    </div>
+                  </Grid>
                   <Grid xs={3}>
                     <button type="submit" className="ContactUsBtn">
                       Send
