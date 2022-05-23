@@ -9,8 +9,8 @@ import DemandDevImg from "../../assets/images/demanddevImg.svg";
 import DemandDevFrame from "../../assets/images/demanddevframe.svg";
 import ServiceFrame from "../Common/ServiceFrame";
 import LatestProjects from "../Common/LatestProjects";
-import WorkProcessSection from "../Common/WorkProcessSection";
-import KeyFeatureSection from "../Common/KeyFeatureSection";
+import OurDevelopers from "../Common/OurDevelopers";
+import DeveloperWorkProcess from "../Common/DeveloperWorkProcess";
 
 // Home Component
 export default function OnDemandDev() {
@@ -18,14 +18,15 @@ export default function OnDemandDev() {
     <div>
       <NavBar />
       <Header
-        Title="On Demand Developers"
-        Description="We are ready to handle your ambitious projects!"
+        Title="Skilled Developers for your Projects"
+        Description="Are you in need of developers for short of long term tasks ? 
+        Our all-inclusive approach will allow you to get the best match !"
         btn
-        btnText="Get This Service"
+        btnText="More information"
         ImgSrc={DemandDevImg}
       />
-      <KeyFeatureSection />
-      <WorkProcessSection />
+      <OurDevelopers />
+      <DeveloperWorkProcess />
       <ServiceFrame src={DemandDevFrame} />
       <LatestProjects />
       <Footer />
