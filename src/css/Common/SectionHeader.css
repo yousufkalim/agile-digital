@@ -35,4 +35,12 @@
         border-radius: 4px;
         margin: .7% 0% !important;
 }
+@media only screen and (max-width: 600px) {
+    .LeftSectionHeader{
+        justify-content:center;
+        text-align: center;
+        align-items: center;
+        margin: 2% 0% 3% 0%;
+    }
+  }
 

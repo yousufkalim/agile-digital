@@ -9,7 +9,9 @@ export default function SectionHeader(props) {
     <>
       {props.WorkProcess ? (
         <motion.div
-          className={props.LeftSectionHeader || "SectionHeaderTypo"}
+          className={
+            props.LeftSectionHeader ? "LeftSectionHeader" : "SectionHeaderTypo"
+          }
           // data-aos="fade-down-left"
           // animate={{ scale: 2 }}
           // transition={{ duration: 0.5 }}
@@ -48,7 +50,9 @@ export default function SectionHeader(props) {
         </motion.div>
       ) : (
         <motion.div
-          className={props.LeftSectionHeader || "SectionHeaderTypo"}
+          className={
+            props.LeftSectionHeader ? "LeftSectionHeader" : "SectionHeaderTypo"
+          }
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1 }}
