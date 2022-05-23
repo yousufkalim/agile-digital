@@ -221,7 +221,13 @@ export default function NavBar(props) {
                       <div className="ServiceOptionDiv">
                         {ServiceDropDown ? (
                           <>
-                            <div className="ServicesDropDown">
+                            <motion.div
+                              initial={{ opacity: 0 }}
+                              whileInView={{ opacity: 1 }}
+                              transition={{ duration: 1 }}
+                              // viewport={{ once: true }}
+                              className="ServicesDropDown"
+                            >
                               <ul className="ServicesFields">
                                 <li>
                                   <a
@@ -259,7 +265,7 @@ export default function NavBar(props) {
                                   </a>
                                 </li>
                               </ul>
-                            </div>
+                            </motion.div>
                             <Divider
                               orientation="vertical"
                               sx={{
