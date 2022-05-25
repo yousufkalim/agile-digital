@@ -5,6 +5,7 @@ import WhatsappIcon from "../../assets/images/whatsapp.svg";
 import EmailIcon from "../../assets/images/emailIcon.svg";
 import Robot from "../../assets/images/notRobort.svg";
 import CallIcon from "../../assets/images/callIcon.svg";
+import CalendlyIcon from "../../assets/images/calendlyIcon.svg";
 import TextField from "@mui/material/TextField";
 import emailjs from "emailjs-com";
 import { Checkbox } from "@mui/material";
@@ -13,21 +14,14 @@ export default function ContactUsSection(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_p9t3cg6",
-        "template_imi9dne",
-        e.target,
-        "user_Dh0YsMnLOPp5ckc48VOcP"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm("service_p9t3cg6", "template_imi9dne", e.target, "user_Dh0YsMnLOPp5ckc48VOcP").then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
   return (
     <>
@@ -49,42 +43,18 @@ export default function ContactUsSection(props) {
                 <form onSubmit={sendEmail} className="ContactForm">
                   <div style={{ display: "flex", width: "100%" }}>
                     <Grid xs={12} sm={6}>
-                      <input
-                        required
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        className="InputField"
-                      />
+                      <input required type="text" name="name" placeholder="Your Name" className="InputField" />
                     </Grid>
                     <Grid xs={12} sm={6}>
-                      <input
-                        required
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        className="InputField"
-                      />
+                      <input required type="email" name="email" placeholder="Email" className="InputField" />
                     </Grid>
                   </div>
                   <div style={{ display: "flex" }}>
                     <Grid xs={12} sm={6}>
-                      <input
-                        required
-                        type="number"
-                        name="phone"
-                        placeholder="Phone"
-                        className="InputField"
-                      />
+                      <input required type="number" name="phone" placeholder="Phone" className="InputField" />
                     </Grid>
                     <Grid xs={12} sm={6}>
-                      <input
-                        required
-                        type="text"
-                        name="budget"
-                        placeholder="Budget"
-                        className="InputField"
-                      />
+                      <input required type="text" name="budget" placeholder="Budget" className="InputField" />
                     </Grid>
                   </div>
                   <div>
@@ -140,49 +110,35 @@ export default function ContactUsSection(props) {
                   </Grid>
                 </form>
               </Grid>
-              <Grid sm={10} md={10} className="ContactMedia">
-                {/* <a href="https://wa.me/03241013344">
-                  <div className="ContactMediaDiv">
-                    <img className="ContactMediaIcons" src={WhatsappIcon} />
-                    <div className="SocialMediaText">
-                      <Typography sx={{ fontSize: ".8rem" }}>
-                        Goto WhatsApp
-                      </Typography>
-                    </div>
-                  </div>
-                </a> */}
+              <Grid xs={12} sm={10} md={10} className="ContactMedia">
                 <a href="mailto:contact@falconconsulting.fr">
                   <div className="ContactMediaDiv">
                     <img className="ContactMediaIcons" src={EmailIcon} />
                     <div className="SocialMediaText">
                       <Typography sx={{ fontSize: "1rem" }}>Email</Typography>
-                      <Typography sx={{ fontSize: ".8rem" }}>
-                        contact@falconconsulting.fr
-                      </Typography>
+                      <Typography sx={{ fontSize: ".7rem" }}>contact@falconconsulting.fr</Typography>
                     </div>
                   </div>
                 </a>
-                {/* <a href="tel:0318-4310639">
+                <a href="tel:0318-4310639">
                   <div className="ContactMediaDiv">
-                    <img className="ContactMediaIcons" src={CallIcon} />
+                    <img className="ContactMediaIcons" src={CalendlyIcon} />
                     <div className="SocialMediaText">
-                      <Typography sx={{ fontSize: ".8rem" }}>Call</Typography>
-                      <Typography sx={{ fontSize: ".7rem" }}>
-                        + 92 3XX XXXXXXX
-                      </Typography>
+                      <Typography sx={{ fontSize: "1rem" }}>Calendly</Typography>
+                      <Typography sx={{ fontSize: ".7rem" }}>Click and join link</Typography>
                     </div>
                   </div>
-                </a> */}
+                </a>
               </Grid>
             </Grid>
           </div>
         </div>
       ) : (
         <div className="ContactsectionDiv">
-          <div>
+          <div className="ContactSection_Mob_Header">
             <SectionHeader
               LeftSectionHeader
-              width="6%"
+              width="10%"
               h1="Contact Us"
               h2="Share Your Project/Idea with us!"
               colorH2="#fff"
@@ -192,87 +148,60 @@ export default function ContactUsSection(props) {
           </div>
           <div className="ContactSectionGrid">
             <Grid container spacing={1} className="ContainerGrid">
-              <Grid sm={6} className="SocialMediaMain">
-                <a href="mailto:contact@falconconsulting.fr">
-                  <div className="SocialMediaDiv">
-                    <img className="SocialMediaIcons" src={EmailIcon} />
-                    <div className="SocialMediaText">
-                      <Typography>Email</Typography>
-                      <Typography>contact@falconconsulting.fr</Typography>
+              <Grid sm={8} md={6} className="SocialMediaMain">
+                <div className="ContactSection_Web_Header">
+                  <SectionHeader
+                    LeftSectionHeader
+                    width="10%"
+                    h1="Contact Us"
+                    h2="Share Your Project/Idea with us!"
+                    colorH2="#fff"
+                    colorDesp="#F8F8F8"
+                    decription="Our Team Member will get back to you within 24 hours."
+                  />
+                </div>
+                <div>
+                  <a href="mailto:contact@falconconsulting.fr">
+                    <div className="SocialMediaDiv">
+                      <img className="SocialMediaIcons" src={CalendlyIcon} />
+                      <div className="SocialMediaText">
+                        <Typography>Schedule Meeting</Typography>
+                        <Typography>calendly.com/falcon-consulting</Typography>
+                      </div>
                     </div>
-                  </div>
-                </a>
-                {/* <a href="https://wa.me/03241013344">
-                  <div className="SocialMediaDiv">
-                    <img className="SocialMediaIcons" src={WhatsappIcon} />
-                    <div className="SocialMediaText">
-                      <Typography>Goto WhatsApp</Typography>
+                  </a>
+                  <a href="mailto:contact@falconconsulting.fr">
+                    <div className="SocialMediaDiv">
+                      <img className="SocialMediaIcons" src={EmailIcon} />
+                      <div className="SocialMediaText">
+                        <Typography>Email</Typography>
+                        <Typography>contact@falconconsulting.fr</Typography>
+                      </div>
                     </div>
-                  </div>
-                </a>
-                <a href="tel:0318-4310639">
-                  <div className="SocialMediaDiv">
-                    <img className="SocialMediaIcons" src={CallIcon} />
-                    <div className="SocialMediaText">
-                      <Typography>Call</Typography>
-                      <Typography sx={{ fontSize: ".8rem" }}>
-                        + 92 3XX XXXXXXX{" "}
-                      </Typography>
-                    </div>
-                  </div>
-                </a> */}
+                  </a>
+                </div>
               </Grid>
-              <Grid container sm={6} className="FormGrid">
+              <Grid container xs={12} sm={8} md={6} className="FormGrid">
                 <form onSubmit={sendEmail} className="ContactForm">
                   <div style={{ display: "flex", width: "100%" }}>
                     <Grid xs={12} sm={6}>
-                      <input
-                        required
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        className="InputField"
-                      />
+                      <input required type="text" name="name" placeholder="Your Name" className="InputField" />
                     </Grid>
                     <Grid xs={12} sm={6}>
-                      <input
-                        required
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        className="InputField"
-                      />
+                      <input required type="email" name="email" placeholder="Email" className="InputField" />
                     </Grid>
                   </div>
                   <div style={{ display: "flex" }}>
                     <Grid xs={12} sm={6}>
-                      <input
-                        required
-                        type="number"
-                        name="phone"
-                        placeholder="Phone"
-                        className="InputField"
-                      />
+                      <input required type="number" name="phone" placeholder="Phone" className="InputField" />
                     </Grid>
                     <Grid xs={12} sm={6}>
-                      <input
-                        required
-                        type="text"
-                        name="budget"
-                        placeholder="Budget"
-                        className="InputField"
-                      />
+                      <input required type="text" name="budget" placeholder="Budget" className="InputField" />
                     </Grid>
                   </div>
                   <div>
                     <Grid xs={12}>
-                      <textarea
-                        required
-                        type="text"
-                        name="message"
-                        placeholder="Type Your Message"
-                        className="textField"
-                      />
+                      <textarea required type="text" name="message" placeholder="Type Your Message" className="textField" />
                     </Grid>
                   </div>
                   <Grid xs={12}>
@@ -281,7 +210,7 @@ export default function ContactUsSection(props) {
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "space-between",
-                        width: "40%",
+                        width: "45%",
                         backgroundColor: "rgba(255, 255, 255, 0.912)",
                         padding: "0.5% 2%",
                         margin: "3% 2.5%",
@@ -299,7 +228,7 @@ export default function ContactUsSection(props) {
                         <Typography
                           sx={{
                             marginLeft: "5%",
-                            fontSize: ".8rem",
+                            fontSize: "80%",
                             fontWeight: "600",
                           }}
                         >
