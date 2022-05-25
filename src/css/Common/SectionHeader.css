@@ -42,5 +42,17 @@
         align-items: center;
         margin: 2% 0% 3% 0%;
     }
+    .SectionHeaderH1{
+        width: 80%;
+    }
+    .SectionHeaderH2{
+        width: 70%;
+
+    }
+    .SectionHeaderDesp{
+        width: 90%;
+
+    }
+
   }
 
