@@ -82,10 +82,16 @@
     line-height: 2;
     font-weight: 700;
     font-size: 1.5rem;
+    list-style: none;
   }
   .MainMenuList li a{
     color: #E5E5E5;
     text-decoration: none;
+  }
+  .Service_Mobile{
+    position: absolute;
+    left: -1000%;
+    visibility: hidden;
   }
   .css-1ts5xjn-MuiPaper-root-MuiAppBar-root{
     padding:0% !important;
@@ -115,7 +121,7 @@
     /* display: flex; */
     /* align-items: center; */
     justify-content: space-between;
-    width: 40%;
+    width: 70%;
     height: 30vh;
   }
   .MainMenu{
@@ -134,7 +140,103 @@
 
 }
 @media only screen and (max-width: 600px) {
-  .MenuTypoDiv{
-    width: 80%;
+
+  .MenuSection{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 100%;
+    margin: 2% 0%;
   }
+  .MenuSectionMain{
+    width: 100%;
+  }
+  .MenuIconMob{
+    width: 5% !important;
+  }
+  .MenuTypoDiv{
+    width: 100%;
+    height: 1vh;
+
+  }
+  .ServiceOptionDiv{
+    position:absolute;
+    visibility: hidden;
+    left: -100%;
+  }
+  .MenuImgDiv{
+    position: absolute;
+    left: -100%;
+    width: 1%;
+
+  }
+  .MainMenuList{
+   
+    width: 100%;
+  }
+
+  
+  .MainMenuList li{
+    width: 100%;
+    padding-left: 5%;
+    list-style: none;
+  }
+  .MainMenuList li:hover{
+    background-color: #E5E5E5;
+    color: #003B7E
+  }
+  .MainMenuList li a:hover{
+    background-color: #E5E5E5;
+    color: #003B7E
+  }
+  .MainMenu{
+    width: 100%;
+  }
+  .Service_Pc{
+    position: absolute;
+    left: -100%;
+    width: 1%;
+  }
+  .Service_Mobile{
+    width: 100%;
+    /* padding-left: 3%; */
+    position:absolute;
+    left: 0%;
+    visibility: visible;
+  }
+  /* .Service_Mobile:hover{
+    background-color: #E5E5E5 !important;
+    color: #003B7E !important;
+  } */
+  .Service_list{
+    /* position: fixed !important; */
+    background-color: #003B7E !important;
+  }
+  .dropDown_list{
+    font-size: 1.5rem;
+  }
+  /* .Service_options{
+    font-size: 1.3rem !important;
+  } */
+  .css-1mcnwpj-MuiList-root{
+    background-color: #003B7E !important;
+    max-width: 100% !important;
+    padding: 0% 2% !important;
+    /* position: inherit !important; */
+    /* font-size: 1.5rem !important; */
+  }
+  .css-10hburv-MuiTypography-root{
+    color: #E5E5E5 !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    font-size: 1.5rem !important;
+  }
+  /* #Mob_nav:hover{
+    background-color: white !important;
+  }
+  #Mob_nav:hover ~ #Mob_items {
+    color: black !important;
+  } */
+
 }
