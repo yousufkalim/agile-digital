@@ -24,14 +24,7 @@ export default function ServiceProvided() {
             className="CardGridMain"
             // data-aos="fade-right"
           >
-            <Grid
-              xs={10}
-              sm={5}
-              md={5.7}
-              lg={5.3}
-              xl={5.2}
-              sx={{ margin: "1%" }}
-            >
+            <Grid xs={10} sm={5} md={5.7} lg={5.3} xl={5.2} sx={{ margin: "1%" }}>
               <ServiceProvidedCard
                 href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}
                 CardTitle="Mobile Application Development"
@@ -39,14 +32,7 @@ export default function ServiceProvided() {
               />
             </Grid>
 
-            <Grid
-              xs={10}
-              sm={5}
-              md={5.7}
-              lg={5.3}
-              xl={5.2}
-              sx={{ margin: "1%" }}
-            >
+            <Grid xs={10} sm={5} md={5.7} lg={5.3} xl={5.2} sx={{ margin: "1%" }}>
               <ServiceProvidedCard
                 href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}
                 CardTitle="Website Development"
@@ -54,28 +40,14 @@ export default function ServiceProvided() {
                 // width="80%"
               />
             </Grid>
-            <Grid
-              xs={10}
-              sm={5}
-              md={5.7}
-              lg={5.3}
-              xl={5.2}
-              sx={{ margin: "1%" }}
-            >
+            <Grid xs={10} sm={5} md={5.7} lg={5.3} xl={5.2} sx={{ margin: "1%" }}>
               <ServiceProvidedCard
                 href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}
                 CardTitle="Software Development"
                 CardImgSrc={SoftDev}
               />
             </Grid>
-            <Grid
-              xs={10}
-              sm={5}
-              md={5.8}
-              lg={5.3}
-              xl={5.2}
-              sx={{ margin: "1%" }}
-            >
+            <Grid xs={10} sm={5} md={5.8} lg={5.3} xl={5.2} sx={{ margin: "1%" }}>
               <ServiceProvidedCard
                 href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}
                 CardTitle="On Demand Developers"
@@ -83,13 +55,7 @@ export default function ServiceProvided() {
               />
             </Grid>
           </Grid>
-          <Grid
-            md={2.7}
-            lg={2.7}
-            xl={2.7}
-            sx={{ margin: "1%" }}
-            className="VerticleCard"
-          >
+          <Grid md={2.7} lg={2.7} xl={2.7} sx={{ margin: "1%" }} className="VerticleCard">
             <ServiceProvidedCard
               verticleCard
               CardImgSrc={UiDev}
