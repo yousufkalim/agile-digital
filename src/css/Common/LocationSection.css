@@ -54,3 +54,33 @@
 .Location_Img{
     width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+    .LocationDiv{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0%;
+    
+    }
+    .LocationDiv_Img{
+        width: 85%;
+    }
+    .LocationDiv_Typo{
+        width: 85%;
+        text-align: center;
+        margin-bottom: 5%;
+        /* margin-left: 2%; */
+    }
+    .Location_Address{
+        width: 100%;
+        
+    }
+    .LocationDiv_Typo img{
+        visibility: hidden;
+        position: absolute;
+
+}
+}

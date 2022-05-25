@@ -8,6 +8,8 @@ import London from "../../assets/images/location_london.png";
 import Paris_Icon from "../../assets/images/paris_icon.svg";
 import US from "../../assets/images/location_us.png";
 import US_Icon from "../../assets/images/us_icon.svg";
+import UAE from "../../assets/images/UAE.png";
+import UAE_Icon from "../../assets/images/UAE_Icon.svg";
 import Right from "../../assets/images/right_arrow.svg";
 import Left from "../../assets/images/left_arrow.svg";
 export default function LocationSection(props) {
@@ -70,6 +72,19 @@ export default function LocationSection(props) {
               </div>
               <div className="LocationDiv_Img">
                 <img className="Location_Img" src={US} />
+              </div>
+            </div>
+            <div className="LocationDiv">
+              <div className="LocationDiv_Typo">
+                <img src={UAE_Icon} />
+
+                <Typography className="Location_Country">UAE</Typography>
+                <Typography className="Location_Address">
+                  Mazyad Mall, Tower 2 - 4th Floor, Office 425, Abu Dhabi, UAE
+                </Typography>
+              </div>
+              <div className="LocationDiv_Img">
+                <img className="Location_Img" src={UAE} />
               </div>
             </div>
           </Carousel>
