@@ -25,6 +25,9 @@ import Fnac from "../../assets/images/Fnac.svg";
 import Canon from "../../assets/images/Canon.svg";
 import AccorHotel from "../../assets/images/AccorHotels.svg";
 import Toyota from "../../assets/images/Toyota.svg";
+import ERP from "../../assets/images/ERP_Excellence.svg";
+import PizzaBoli from "../../assets/images/Pizza_Boli.svg";
+import Sindoor from "../../assets/images/Sindoor.svg";
 import { Grid } from "@mui/material";
 import { Button } from "@mui/material";
 import Tab from "@mui/material/Tab";
@@ -77,30 +80,13 @@ export default function BasicTabs() {
   return (
     <Box className="ProjectListMain" sx={{ width: "100%" }}>
       <Box className="ProjectListTabsBox">
-        <Tabs
-          className="ProjectListTabs"
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
-          <Tab
-            className="ProjectListLabel"
-            label="Software"
-            {...a11yProps(0)}
-          />
+        <Tabs visibleScrollbar className="ProjectListTabs" value={value} onChange={handleChange} aria-label="basic tabs example">
+          <Tab className="ProjectListLabel" label="Software" {...a11yProps(0)} />
           <Tab className="ProjectListLabel" label="Website" {...a11yProps(1)} />
           <Tab className="ProjectListLabel" label="ALL" {...a11yProps(2)} />
-          <Tab
-            className="ProjectListLabel"
-            label="Mobile Application"
-            {...a11yProps(3)}
-          />
+          <Tab className="ProjectListLabel" label="Mobile Application" {...a11yProps(3)} />
           <Tab className="ProjectListLabel" label="UI/UX" {...a11yProps(4)} />
-          <Tab
-            className="ProjectListLabel"
-            label="Data & Cloud"
-            {...a11yProps(5)}
-          />
+          <Tab className="ProjectListLabel" label="Data & Cloud" {...a11yProps(5)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -180,8 +166,14 @@ export default function BasicTabs() {
               title="Blsh Delivery"
               description="A revolutionary approach to mobile giving, fundraising, and donation collection."
             />
+            <OurProjectCard
+              title="ERP Excellence"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={ERP}
+            />
 
             <OurProjectCard
+              Reverse
               src={Tajweed}
               title="Tajweed"
               description="Mobile application allowing students to learn easily the Tajweed."
@@ -191,11 +183,7 @@ export default function BasicTabs() {
           ""
         )}
         <Grid xs={12} className="BlogBtnGrid">
-          <Button
-            className="BlogBtn"
-            variant="outlined"
-            onClick={(e) => SetMoreProjects(!MoreProjects)}
-          >
+          <Button className="BlogBtn" variant="outlined" onClick={(e) => SetMoreProjects(!MoreProjects)}>
             {MoreProjects ? "Show less" : "See more"}
           </Button>
         </Grid>
@@ -313,6 +301,24 @@ export default function BasicTabs() {
               description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
             />
             <OurProjectCard
+              title="ERP Excellence"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={ERP}
+            />
+
+            <OurProjectCard
+              Reverse
+              src={PizzaBoli}
+              title="Pizza Boli"
+              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+            />
+            <OurProjectCard
+              title="Sindoor"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={Sindoor}
+            />
+            <OurProjectCard
+              Reverse
               src={Tajweed}
               title="Tajweed"
               description="Mobile application allowing students to learn easily the Tajweed."
@@ -322,11 +328,7 @@ export default function BasicTabs() {
           ""
         )}
         <Grid xs={12} className="BlogBtnGrid">
-          <Button
-            className="BlogBtn"
-            variant="outlined"
-            onClick={(e) => SetMoreProjects(!MoreProjects)}
-          >
+          <Button className="BlogBtn" variant="outlined" onClick={(e) => SetMoreProjects(!MoreProjects)}>
             {MoreProjects ? "Show less" : "See more"}
           </Button>
         </Grid>
@@ -389,6 +391,17 @@ export default function BasicTabs() {
               title="Blsh Delivery"
               description="A revolutionary approach to mobile giving, fundraising, and donation collection."
             />
+            <OurProjectCard
+              src={PizzaBoli}
+              title="Pizza Boli"
+              description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
+            />
+            <OurProjectCard
+              Reverse
+              title="ERP Excellence"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={ERP}
+            />
 
             <OurProjectCard
               src={Tajweed}
@@ -400,11 +413,7 @@ export default function BasicTabs() {
           ""
         )}
         <Grid xs={12} className="BlogBtnGrid">
-          <Button
-            className="BlogBtn"
-            variant="outlined"
-            onClick={(e) => SetMoreProjects(!MoreProjects)}
-          >
+          <Button className="BlogBtn" variant="outlined" onClick={(e) => SetMoreProjects(!MoreProjects)}>
             {MoreProjects ? "Show less" : "See more"}
           </Button>
         </Grid>
@@ -482,11 +491,7 @@ export default function BasicTabs() {
           ""
         )}
         <Grid xs={12} className="BlogBtnGrid">
-          <Button
-            className="BlogBtn"
-            variant="outlined"
-            onClick={(e) => SetMoreProjects(!MoreProjects)}
-          >
+          <Button className="BlogBtn" variant="outlined" onClick={(e) => SetMoreProjects(!MoreProjects)}>
             {MoreProjects ? "Show less" : "See more"}
           </Button>
         </Grid>
