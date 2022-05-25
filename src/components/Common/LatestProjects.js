@@ -37,16 +37,14 @@ export default function LatestProjects(props) {
           viewport={{ once: true }}
           className="LatestProjectsSlider"
         >
-          <Carousel className="SliderDiv" show={4.5} slide={2} swiping={true}>
+          <Carousel className="SliderDiv" responsive show={4.5} slide={2} swiping={true}>
             <div className="SliderProject">
               <div className="HoverDetailLite">
                 <img className="hoverDivLogo" src={KC_logo} />
 
                 <Typography className="HoverDivTypo">
-                  Kidcab est la solution de transport pour accompagner vos
-                  enfants au quotidien. Kidcab sélectionne des chauffeurs
-                  professionnels et expérimentés, formés à l'accompagnement des
-                  enfants
+                  Kidcab est la solution de transport pour accompagner vos enfants au quotidien. Kidcab sélectionne des chauffeurs
+                  professionnels et expérimentés, formés à l'accompagnement des enfants
                 </Typography>
                 <button className="HoverDivBtnDark">
                   <BasicModal />
@@ -59,19 +57,12 @@ export default function LatestProjects(props) {
                 <img className="hoverDivLogo" src={PP_logo} />
 
                 <Typography className="HoverDivTypo">
-                  Vestibulum eget augue consectetur, mattis turpis et, luctus
-                  eros. Aenean luctus varius lacus in imperdiet. Curabitur mi
-                  ligula, consequat.Vestibulum eget augue consectetur mattis
-                  turpis et, luctus eros. Aenean luctus varius lacus in
-                  imperdiet. Curabitur mi ligula, consequat
+                  Vestibulum eget augue consectetur, mattis turpis et, luctus eros. Aenean luctus varius lacus in imperdiet.
+                  Curabitur mi ligula, consequat.Vestibulum eget augue consectetur mattis turpis et, luctus eros. Aenean luctus
+                  varius lacus in imperdiet. Curabitur mi ligula, consequat
                 </Typography>
                 <div className="HoverDivBtn">
-                  <BasicModal
-                    LogoSrc={PP_logo}
-                    DividerTheme="#11A283"
-                    ModalBtnTheme="#11A283"
-                    Heading="Permispop"
-                  />
+                  <BasicModal LogoSrc={PP_logo} DividerTheme="#11A283" ModalBtnTheme="#11A283" Heading="Permispop" />
                 </div>
               </div>
               <img className="SliderImgs" src={Permispop} alt="2" />
@@ -81,18 +72,12 @@ export default function LatestProjects(props) {
                 <img className="hoverDivLogo" src={QB_logo} />
 
                 <Typography className="HoverDivTypo">
-                  . Believe direct collaboration with our clients . Essential .
-                  Bringing unique and engaging experiences . Life.. Help our
-                  clients solve business problems, increase visibility, and
-                  achieve unexpected results exclusively from NYC..
+                  . Believe direct collaboration with our clients . Essential . Bringing unique and engaging experiences . Life..
+                  Help our clients solve business problems, increase visibility, and achieve unexpected results exclusively from
+                  NYC..
                 </Typography>
                 <button className="HoverDivBtn">
-                  <BasicModal
-                    LogoSrc={QB_logo}
-                    DividerTheme="#FF8616"
-                    ModalBtnTheme="#FF8616"
-                    Heading="Quadrabase"
-                  />
+                  <BasicModal LogoSrc={QB_logo} DividerTheme="#FF8616" ModalBtnTheme="#FF8616" Heading="Quadrabase" />
                 </button>
               </div>
               <img className="SliderImgs" src={QB} alt="3" />
@@ -102,19 +87,12 @@ export default function LatestProjects(props) {
                 <img className="hoverDivLogo" src={Desine_Logo} />
 
                 <Typography className="HoverDivTypo">
-                  This website offers an online tailoring experience with free
-                  pick-up and delivery in Karachi. We provide stitching services
-                  with customizable designs for salwar suits, blouses, kurtas,
-                  bottoms, western wear as per customers measurement at the
-                  doorstep. Coming Soon for other cities also.
+                  This website offers an online tailoring experience with free pick-up and delivery in Karachi. We provide
+                  stitching services with customizable designs for salwar suits, blouses, kurtas, bottoms, western wear as per
+                  customers measurement at the doorstep. Coming Soon for other cities also.
                 </Typography>
                 <button className="HoverDivBtn">
-                  <BasicModal
-                    LogoSrc={Desine_Logo}
-                    DividerTheme="#CC8E9C"
-                    ModalBtnTheme="#CC8E9C"
-                    Heading="Design Confection"
-                  />
+                  <BasicModal LogoSrc={Desine_Logo} DividerTheme="#CC8E9C" ModalBtnTheme="#CC8E9C" Heading="Design Confection" />
                 </button>
               </div>
               <img className="SliderImgs" src={Desine} alt="1" />
@@ -124,19 +102,12 @@ export default function LatestProjects(props) {
                 <img className="hoverDivLogo" src={RealEstate_Logo} />
 
                 <Typography className="HoverDivTypo">
-                  This website offers an online tailoring experience with free
-                  pick-up and delivery in Karachi. We provide stitching services
-                  with customizable designs for salwar suits, blouses, kurtas,
-                  bottoms, western wear as per customers measurement at the
-                  doorstep. Coming Soon for other cities also.
+                  This website offers an online tailoring experience with free pick-up and delivery in Karachi. We provide
+                  stitching services with customizable designs for salwar suits, blouses, kurtas, bottoms, western wear as per
+                  customers measurement at the doorstep. Coming Soon for other cities also.
                 </Typography>
                 <button className="HoverDivBtn">
-                  <BasicModal
-                    LogoSrc={RealEstate_Logo}
-                    DividerTheme="#837C6B"
-                    ModalBtnTheme="#837C6B"
-                    Heading="Real Estate"
-                  />
+                  <BasicModal LogoSrc={RealEstate_Logo} DividerTheme="#837C6B" ModalBtnTheme="#837C6B" Heading="Real Estate" />
                 </button>
               </div>
               <img className="SliderImgs" src={Real_Estate} alt="1" />
@@ -146,19 +117,12 @@ export default function LatestProjects(props) {
                 <img className="hoverDivLogo" src={EzBox_Logo} />
 
                 <Typography className="HoverDivTypo">
-                  This website offers an online tailoring experience with free
-                  pick-up and delivery in Karachi. We provide stitching services
-                  with customizable designs for salwar suits, blouses, kurtas,
-                  bottoms, western wear as per customers measurement at the
-                  doorstep. Coming Soon for other cities also.
+                  This website offers an online tailoring experience with free pick-up and delivery in Karachi. We provide
+                  stitching services with customizable designs for salwar suits, blouses, kurtas, bottoms, western wear as per
+                  customers measurement at the doorstep. Coming Soon for other cities also.
                 </Typography>
                 <button className="HoverDivBtn">
-                  <BasicModal
-                    LogoSrc={EzBox_Logo}
-                    DividerTheme="#3399FE"
-                    ModalBtnTheme="#3399FE"
-                    Heading="Box Media"
-                  />
+                  <BasicModal LogoSrc={EzBox_Logo} DividerTheme="#3399FE" ModalBtnTheme="#3399FE" Heading="Box Media" />
                 </button>
               </div>
               <img className="SliderImgs" src={EzBox} alt="1" />
