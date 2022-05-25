@@ -4,7 +4,7 @@ export default function DeveloperWorkCard(props) {
   return (
     <>
       {props.reverse ? (
-        <div className="DeveloperCardMain">
+        <div className="DeveloperCardMain_R">
           <div className="DeveloperCardImg_Div">
             <img className="DeveloperCard_Img" src={props.src} />
           </div>
