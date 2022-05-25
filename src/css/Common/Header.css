@@ -58,6 +58,15 @@
   display: flex;
   justify-content: right;
 }
+.ChatIconsDiv{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 95%;
+    top: 77%;
+    width: 40%;
+    z-index: 999;
+}
 
 /* MEDIA QUERIES*/
 
@@ -69,11 +78,31 @@
     align-items: center;
   }
   .HeaderHeading{
-    width: 60%;
+    width: 85%;
   }
   .HeaderPara{
-    width: 70%;
+    width: 90%;
   margin: 4% 0 !important;
+}
+.ChatIconsDiv{
+  left: 90%;
+  top: 75%;
+  width: 65%;
+}
+}
+@media only screen and (max-width: 600px) {
+ 
+  .HeaderHeading{
+    width: 90%;
+  }
+  .HeaderPara{
+    width: 95%;
+  margin: 4% 0 !important;
+}
+.ChatIconsDiv{
+  left: 90%;
+  top: 77%;
+  width: 90%;
 }
 }
 
