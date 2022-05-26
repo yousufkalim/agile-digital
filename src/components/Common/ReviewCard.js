@@ -3,41 +3,47 @@ import Avatar from "@mui/material/Avatar";
 import { Typography } from "@mui/material";
 import Rating from "@mui/material/Rating";
 import img from "../../assets/images/muh_ali.webp";
+
 export default function ReviewCard(props) {
-  const [value, setValue] = React.useState(2);
+  const { data, dataIndex } = props;
+  const { name, review } = data[dataIndex];
+
+  const [value, setValue] = React.useState(4);
+
   return (
-    <>
-      <div className="ReviewCardMain">
-        <div className="ReviewCard">
-          <Avatar
-            alt="Remy Sharp"
-            src={props.src || img}
-            sx={{ width: 66, height: 66 }}
-          />
-          <Typography sx={{ margin: "5% 0%" }}>{props.name}</Typography>
-          <Rating
-            name="simple-controlled"
-            // name="size-medium"
-            size={props.size || "small"}
-            defaultValue={2}
-            value={value}
-            onChange={(event, newValue) => {
-              setValue(newValue);
-            }}
-          />
-          <Typography
-            sx={{
-              width: "90%",
-              fontSize: ".6rem",
-              color: "#454238",
-              fontWeight: "400",
-              marginTop: "10%",
-            }}
-          >
-            {props.review}
-          </Typography>
-        </div>
+    <div
+      style={{
+        userSelect: "none",
+        maxWidth: "400px",
+        height: "516px",
+        borderRadius: 15,
+      }}
+    >
+      <div className="ReviewCard">
+        <Avatar alt="Remy Sharp" src={props.src || img} sx={{ width: 99, height: 99 }} />
+        <Typography sx={{ margin: "6% 0%", fontWeight: 600 }}>{name}</Typography>
+        <Rating
+          name="simple-controlled"
+          // name="size-medium"
+          size={props.size || "medium"}
+          defaultValue={2}
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        />
+        <Typography
+          sx={{
+            width: "80%",
+            fontSize: ".7rem",
+            color: "#454238",
+            fontWeight: "400",
+            marginTop: "10%",
+          }}
+        >
+          {review}
+        </Typography>
       </div>
-    </>
+    </div>
   );
 }
