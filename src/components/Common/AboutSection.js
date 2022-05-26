@@ -15,7 +15,7 @@ export default function AboutSection() {
     <>
       <div className="AboutSectionDiv">
         <SectionHeader
-          LeftSectionHeader
+          LeftSectionHeader={true}
           colorH2="#0F52BA"
           h1="your work is our priority"
           h2="Why choose Falcon Consulting?"

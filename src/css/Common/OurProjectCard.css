@@ -47,20 +47,26 @@
 
 }
 
-/* .ProjectCardImg{
-    max-height: 50vh;
-} */
+.ProjectCardImg{
+    border-radius: 15px;
+}
 @media only screen and (max-width: 900px) {
     .ProjectCardContainer1{
         flex-direction: column-reverse !important;
     }
     .ProjectCardTypo{
-        margin: 5% 0% !important;
-    width: 100%;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
+        width: 100%;
+        margin: 5% 0% !important;
 
     }
+    /* .ProjectCardDivider{
+        display: flex !important;
+        align-items: center !important;
+    } */
 
 
 }

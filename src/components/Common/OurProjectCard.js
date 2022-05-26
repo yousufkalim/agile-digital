@@ -52,7 +52,7 @@ export default function OurProjectCard(props) {
                     ModalBtnTheme={props.ModalBtnTheme || "transparent"}
                     ModalBtnText="View"
                     LogoSrc={props.LogoSrc}
-                    Heading={props.ModalHeading}
+                    Heading={props.title}
                     Dividerwidth={props.Dividerwidth || "12%"}
                     DividerTheme={props.DividerTheme}
                     SubH1={props.SubH1}
@@ -102,7 +102,7 @@ export default function OurProjectCard(props) {
                     ModalBtnTheme={props.ModalBtnTheme || "transparent"}
                     ModalBtnText="View"
                     LogoSrc={props.LogoSrc}
-                    Heading={props.ModalHeading}
+                    Heading={props.title}
                     Dividerwidth={props.Dividerwidth || "12%"}
                     DividerTheme={props.DividerTheme}
                     SubH1={props.SubH1}

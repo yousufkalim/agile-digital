@@ -19,12 +19,14 @@
 @import url("./Common/BlogList.css");
 @import url("./Common/OurProjectTabs.css");
 @import url("./Common/OurProjectCard.css");
-/* @import url("./Common/ProjectDetails.css"); */
-/* @import url("./Common/OverviewSection.css"); */
 @import url("./Common/BasicModal.css");
+@import url("./Common/OurDevelopers.css");
+@import url("./Common/DeveloperWorkProcess.css");
 @import url("./Common/LocationSection.css");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+/* @import url("./Common/ProjectDetails.css"); */
+/* @import url("./Common/OverviewSection.css"); */
 
 
 /* Defaults */

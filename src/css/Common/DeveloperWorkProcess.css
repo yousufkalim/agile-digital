@@ -1,0 +1,58 @@
+.DeveloperWorkDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.DeveloperCardMain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 2%; */
+    padding: 2%;
+    width: 90%;
+}
+.DeveloperCardMain_R{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 2%; */
+    padding: 2%;
+    width: 90%;
+}
+.DeveloperCard_Typo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+width: 50%;
+}
+
+.DeveloperCardImg_Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.DeveloperCard_Img{
+    width: 80%;
+}
+@media only screen and (max-width: 600px) {
+    .DeveloperCardMain{
+        flex-direction: column-reverse;
+    }
+    .DeveloperCardMain_R{
+        flex-direction: column;
+
+    }
+    .DeveloperCard_Typo{
+        text-align: center;
+    width: 100%;
+    }
+    
+    .DeveloperCardImg_Div{
+        width: 100%;
+    }
+
+}

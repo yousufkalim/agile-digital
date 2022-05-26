@@ -59,10 +59,7 @@ export default function ServiceProvidedCard(props) {
             </a>
           </div>
           <div style={{ width: "100%" }}>
-            <img
-              src={props.CardImgSrc || MobileApp}
-              style={{ width: "100%" }}
-            />
+            <img src={props.CardImgSrc || MobileApp} style={{ width: "100%" }} />
           </div>
         </motion.div>
       ) : (

@@ -4,6 +4,7 @@ import { Grid, Typography } from "@mui/material";
 import HeaderImg from "../../assets/images/HeaderImg.svg";
 import ChatIcon from "../../assets/images/whatsappIcon.svg";
 import WhatsappIcon from "../../assets/images/ChatIcon.svg";
+import Calendly from "../../assets/images/calendly.svg";
 import Divider from "@mui/material/Divider";
 import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
@@ -72,17 +73,7 @@ export default function Header(props) {
           width={props.ImgWidth || "95%"}
         />
         {props.chatIcons ? (
-          <div
-            style={{
-              position: "fixed",
-              display: "flex",
-              flexDirection: "column",
-              left: "95%",
-              top: "85%",
-              width: "40%",
-              zIndex: 1000,
-            }}
-          >
+          <div className="ChatIconsDiv">
             <a href="https://wa.me/03241013344">
               <img
                 alt="whatsapp"
@@ -92,6 +83,9 @@ export default function Header(props) {
             </a>
             <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
               <img alt="chat" src={ChatIcon} style={{ width: "8%" }} />
+            </a>
+            <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
+              <img alt="Calendly" src={Calendly} style={{ width: "8%" }} />
             </a>
           </div>
         ) : null}
