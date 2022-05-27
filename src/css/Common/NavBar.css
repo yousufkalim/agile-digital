@@ -2,6 +2,7 @@
 /* .css-1u4elim-MuiPaper-root-MuiAppBar-root {
     box-shadow: 0px 2px 7px -1px rgb(0 0 0 / 20%) !important;
   } */
+  
   .MenuDiv{
     height: 100vh;
     background:  linear-gradient(180deg, #003B7E 0%, #003B7E 21.35%, #003B7E 100%);;
@@ -19,10 +20,14 @@
     /* transform: scaleY(100,50); */
     /* transition: 1s; */
   }
+  .css-13i1luw-MuiPaper-root-MuiAppBar-root{
+    padding: 0% !important; 
+  }
   .NavToolbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* position:fixed !important; */
     margin:  0% 3%;
     /* width: 90%; */
   }
@@ -37,7 +42,7 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    margin: 2%;
+    margin: 0%;
   }
   .MenuImgDiv{
     width: 35%;
@@ -69,6 +74,7 @@
   .ServicesFields li{
     list-style: none;
     color: #E5E5E5;
+    text-align: right;
     /* font-size: 90%; */
     line-height: 1.7;
     font-weight: 600;
@@ -215,28 +221,50 @@
   }
   .dropDown_list{
     font-size: 1.5rem;
+    padding: 0% 2%;
   }
   /* .Service_options{
-    font-size: 1.3rem !important;
+    font-size: 1% !important;
+    width: 10% !important;
   } */
   .css-1mcnwpj-MuiList-root{
     background-color: #003B7E !important;
     max-width: 100% !important;
-    padding: 0% 2% !important;
+    padding: 0% !important;
     /* position: inherit !important; */
     /* font-size: 1.5rem !important; */
   }
   .css-10hburv-MuiTypography-root{
     color: #E5E5E5 !important;
-    line-height: 1 !important;
+    line-height: 1.33 !important;
     font-weight: 700 !important;
     font-size: 1.5rem !important;
+    transition: .5s;
   }
-  /* #Mob_nav:hover{
+  .css-10hburv-MuiTypography-root:hover{
+    color: #000 !important;
+  }
+  .Nav_links{
+    width: 100% !important;
+    padding: 0% 2%;
+  }
+  .DropLinks{
+    font-size: 10% !important;
+    font-weight: 400 !important;
+    /* width: 10% !important; */
+  }
+  #Mob_nav{
+    transition: .5s;
+
+  }
+  #Mob_nav:hover{
+    color: #000 !important;
     background-color: white !important;
   }
-  #Mob_nav:hover ~ #Mob_items {
+
+  /* #Mob_items:focus{
     color: black !important;
   } */
+
 
 }
