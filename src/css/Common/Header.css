@@ -2,9 +2,10 @@
 .HeaderMain{
   display: flex !important;
   justify-content: space-between !important;
-  padding: 2% 4%;
+  padding: 5% 3%;
   align-items: center !important;
   width: 100% !important;
+  height: 100%;
 }
 
 .HeaderTypo{
@@ -67,14 +68,46 @@
     width: 40%;
     z-index: 999;
 }
+.ChatIconImg{
+  width: 9%;
+}
 
 /* MEDIA QUERIES*/
 
+@media only screen and (max-width: 1366px) {
+  .HeaderMain{
+    padding: 10% 3%;
+  }
+  
+  .HeaderHeading {
+    font-size: 2rem !important;
+
+  }
+  .HeaderPara{
+    font-size: 1rem !important;
+  }
+}
+/* @media only screen and (max-width: 992px) {
+  .HeaderMain{
+    height: 80vh;
+  }
+  .HeaderHeading {
+    font-size: 2rem !important;
+
+  }
+  .HeaderPara{
+    font-size: 1rem !important;
+  }
+} */
 @media only screen and (max-width: 900px) {
+  .HeaderMain{
+    padding: 8% 3%;
+  }
   .HeaderTypo{
     display: flex;
     flex-direction: column !important;
     text-align: center;
+    justify-content: center;
     align-items: center;
   }
   .HeaderHeading{
@@ -91,18 +124,32 @@
 }
 }
 @media only screen and (max-width: 600px) {
+    .HeaderMain{
+    padding: 15% 3%;
+
+    }
+   
+    
+  
+ 
  
   .HeaderHeading{
     width: 90%;
+    font-size: 1.7rem !important;
+
   }
   .HeaderPara{
     width: 95%;
+    font-size: .9rem !important;
   margin: 4% 0 !important;
 }
 .ChatIconsDiv{
   left: 90%;
   top: 77%;
   width: 90%;
+}
+.ChatIconImg{
+  width: 10%;
 }
 }
 
