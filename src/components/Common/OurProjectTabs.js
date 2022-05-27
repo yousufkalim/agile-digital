@@ -28,6 +28,8 @@ import Toyota from "../../assets/images/Toyota.svg";
 import ERP from "../../assets/images/ERP_Excellence.svg";
 import PizzaBoli from "../../assets/images/Pizza_Boli.svg";
 import Sindoor from "../../assets/images/Sindoor.svg";
+import Yuwway from "../../assets/images/Yuwway.svg";
+import Zypzap from "../../assets/images/Zypzap.svg";
 import { Grid } from "@mui/material";
 import { Button } from "@mui/material";
 import Tab from "@mui/material/Tab";
@@ -80,7 +82,7 @@ export default function BasicTabs() {
   return (
     <Box className="ProjectListMain" sx={{ width: "100%" }}>
       <Box className="ProjectListTabsBox">
-        <Tabs visibleScrollbar className="ProjectListTabs" value={value} onChange={handleChange} aria-label="basic tabs example">
+        <Tabs allowScrollButtonsMobile selectionFollowsFocus={true} visibleScrollbar className="ProjectListTabs" value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab className="ProjectListLabel" label="Software" {...a11yProps(0)} />
           <Tab className="ProjectListLabel" label="Website" {...a11yProps(1)} />
           <Tab className="ProjectListLabel" label="ALL" {...a11yProps(2)} />
@@ -309,7 +311,7 @@ export default function BasicTabs() {
             <OurProjectCard
               Reverse
               src={PizzaBoli}
-              title="Pizza Boli"
+              title="Table"
               description="MediaPipe offers cross-platform, customizable ML solutions for live and streaming media"
             />
             <OurProjectCard
@@ -321,6 +323,17 @@ export default function BasicTabs() {
               Reverse
               src={Tajweed}
               title="Tajweed"
+              description="Mobile application allowing students to learn easily the Tajweed."
+            />
+             <OurProjectCard
+              title="Yuwway"
+              description="A revolutionary approach to mobile giving, fundraising, and donation collection."
+              src={Yuwway}
+            />
+            <OurProjectCard
+              Reverse
+              src={Zypzap}
+              title="Zypzap"
               description="Mobile application allowing students to learn easily the Tajweed."
             />
           </>
