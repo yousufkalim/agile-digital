@@ -12,7 +12,8 @@ import Header_Img from "../assets/images/AboutUs_Header_Img.png";
 // Home Component
 export default function About() {
   return (
-    <div>
+    <div className="AboutContainer">
+
       <NavBar />
       <Header
         Title="Our Goal Is To Exceed Your Expectations "
