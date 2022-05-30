@@ -4,6 +4,31 @@
 background-color: #F8F8F8;
 
 }
+.ServiceProvidedMain{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.CardGridMain{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 95% !important;
+    
+
+}
+.ServiceProvidedBoxes{
+    display: flex;
+    justify-content: center;
+}
+/* .CardGridLeftMain{
+}
+.CardGridLeft{
+}
+.VerticleCard{
+
+} */
 /* .ServiceProvidedTypo{
     display: flex;
     flex-direction: column;
@@ -28,14 +53,4 @@ background-color: #F8F8F8;
     color: #404040B2 !important;
     font-weight: 400 !important;
 } */
-.VerticleCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.CardGridMain{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 98% !important;
-}
+

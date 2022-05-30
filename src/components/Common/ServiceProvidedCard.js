@@ -74,10 +74,12 @@ export default function ServiceProvidedCard(props) {
             width: "100%",
             border: "1px solid #003B7E",
             borderRadius: "20px",
+            objectFit: "cover" ,
             height: "100%",
+            overflow:"hidden"
           }}
         >
-          <div style={{ width: "40%" }}>
+          <div >
             <Typography
               sx={{
                 fontSize: "1.6rem",
@@ -117,8 +119,9 @@ export default function ServiceProvidedCard(props) {
               </div>
             </a>
           </div>
-          <div style={{ objectFit: "fill" }}>
+          <div >
             <img
+            style={{height:"100%", objectFit:"cover"}}
               src={props.CardImgSrc || MobileApp}
               // style={{  }}
               width={props.width || "100%"}
