@@ -43,8 +43,8 @@ export default function NavBar(props) {
             {Menu ? (
               <motion.div className="MenuDiv" animate={{ y: [-1000, 0] }} transition={{ ease: "easeOut", duration: 1 }}>
               <Toolbar className="NavToolbar" sx={{ display: "flex", justifyContent: "space-between" }}>
-                <a href={`${process.env.REACT_APP_DEMO}/`}>
-                  <img alt="logo" src={LogoWhite} style={{ width: "70%" }} />
+                <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle_White">
+                Agile Digital Services
                 </a>
                 <img
                   className="MenuIconMob"
@@ -173,11 +173,11 @@ export default function NavBar(props) {
                                 </ListItemButton>
                               </List>
                             </Collapse>
-                            <ListItemButton  id="Mob_nav"> 
+                            {/* <ListItemButton  id="Mob_nav"> 
                               <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/blog`}>
                                 <ListItemText primary="Blog" />
                               </a>
-                            </ListItemButton>
+                            </ListItemButton> */}
                             <ListItemButton id="Mob_nav">
                               <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/ourprojects`}>
                                 <ListItemText primary="Our Projects" />
@@ -190,9 +190,9 @@ export default function NavBar(props) {
                             </ListItemButton>
                           </List>
                         </div>
-                        <li className="Service_Pc">
+                        {/* <li className="Service_Pc">
                           <a href={`${process.env.REACT_APP_DEMO}/blog`}>Blog</a>
-                        </li>
+                        </li> */}
                         <li className="Service_Pc">
                           <a href={`${process.env.REACT_APP_DEMO}/ourprojects`}>Our Projects</a>
                         </li>
@@ -207,8 +207,8 @@ export default function NavBar(props) {
             </motion.div>
             ) : (
               <Toolbar className="NavToolbar" >
-                <a href={`${process.env.REACT_APP_DEMO}/`}>
-                  <img alt="logo" src={LogoWhite} style={{ width: "75%" ,marginTop:"5%" }} />
+                <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle_White">
+                Agile Digital Services
                 </a>
                 <img
                   className="MenuIconMob"
@@ -237,8 +237,8 @@ export default function NavBar(props) {
               <>
               <motion.div className="MenuDiv" animate={{ y: [-1000, 0] }} transition={{ ease: "easeOut", duration: 1 }}>
                 <Toolbar className="NavToolbar" sx={{ display: "flex", justifyContent: "space-between" }}>
-                  <a href={`${process.env.REACT_APP_DEMO}/`}>
-                    <img alt="logo" src={LogoWhite} style={{ width: "70%" }} />
+                  <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle_White">
+                Agile Digital Services
                   </a>
                   <img
                     className="MenuIconMob"
@@ -367,11 +367,11 @@ export default function NavBar(props) {
                                   </ListItemButton>
                                 </List>
                               </Collapse>
-                              <ListItemButton  id="Mob_nav"> 
+                              {/* <ListItemButton  id="Mob_nav"> 
                                 <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/blog`}>
                                   <ListItemText primary="Blog" />
                                 </a>
-                              </ListItemButton>
+                              </ListItemButton> */}
                               <ListItemButton id="Mob_nav">
                                 <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/ourprojects`}>
                                   <ListItemText primary="Our Projects" />
@@ -384,9 +384,9 @@ export default function NavBar(props) {
                               </ListItemButton>
                             </List>
                           </div>
-                          <li className="Service_Pc">
+                          {/* <li className="Service_Pc">
                             <a href={`${process.env.REACT_APP_DEMO}/blog`}>Blog</a>
-                          </li>
+                          </li> */}
                           <li className="Service_Pc">
                             <a href={`${process.env.REACT_APP_DEMO}/ourprojects`}>Our Projects</a>
                           </li>
@@ -402,8 +402,8 @@ export default function NavBar(props) {
               </>
             ) : (
               <Toolbar className="NavToolbar">
-                <a href={`${process.env.REACT_APP_DEMO}/`}>
-                  <img alt="logo" src={Logo} style={{ width: "75%",marginTop:"5%" }} />
+                <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle" >
+                Agile Digital Services
                 </a>
 
                 <img className="MenuIconMob" alt="menu" src={NavMenu} style={{ width: "2.5%" }} onClick={(e) => SetMenu(!Menu)} />
