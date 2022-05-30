@@ -18,6 +18,11 @@ import { motion } from "framer-motion";
 import BasicModal from "./BasicModal";
 
 export default function LatestProjects(props) {
+  let slideShow = 4.5;
+  if (window.innerWidth <= 600){
+    slideShow = 2;
+  }
+ 
   return (
     <>
       <div className="LatestProjectDiv">
@@ -29,15 +34,13 @@ export default function LatestProjects(props) {
         />
 
         <motion.div
-          // animate={{ x: [1500, 0] }}
-          // transition={{ duration: 2 }}
-          initial={{ x: 1000, opacity: 0 }}
+          initial={{ x: 300, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
           viewport={{ once: true }}
           className="LatestProjectsSlider"
         >
-          <Carousel className="SliderDiv" responsive show={4.5} slide={2} swiping={true}>
+          <Carousel className="SliderDiv" responsive show={slideShow} slide={1} swiping={true}>
             <div className="SliderProject">
               <div className="HoverDetailLite">
                 <img className="hoverDivLogo" src={KC_logo} />
