@@ -74,7 +74,7 @@ export default function Header(props) {
         />
         {props.chatIcons ? (
           <div className="ChatIconsDiv">
-            <a href="https://wa.me/03241013344">
+            <a href="https://wa.me/03135098197">
               <img
               className="ChatIconImg" 
                 alt="whatsapp"
