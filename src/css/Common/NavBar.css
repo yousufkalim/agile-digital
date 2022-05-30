@@ -3,6 +3,16 @@
     box-shadow: 0px 2px 7px -1px rgb(0 0 0 / 20%) !important;
   } */
   
+  .LogoTitle{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #003B7E;
+  }
+  .LogoTitle_White{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #fff;
+  }
   .MenuDiv{
     height: 100vh;
     background:  linear-gradient(180deg, #003B7E 0%, #003B7E 21.35%, #003B7E 100%);;
