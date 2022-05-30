@@ -108,7 +108,16 @@ opacity: .8;
     background-color: #47B9B4;
     color: black;
 }
-
+.Awesome_Slider{
+    height: 40vh;
+}
+.awssld{
+    --content-background-color: white !important;
+    --organic-arrow-color: rgb(75, 173, 223) !important;
+}
+.awssld__bullets{
+    visibility: hidden !important;
+}
 @media only screen and (max-width: 1200px) {
     .hoverDivLogo{
         width: 60%;
@@ -128,4 +137,11 @@ opacity: .8;
         font-size: .6rem !important;
     }
   
+}
+
+@media only screen and (max-width: 900px) {
+
+.ProjectsCompletedDiv{
+    padding: 5% 10%;
+}
 }

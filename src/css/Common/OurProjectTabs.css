@@ -6,16 +6,18 @@
 }
 .ProjectListLabel{
     font-family:  Montserrat !important;
-    color: black;
-    font-weight: 600;
-    opacity: 50%;
+    color: black !important;
+    
+    font-weight: 600 !important;
+    opacity: 40%;
 }
-.ProjectListLabel:focus{
+.ProjectListLabel:hover{
     color: white !important;
     background-color: #003B7E !important;
-    opacity: 100%;
-    border-radius: 10px;
+    opacity: 100% !important;
+    border-radius: 10px !important;
 }
+    
 .css-1aquho2-MuiTabs-indicator{
     height:0 !important;
 }
@@ -23,3 +25,4 @@
     height: 0 !important;
     width: 0 !important;
 }
+

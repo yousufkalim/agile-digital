@@ -10,11 +10,12 @@ import Footer from "../components/Common/Footer";
 // Home Component
 export default function ContactUs() {
   return (
-    <>
+    <div className="ContactContainer">
+
       <NavBar ContactUs />
       <ContactUsSection ContactUs />
       <LocationSection />
       <Footer />
-    </>
+    </div>
   );
 }

@@ -56,6 +56,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .Awesome_Slider{
+        height: 100% !important;
+    }
     .LocationDiv{
         display: flex;
         flex-direction: column-reverse;
@@ -82,5 +85,40 @@
         visibility: hidden;
         position: absolute;
 
+}
+}
+@media only screen and (max-width: 520px) {
+    .Awesome_Slider{
+        height: 100% !important;
+    }
+    .LocationDiv{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0%;
+    
+    }
+    .LocationDiv_Img{
+        width: 80%;
+    }
+    .LocationDiv_Typo{
+        width: 85%;
+        text-align: center;
+        margin-bottom: 5%;
+        /* margin-left: 2%; */
+    }
+    .Location_Address{
+        width: 100%;
+        
+    }
+    .LocationDiv_Typo img{
+        visibility: hidden;
+        position: absolute;
+
+}
+.awssld__controls{
+    visibility: visible !important;
 }
 }

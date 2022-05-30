@@ -11,7 +11,8 @@ import Footer from "../components/Common/Footer";
 // Home Component
 export default function OurProjects() {
   return (
-    <div>
+    <div className="ProjectsContainer">
+
       <NavBar />
       <Header
         Title="ALL PROJECTS START BY A SIMPLE IDEA LET US TAKE CARE OF THE REST!"

@@ -29,12 +29,14 @@ export default function ContactUsSection(props) {
         <div className="ContactUsDiv">
           <div>
             <SectionHeader
+            
               width="6%"
               h1="Contact Us"
               h2="Share Your Project/Idea with us!"
               colorH2="#fff"
               colorDesp="#F8F8F8"
-              decription="Our Team Member will get back to you within 24 hours."
+              decription="Do you have any question on any concrete project ? Or do you just want to touch base about offshore development and see if it can fit your needs ? 
+              Please fill the contact form and we will share our expertize for free. Our Team Member will get back to you within 24 hours. "
             />
           </div>
           <div className="ContactUsGrid">
@@ -71,6 +73,7 @@ export default function ContactUsSection(props) {
                   </div>
                   <Grid xs={12}>
                     <div
+                    className="RobotDiv"
                       style={{
                         display: "flex",
                         alignItems: "center",
@@ -143,7 +146,8 @@ export default function ContactUsSection(props) {
               h2="Share Your Project/Idea with us!"
               colorH2="#fff"
               colorDesp="#F8F8F8"
-              decription="Our Team Member will get back to you within 24 hours."
+              decription="Do you have any question on any concrete project ? Or do you just want to touch base about offshore development and see if it can fit your needs ? 
+              Please fill the contact form and we will share our expertize for free. Our Team Member will get back to you within 24 hours. "
             />
           </div>
           <div className="ContactSectionGrid">
@@ -157,7 +161,8 @@ export default function ContactUsSection(props) {
                     h2="Share Your Project/Idea with us!"
                     colorH2="#fff"
                     colorDesp="#F8F8F8"
-                    decription="Our Team Member will get back to you within 24 hours."
+                    decription="Do you have any question on any concrete project ? Or do you just want to touch base about offshore development and see if it can fit your needs ? 
+                    Please fill the contact form and we will share our expertize for free. Our Team Member will get back to you within 24 hours. "
                   />
                 </div>
                 <div>

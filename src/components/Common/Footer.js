@@ -30,7 +30,7 @@ export default function (props) {
             </Typography>
             <div className="IconsDiv">
               <img className="FooterIcons" src={FB} />
-              <img className="FooterIcons" src={Twitter} />
+              {/* <img className="FooterIcons" src={Twitter} /> */}
               <img className="FooterIcons" src={LinkedIn} />
               <img className="FooterIcons" src={WhatsApp} />
             </div>

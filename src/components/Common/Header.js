@@ -76,16 +76,16 @@ export default function Header(props) {
           <div className="ChatIconsDiv">
             <a href="https://wa.me/03241013344">
               <img
+              className="ChatIconImg" 
                 alt="whatsapp"
                 src={WhatsappIcon}
-                style={{ width: "8%", marginBottom: "5px" }}
               />
             </a>
             <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
-              <img alt="chat" src={ChatIcon} style={{ width: "8%" }} />
+              <img className="ChatIconImg" alt="chat" src={ChatIcon} />
             </a>
             <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
-              <img alt="Calendly" src={Calendly} style={{ width: "8%" }} />
+              <img className="ChatIconImg"  alt="Calendly" src={Calendly}  />
             </a>
           </div>
         ) : null}

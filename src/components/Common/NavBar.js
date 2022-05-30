@@ -32,7 +32,7 @@ export default function NavBar(props) {
         <Box className="NavBarBox" sx={{ flexGrow: 1 }}>
           <AppBar
             className="AppBarBox"
-            position="static"
+            position="fixed"
             sx={{
               backgroundColor: "#02356f",
               color: "blue",
@@ -42,170 +42,173 @@ export default function NavBar(props) {
           >
             {Menu ? (
               <motion.div className="MenuDiv" animate={{ y: [-1000, 0] }} transition={{ ease: "easeOut", duration: 1 }}>
-                <Toolbar className="NavToolbar" sx={{ display: "flex", justifyContent: "space-between" }}>
-                  <a href={`${process.env.REACT_APP_DEMO}/`}>
-                    <img alt="logo" src={LogoWhite} style={{ width: "70%" }} />
-                  </a>
-                  <img
-                    className="MenuIconMob"
-                    alt="menu"
-                    src={CloseIcon}
-                    style={{ width: "2.5%", color: "white" }}
-                    onClick={(e) => SetMenu(!Menu)}
-                  />
-                </Toolbar>
-                <div className="MenuSectionMain">
-                  <div className="MenuSection">
-                    <div className="MenuImgDiv">
-                      <img className="MenuImg" src={MenuImg} />
-                    </div>
-                    <div className="MenuTypoDiv">
-                      <div className="ServiceOptionDiv">
-                        {ServiceDropDown ? (
-                          <>
-                            <motion.div
-                              initial={{ opacity: 0 }}
-                              whileInView={{ opacity: 1 }}
-                              transition={{ duration: 1 }}
-                              className="ServicesDropDown"
-                            >
-                              <ul className="ServicesFields">
-                                <li>
-                                  <a href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}>WEB DEVELOPMENT</a>
-                                </li>
-                                <li>
-                                  <a href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}>APP DEVELOPMENT</a>
-                                </li>
-                                <li>
-                                  <a href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}>SOFTWARE DEVELOPMENT</a>
-                                </li>
-                                <li>
-                                  <a href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}>ON DEMAND DEVELOPERS</a>
-                                </li>
-                                <li>
-                                  <a href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}>UI/UX DEVELOPMENT</a>
-                                </li>
-                              </ul>
-                            </motion.div>
-                            <Divider
-                              orientation="vertical"
-                              sx={{
-                                width: ".5%",
-                                height: "35%",
-                                backgroundColor: "#fff",
-                                borderRadius: "4px",
-                                marginLeft: "5%",
-                              }}
-                            />
-                          </>
-                        ) : (
-                          ""
-                        )}
-                      </div>
-                      {/* <Divider
-                  sx={{
-                    width: "25%",
-                    height: ".5%",
-                    backgroundColor: "#fff",
-                    borderRadius: "4px",
-                    marginTop: "-13%",
-                  }}
-                /> */}
-                      {/* {console.log("processlink", process.env.REACT_APP_DEMO)} */}
-                      <div className="MainMenu">
-                        <ul className="MainMenuList">
-                          <li className="Service_Pc">
-                            <a href={`${process.env.REACT_APP_DEMO}/about`}>About</a>
-                          </li>
-                          <div
-                            className="Service_Pc"
-                            style={{
-                              display: "flex",
-                              alignItems: "center",
-                            }}
-                          >
-                            <li onClick={(e) => SetServiceDropDown(!ServiceDropDown)}>Services</li>
-                          </div>
-                          <div className="Service_Mobile">
-                            <List
-                              sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
-                              component="nav"
-                              // aria-labelledby="nested-list-subheader"
-                            >
-                              <ListItemButton>
-                                <a href={`${process.env.REACT_APP_DEMO}/about`}>
-                                  <ListItemText primary="About" />
-                                </a>
-                              </ListItemButton>
-                              <ListItemButton onClick={handleClick}>
-                                <ListItemText className="dropDown_list" primary="Services" />
-                                {open ? <ExpandLess /> : <ExpandMore />}
-                              </ListItemButton>
-                              <Collapse className="Service_list" in={open} timeout="auto" unmountOnExit>
-                                <List component="div" disablePadding>
-                                  <ListItemButton sx={{ pl: 4 }}>
-                                    <a href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}>
-                                      <ListItemText className="service_options" primary="WEB DEVELOPMENT" />
-                                    </a>
-                                  </ListItemButton>
-                                  <ListItemButton sx={{ pl: 4 }}>
-                                    <a href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}>
-                                      <ListItemText className="service_options" primary="APP DEVELOPMENT" />
-                                    </a>
-                                  </ListItemButton>
-                                  <ListItemButton sx={{ pl: 4 }}>
-                                    <a href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}>
-                                      <ListItemText className="service_options" primary="SOFTWARE DEVELOPMENT" />
-                                    </a>
-                                  </ListItemButton>
-                                  <ListItemButton sx={{ pl: 4 }}>
-                                    <a href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}>
-                                      <ListItemText className="service_options" primary="ON DEMAND DEVELOPERS" />
-                                    </a>
-                                  </ListItemButton>
-                                  <ListItemButton sx={{ pl: 4 }}>
-                                    <a href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}>
-                                      <ListItemText className="service_options" primary="UI/UX DEVELOPMENT" />
-                                    </a>
-                                  </ListItemButton>
-                                </List>
-                              </Collapse>
-                              <ListItemButton>
-                                <a href={`${process.env.REACT_APP_DEMO}/blog`}>
-                                  <ListItemText primary="Blog" />
-                                </a>
-                              </ListItemButton>
-                              <ListItemButton>
-                                <a href={`${process.env.REACT_APP_DEMO}/ourprojects`}>
-                                  <ListItemText primary="Our Projects" />
-                                </a>
-                              </ListItemButton>
-                              <ListItemButton>
-                                <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
-                                  <ListItemText primary="Contact Us" />
-                                </a>
-                              </ListItemButton>
-                            </List>
-                          </div>
-                          <li className="Service_Pc">
-                            <a href={`${process.env.REACT_APP_DEMO}/blog`}>Blog</a>
-                          </li>
-                          <li className="Service_Pc">
-                            <a href={`${process.env.REACT_APP_DEMO}/ourprojects`}>Our Projects</a>
-                          </li>
-                          <li className="Service_Pc">
-                            <a href={`${process.env.REACT_APP_DEMO}/contactus`}>Contact Us</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </motion.div>
-            ) : (
               <Toolbar className="NavToolbar" sx={{ display: "flex", justifyContent: "space-between" }}>
                 <a href={`${process.env.REACT_APP_DEMO}/`}>
                   <img alt="logo" src={LogoWhite} style={{ width: "70%" }} />
+                </a>
+                <img
+                  className="MenuIconMob"
+                  alt="menu"
+                  src={CloseIcon}
+                  style={{ width: "2.5%", color: "white" }}
+                  onClick={(e) => SetMenu(!Menu)}
+                />
+              </Toolbar>
+              <div className="MenuSectionMain">
+                <div className="MenuSection">
+                  <div className="MenuImgDiv">
+                    <img className="MenuImg" src={MenuImg} />
+                  </div>
+                  <div className="MenuTypoDiv">
+                    <div className="ServiceOptionDiv">
+                      {ServiceDropDown ? (
+                        <>
+                          <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ duration: 1 }}
+                            // viewport={{ once: true }}
+                            className="ServicesDropDown"
+                          >
+                            <ul className="ServicesFields">
+                              <li>
+                                <a href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}>WEB DEVELOPMENT</a>
+                              </li>
+                              <li>
+                                <a href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}>APP DEVELOPMENT</a>
+                              </li>
+                              <li>
+                                <a href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}>SOFTWARE DEVELOPMENT</a>
+                              </li>
+                              <li>
+                                <a href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}>ON DEMAND DEVELOPERS</a>
+                              </li>
+                              <li>
+                                <a href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}>UI/UX DEVELOPMENT</a>
+                              </li>
+                            </ul>
+                          </motion.div>
+                          <Divider
+                            orientation="vertical"
+                            sx={{
+                              width: ".5%",
+                              height: "35%",
+                              backgroundColor: "#fff",
+                              borderRadius: "4px",
+                              marginLeft: "5%",
+                            }}
+                          />
+
+                          {/* <Divider
+                          sx={{
+                            width: "25%",
+                            height: ".5%",
+                            backgroundColor: "#fff",
+                            borderRadius: "4px",
+                            marginTop: "-13%",
+                          }}
+                        /> */}
+                        </>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+
+                    <div className="MainMenu">
+                      <ul className="MainMenuList">
+                        <li className="Service_Pc">
+                          <a href={`${process.env.REACT_APP_DEMO}/about`}>About</a>
+                        </li>
+                        <div
+                          className="Service_Pc"
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                        >
+                          <li onClick={(e) => SetServiceDropDown(!ServiceDropDown)}>Services</li>
+                        </div>
+                        <div className="Service_Mobile">
+                          <List
+                            sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+                            component="nav"
+                            // aria-labelledby="nested-list-subheader"
+                          >
+                            <ListItemButton id="Mob_nav">
+                              <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/about`}>
+                                <ListItemText id="Mob_items" primary="About" />
+                              </a>
+                            </ListItemButton>
+                            <ListItemButton  id="Mob_nav" onClick={handleClick}>
+                              <ListItemText id="Mob_items" className="dropDown_list" primary="Services" />
+                              {open ? <ExpandLess/> : <ExpandMore/>}
+                            </ListItemButton>
+                            <Collapse className="Service_list" in={open} timeout="auto" unmountOnExit>
+                              <List component="div" disablePadding>
+                              {/* primaryTypographyProps={{fontSize: "1.4rem",color:"white",fontWeight:"500",lineHeight:1 }}  */}
+                                <ListItemButton id="Mob_nav" sx={{ pl: 6}}>
+                                  <a  href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}>
+                                    <ListItemText primary="WEB DEVELOPMENT" />
+                                  </a>
+                                </ListItemButton>
+                                <ListItemButton id="Mob_nav" sx={{ pl: 6 }}>
+                                  <a  href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}>
+                                    <ListItemText primary="APP DEVELOPMENT" />
+                                  </a>
+                                </ListItemButton>
+                                <ListItemButton id="Mob_nav" sx={{ pl: 6 }}>
+                                  <a  href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}>
+                                    <ListItemText primary="SOFTWARE DEVELOPMENT" />
+                                  </a>
+                                </ListItemButton>
+                                <ListItemButton id="Mob_nav" sx={{ pl: 6 }}>
+                                  <a  href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}>
+                                    <ListItemText primary="ON DEMAND DEVELOPERS" />
+                                  </a>
+                                </ListItemButton>
+                                <ListItemButton id="Mob_nav" sx={{ pl: 6 }}>
+                                  <a  href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}>
+                                    <ListItemText primary="UI/UX DEVELOPMENT" />
+                                  </a>
+                                </ListItemButton>
+                              </List>
+                            </Collapse>
+                            <ListItemButton  id="Mob_nav"> 
+                              <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/blog`}>
+                                <ListItemText primary="Blog" />
+                              </a>
+                            </ListItemButton>
+                            <ListItemButton id="Mob_nav">
+                              <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/ourprojects`}>
+                                <ListItemText primary="Our Projects" />
+                              </a>
+                            </ListItemButton>
+                            <ListItemButton id="Mob_nav">
+                              <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/contactus`}>
+                                <ListItemText primary="Contact Us" />
+                              </a>
+                            </ListItemButton>
+                          </List>
+                        </div>
+                        <li className="Service_Pc">
+                          <a href={`${process.env.REACT_APP_DEMO}/blog`}>Blog</a>
+                        </li>
+                        <li className="Service_Pc">
+                          <a href={`${process.env.REACT_APP_DEMO}/ourprojects`}>Our Projects</a>
+                        </li>
+                        <li className="Service_Pc">
+                          <a href={`${process.env.REACT_APP_DEMO}/contactus`}>Contact Us</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+            ) : (
+              <Toolbar className="NavToolbar" >
+                <a href={`${process.env.REACT_APP_DEMO}/`}>
+                  <img alt="logo" src={LogoWhite} style={{ width: "75%" ,marginTop:"5%" }} />
                 </a>
                 <img
                   className="MenuIconMob"
@@ -222,7 +225,7 @@ export default function NavBar(props) {
         <Box className="NavBarBox" sx={{ flexGrow: 1 }}>
           <AppBar
             className="AppBarBox"
-            position="static"
+            position="fixed"
             sx={{
               backgroundColor: "white",
               color: "blue",
@@ -231,6 +234,7 @@ export default function NavBar(props) {
             }}
           >
             {Menu ? (
+              <>
               <motion.div className="MenuDiv" animate={{ y: [-1000, 0] }} transition={{ ease: "easeOut", duration: 1 }}>
                 <Toolbar className="NavToolbar" sx={{ display: "flex", justifyContent: "space-between" }}>
                   <a href={`${process.env.REACT_APP_DEMO}/`}>
@@ -325,55 +329,56 @@ export default function NavBar(props) {
                               // aria-labelledby="nested-list-subheader"
                             >
                               <ListItemButton id="Mob_nav">
-                                <a href={`${process.env.REACT_APP_DEMO}/about`}>
+                                <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/about`}>
                                   <ListItemText id="Mob_items" primary="About" />
                                 </a>
                               </ListItemButton>
-                              <ListItemButton onClick={handleClick}>
-                                <ListItemText className="dropDown_list" primary="Services" />
-                                {open ? <ExpandLess /> : <ExpandMore />}
+                              <ListItemButton  id="Mob_nav" onClick={handleClick}>
+                                <ListItemText id="Mob_items" className="dropDown_list" primary="Services" />
+                                {open ? <ExpandLess/> : <ExpandMore/>}
                               </ListItemButton>
                               <Collapse className="Service_list" in={open} timeout="auto" unmountOnExit>
                                 <List component="div" disablePadding>
-                                  <ListItemButton sx={{ pl: 4 }}>
-                                    <a href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}>
-                                      <ListItemText className="service_options" primary="WEB DEVELOPMENT" />
+                                {/* primaryTypographyProps={{fontSize: "1.4rem",color:"white",fontWeight:"500",lineHeight:1 }}  */}
+                                  <ListItemButton id="Mob_nav" sx={{ pl: 6}}>
+                                    <a  href={`${process.env.REACT_APP_DEMO}/services/WebDevelopment`}>
+                                      <ListItemText primary="WEB DEVELOPMENT" />
                                     </a>
                                   </ListItemButton>
-                                  <ListItemButton sx={{ pl: 4 }}>
-                                    <a href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}>
-                                      <ListItemText className="service_options" primary="APP DEVELOPMENT" />
+                                  <ListItemButton id="Mob_nav" sx={{ pl: 6 }}>
+                                    <a  href={`${process.env.REACT_APP_DEMO}/services/AppDevelopment`}>
+                                      <ListItemText primary="APP DEVELOPMENT" />
                                     </a>
                                   </ListItemButton>
-                                  <ListItemButton sx={{ pl: 4 }}>
-                                    <a href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}>
-                                      <ListItemText className="service_options" primary="SOFTWARE DEVELOPMENT" />
+                                  <ListItemButton id="Mob_nav" sx={{ pl: 6 }}>
+                                    <a  href={`${process.env.REACT_APP_DEMO}/services/SoftwareDevelopment`}>
+                                      <ListItemText primary="SOFTWARE DEVELOPMENT" />
                                     </a>
                                   </ListItemButton>
-                                  <ListItemButton sx={{ pl: 4 }}>
-                                    <a href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}>
-                                      <ListItemText className="service_options" primary="ON DEMAND DEVELOPERS" />
+                                  <ListItemButton id="Mob_nav" sx={{ pl: 6 }}>
+                                    <a  href={`${process.env.REACT_APP_DEMO}/services/OnDemandDevelopers`}>
+                                      <ListItemText primary="ON DEMAND DEVELOPERS" />
                                     </a>
                                   </ListItemButton>
-                                  <ListItemButton sx={{ pl: 4 }}>
-                                    <a href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}>
-                                      <ListItemText className="service_options" primary="UI/UX DEVELOPMENT" />
+                                  <ListItemButton id="Mob_nav" sx={{ pl: 6 }}>
+                                    <a  href={`${process.env.REACT_APP_DEMO}/services/UiDevelopment`}>
+                                      <ListItemText primary="UI/UX DEVELOPMENT" />
                                     </a>
                                   </ListItemButton>
                                 </List>
                               </Collapse>
-                              <ListItemButton>
-                                <a href={`${process.env.REACT_APP_DEMO}/blog`}>
+                              <ListItemButton  id="Mob_nav"> 
+                                <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/blog`}>
                                   <ListItemText primary="Blog" />
                                 </a>
                               </ListItemButton>
-                              <ListItemButton>
-                                <a href={`${process.env.REACT_APP_DEMO}/ourprojects`}>
+                              <ListItemButton id="Mob_nav">
+                                <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/ourprojects`}>
                                   <ListItemText primary="Our Projects" />
                                 </a>
                               </ListItemButton>
-                              <ListItemButton>
-                                <a href={`${process.env.REACT_APP_DEMO}/contactus`}>
+                              <ListItemButton id="Mob_nav">
+                                <a className="Nav_links" href={`${process.env.REACT_APP_DEMO}/contactus`}>
                                   <ListItemText primary="Contact Us" />
                                 </a>
                               </ListItemButton>
@@ -394,10 +399,11 @@ export default function NavBar(props) {
                   </div>
                 </div>
               </motion.div>
+              </>
             ) : (
               <Toolbar className="NavToolbar">
                 <a href={`${process.env.REACT_APP_DEMO}/`}>
-                  <img alt="logo" src={Logo} style={{ width: "70%" }} />
+                  <img alt="logo" src={Logo} style={{ width: "75%",marginTop:"5%" }} />
                 </a>
 
                 <img className="MenuIconMob" alt="menu" src={NavMenu} style={{ width: "2.5%" }} onClick={(e) => SetMenu(!Menu)} />

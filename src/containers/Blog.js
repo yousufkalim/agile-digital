@@ -14,7 +14,8 @@ import Footer from "../components/Common/Footer";
 // Home Component
 export default function Blog() {
   return (
-    <div>
+    <div className="BlogContainer">
+
       <NavBar />
       <BlogHeader />
       <BlogReadArticles src={BlogImg1} />

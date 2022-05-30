@@ -1,6 +1,6 @@
 .ContactUsDiv{
     background-color: #003B7E;
-    padding: 5%;
+    padding: 10% 5%;
     
 }
 .ContactUsGrid{
@@ -27,14 +27,14 @@
 }
 .ContactMedia{
     display: flex !important;
-    width: 45% !important;
+    width: 40vw!important;
     align-items: center !important;
     justify-content: space-between !important;
     margin: 3% 0%;
 }
-/* .ContactMedia a{
-    margin: 1% 3%;
-} */
+.ContactMedia a{
+    width: 50%;
+}
 .ContactMediaIcons{
     max-width: 80px;
     margin-right: 5%;
@@ -47,6 +47,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     transform: scale(1);
     transition: .5s;
 }
@@ -157,11 +158,12 @@ input:focus ,textarea:focus{
     color: white;
     background-color: #003B7E;
     margin: 5%;
+    font-size: 1.2rem;
     border: none;
     border-radius: 5px;
-    padding: 4%;
+    padding: 6%;
     width: 80%;
-    height: 2rem;
+    /* height: 2rem; */
     cursor: pointer;
     transition: 1s;
 }
@@ -174,6 +176,12 @@ input:focus ,textarea:focus{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+@media only screen and (max-width: 1366px) {
+
+.RobotDiv{
+    width: 50% !important;
+}
 }
 @media only screen and (max-width: 900px) {
     .ContactSection_Web_Header{
@@ -220,7 +228,10 @@ input:focus ,textarea:focus{
 }
 @media only screen and (max-width: 600px) {
   
-   
+    .ContactUsDiv{
+        padding: 15% 5%;
+        
+    }
     .FormGrid{
         width: 100% !important;
         margin: 5% 0%;
@@ -238,10 +249,9 @@ input:focus ,textarea:focus{
     .ContactUsBtn{
         margin-left: 15%;
         border: none;
-        border-radius: 5px;
-        padding: 4%;
+    font-size: 1em;
+    border-radius: 5px;
         width: 80%;
-        height: 2rem;
     }
     .ContactMedia{
         flex-direction: column !important;
@@ -250,8 +260,15 @@ input:focus ,textarea:focus{
     } 
     .ContactMedia a{
         margin-bottom: 2%;
-
+        width: 70%;
+        
     } 
+    .ContactMediaDiv{
+        justify-content:left;
+    }
+    .RobotDiv{
+        width: 60% !important;
+    }
    
   
   }
