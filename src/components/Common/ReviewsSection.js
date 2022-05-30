@@ -15,7 +15,7 @@ export default function ReviewSection() {
           h2="Client Reviews"
         />
         <div className="ReviewCardSlider">
-          <Carousel className="SliderDiv2" show={5} slide={1} swiping={true}>
+          <Carousel className="SliderDiv2" show={5} slide={1} swiping={true} responsive>
             <ReviewCard
               name="Farhan Shakir"
               review=" It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
