@@ -114,12 +114,12 @@ export default function ContactUsSection(props) {
                 </form>
               </Grid>
               <Grid xs={12} sm={10} md={10} className="ContactMedia">
-                <a href="mailto:contact@falconconsulting.fr">
+                <a href="mailto:engr.adeelbaig@gmail.com">
                   <div className="ContactMediaDiv">
                     <img className="ContactMediaIcons" src={EmailIcon} />
                     <div className="SocialMediaText">
                       <Typography sx={{ fontSize: "1rem" }}>Email</Typography>
-                      <Typography sx={{ fontSize: ".7rem" }}>contact@falconconsulting.fr</Typography>
+                      <Typography sx={{ fontSize: ".7rem" }}>mailto:engr.adeelbaig@gmail.com</Typography>
                     </div>
                   </div>
                 </a>
@@ -166,21 +166,21 @@ export default function ContactUsSection(props) {
                   />
                 </div>
                 <div>
-                  <a href="mailto:contact@falconconsulting.fr">
+                  <a href="mailto:engr.adeelbaig@gmail.com">
                     <div className="SocialMediaDiv">
                       <img className="SocialMediaIcons" src={CalendlyIcon} />
                       <div className="SocialMediaText">
                         <Typography>Schedule Meeting</Typography>
-                        <Typography>calendly.com/falcon-consulting</Typography>
+                        <Typography>calendly.com/agile-digital</Typography>
                       </div>
                     </div>
                   </a>
-                  <a href="mailto:contact@falconconsulting.fr">
+                  <a href="mailto:engr.adeelbaig@gmail.com">
                     <div className="SocialMediaDiv">
                       <img className="SocialMediaIcons" src={EmailIcon} />
                       <div className="SocialMediaText">
                         <Typography>Email</Typography>
-                        <Typography>contact@falconconsulting.fr</Typography>
+                        <Typography>engr.adeelbaig@gmail.com</Typography>
                       </div>
                     </div>
                   </a>
