@@ -18,17 +18,12 @@ export default function (props) {
       >
         <div className="FooterDiv">
           <div className="FooterLeft">
-          <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle" style={{padding: "5% 0%"}} >
-                Agile Digital Services
-                </a>
-            <Typography
-              className="FooterTypo"
-              sx={{ color: "#282828", opacity: "50%", margin: "3% 0%" }}
-            >
-              The services are provided at a flat rate, or according to a
-              determined daily rate, according to your preference. In both
-              cases, we guarantee you a quality service at a very competitive
-              price.
+            <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle" style={{ padding: "5% 0%" }}>
+              Agile Digital Services
+            </a>
+            <Typography className="FooterTypo" sx={{ color: "#282828", opacity: "50%", margin: "3% 0%" }}>
+              The services are provided at a flat rate, or according to a determined daily rate, according to your preference. In
+              both cases, we guarantee you a quality service at a very competitive price.
             </Typography>
             <div className="IconsDiv">
               <img className="FooterIcons" src={FB} />
@@ -39,10 +34,7 @@ export default function (props) {
           </div>
           <div className="FooterRight">
             <div className="FooterList">
-              <Typography
-                className="FooterListHeading"
-                sx={{ fontWeight: "700", opacity: "50%", marginBottom: "40%" }}
-              >
+              <Typography className="FooterListHeading" sx={{ fontWeight: "700", opacity: "50%", marginBottom: "40%" }}>
                 Pages
               </Typography>
               <ul>
@@ -53,10 +45,7 @@ export default function (props) {
               </ul>
             </div>
             <div className="FooterList">
-              <Typography
-                className="FooterListHeading"
-                sx={{ fontWeight: "700", opacity: "50%", marginBottom: "23%" }}
-              >
+              <Typography className="FooterListHeading" sx={{ fontWeight: "700", opacity: "50%", marginBottom: "23%" }}>
                 Focus
               </Typography>
               <ul>
@@ -67,10 +56,7 @@ export default function (props) {
               </ul>
             </div>
             <div className="FooterList">
-              <Typography
-                className="FooterListHeading"
-                sx={{ fontWeight: "700", opacity: "50%", marginBottom: "28%" }}
-              >
+              <Typography className="FooterListHeading" sx={{ fontWeight: "700", opacity: "50%", marginBottom: "28%" }}>
                 Privacy
               </Typography>
               <ul>
@@ -84,9 +70,8 @@ export default function (props) {
       <Divider />
       <div className="CopyRightDiv">
         <Typography sx={{ fontSize: "80%", fontWeight: "700" }}>
-          CEO- Adeel Ilyas Baig :
-          <span style={{ color: "#003B7E" }}> 0092-3135098197</span>
-        
+          This site is owned and operated by
+          <span style={{ color: "#003B7E" }}> Adeel Ilyas Baig</span>
         </Typography>
       </div>
     </>

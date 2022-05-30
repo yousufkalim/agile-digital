@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import SectionHeader from "./SectionHeader";
 import WhatsappIcon from "../../assets/images/whatsapp.svg";
 import EmailIcon from "../../assets/images/emailIcon.svg";
+import callicon from "../../assets/images/callIcon.svg";
 import Robot from "../../assets/images/notRobort.svg";
 import CallIcon from "../../assets/images/callIcon.svg";
 import CalendlyIcon from "../../assets/images/calendlyIcon.svg";
@@ -29,7 +30,6 @@ export default function ContactUsSection(props) {
         <div className="ContactUsDiv">
           <div>
             <SectionHeader
-            
               width="6%"
               h1="Contact Us"
               h2="Share Your Project/Idea with us!"
@@ -73,7 +73,7 @@ export default function ContactUsSection(props) {
                   </div>
                   <Grid xs={12}>
                     <div
-                    className="RobotDiv"
+                      className="RobotDiv"
                       style={{
                         display: "flex",
                         alignItems: "center",
@@ -181,6 +181,15 @@ export default function ContactUsSection(props) {
                       <div className="SocialMediaText">
                         <Typography>Email</Typography>
                         <Typography>engr.adeelbaig@gmail.com</Typography>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="tel:+923135098197">
+                    <div className="SocialMediaDiv">
+                      <img className="SocialMediaIcons" src={callicon} />
+                      <div className="SocialMediaText">
+                        <Typography>Phone</Typography>
+                        <Typography>+92-313-509-8197</Typography>
                       </div>
                     </div>
                   </a>
