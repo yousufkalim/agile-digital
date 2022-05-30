@@ -33,7 +33,7 @@ export default function AboutCompany() {
                   textTransform: "capitalize",
                 }}
               >
-                About Falcon Consulting
+                About Agile Digital
               </Typography>
               <Typography
                 sx={{
@@ -42,13 +42,13 @@ export default function AboutCompany() {
                   fontWeight: "400",
                 }}
               >
-                Falcon Consulting is a development agency that specializes in
+                Agile Digital is a development agency that specializes in
                 consulting, application development and consulting in the field
                 of new technologies. We combine rigor, quality of work and
-                optimized production costs. Founded in 2015, Falcon Consulting
+                optimized production costs. Founded in 2015, Agile Digital
                 started out as a consulting company that worked with large
-                accounts such as Microsoft, Canon and Accor. In 2019, Falcon
-                Consulting took off and became a development agency, bringing
+                accounts such as Microsoft, Canon and Accor. In 2019, Agile
+                Digital took off and became a development agency, bringing
                 together over 10 years of experience in application development
                 and project management in its team. Established in France, the
                 agency has launched on the American market since March 2019. We

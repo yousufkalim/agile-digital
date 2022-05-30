@@ -18,7 +18,7 @@ export default function AboutSection() {
           LeftSectionHeader={true}
           colorH2="#0F52BA"
           h1="your work is our priority"
-          h2="Why choose Falcon Consulting?"
+          h2="Why choose Agile Digital?"
           // decription="This sounds simple, but it is beneficial to your business success."
         />
         <div className="AboutSectionLower">
