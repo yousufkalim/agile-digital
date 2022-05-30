@@ -18,10 +18,12 @@ export default function (props) {
       >
         <div className="FooterDiv">
           <div className="FooterLeft">
-            <img className="FooterLogo" src={Logo} alt="logo" />
+          <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle" style={{padding: "5% 0%"}} >
+                Agile Digital Services
+                </a>
             <Typography
               className="FooterTypo"
-              sx={{ color: "#282828", opacity: "50%", marginBottom: "3%" }}
+              sx={{ color: "#282828", opacity: "50%", margin: "3% 0%" }}
             >
               The services are provided at a flat rate, or according to a
               determined daily rate, according to your preference. In both
@@ -82,9 +84,9 @@ export default function (props) {
       <Divider />
       <div className="CopyRightDiv">
         <Typography sx={{ fontSize: "80%", fontWeight: "700" }}>
-          © 2015-2022
-          <span style={{ color: "#003B7E" }}> Falcon Consulting</span>, All
-          Rights Reserved.
+          CEO- Adeel Ilyas Baig :
+          <span style={{ color: "#003B7E" }}> 0092-3135098197</span>
+        
         </Typography>
       </div>
     </>
