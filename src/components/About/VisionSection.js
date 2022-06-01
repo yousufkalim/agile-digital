@@ -11,7 +11,7 @@ export default function VisionSection() {
             LeftSectionHeader
             h1="We believe our vision"
             h2="Our Vision"
-            decription="Agile Digital is a development agency that specializes in consulting, application development and consulting in the field of new technologies. We combine rigor, quality of work and optimized production costs"
+            decription="Aigle Digital is a development agency that specializes in consulting, application development and consulting in the field of new technologies. We combine rigor, quality of work and optimized production costs"
             colorDesp
             width="15%"
           />

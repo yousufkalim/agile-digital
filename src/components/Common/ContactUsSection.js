@@ -171,7 +171,7 @@ export default function ContactUsSection(props) {
                       <img className="SocialMediaIcons" src={CalendlyIcon} />
                       <div className="SocialMediaText">
                         <Typography>Schedule Meeting</Typography>
-                        <Typography>calendly.com/agile-digital</Typography>
+                        <Typography>calendly.com/aigle-digital</Typography>
                       </div>
                     </div>
                   </a>

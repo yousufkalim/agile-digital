@@ -33,7 +33,7 @@ export default function AboutCompany() {
                   textTransform: "capitalize",
                 }}
               >
-                About Agile Digital
+                About Aigle Digital
               </Typography>
               <Typography
                 sx={{
@@ -42,12 +42,12 @@ export default function AboutCompany() {
                   fontWeight: "400",
                 }}
               >
-                Agile Digital is a development agency that specializes in
+                Aigle Digital is a development agency that specializes in
                 consulting, application development and consulting in the field
                 of new technologies. We combine rigor, quality of work and
-                optimized production costs. Founded in 2015, Agile Digital
+                optimized production costs. Founded in 2015, Aigle Digital
                 started out as a consulting company that worked with large
-                accounts such as Microsoft, Canon and Accor. In 2019, Agile
+                accounts such as Microsoft, Canon and Accor. In 2019, Aigle
                 Digital took off and became a development agency, bringing
                 together over 10 years of experience in application development
                 and project management in its team. Established in France, the

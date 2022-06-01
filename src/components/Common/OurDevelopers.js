@@ -3,7 +3,7 @@ import { Carousel } from "@trendyol-js/react-carousel";
 // import { Carousel } from "react-responsive-carousel";
 // import "react-responsive-carousel/lib/styles/carousel.min.css";
 import SectionHeader from "../Common/SectionHeader";
-import Agile from "../../assets/images/od_agile.png";
+import Aigle from "../../assets/images/od_agile.png";
 import Experienced from "../../assets/images/od_experienced.png";
 import Trained from "../../assets/images/od_trained.png";
 import Dedicated from "../../assets/images/od_dedicated.png";
@@ -39,9 +39,9 @@ export default function OurDevelopers(props) {
             leftArrow={<img src={Left} />}
           >
             <DeveloperSlider
-              src={Agile}
-              heading="Agile"
-              desp=" We train them in agile management methods so that our partners can take full advantage of them"
+              src={Aigle}
+              heading="Aigle"
+              desp=" We train them in aigle management methods so that our partners can take full advantage of them"
             />
             <DeveloperSlider
               src={Experienced}
