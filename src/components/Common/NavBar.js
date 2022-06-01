@@ -44,7 +44,7 @@ export default function NavBar(props) {
               <motion.div className="MenuDiv" animate={{ y: [-1000, 0] }} transition={{ ease: "easeOut", duration: 1 }}>
               <Toolbar className="NavToolbar" sx={{ display: "flex", justifyContent: "space-between" }}>
                 <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle_White">
-                Agile Digital Services
+                Aigle Digital Services
                 </a>
                 <img
                   className="MenuIconMob"
@@ -208,7 +208,7 @@ export default function NavBar(props) {
             ) : (
               <Toolbar className="NavToolbar" >
                 <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle_White">
-                Agile Digital Services
+                Aigle Digital Services
                 </a>
                 <img
                   className="MenuIconMob"
@@ -238,7 +238,7 @@ export default function NavBar(props) {
               <motion.div className="MenuDiv" animate={{ y: [-1000, 0] }} transition={{ ease: "easeOut", duration: 1 }}>
                 <Toolbar className="NavToolbar" sx={{ display: "flex", justifyContent: "space-between" }}>
                   <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle_White">
-                Agile Digital Services
+                Aigle Digital Services
                   </a>
                   <img
                     className="MenuIconMob"
@@ -403,7 +403,7 @@ export default function NavBar(props) {
             ) : (
               <Toolbar className="NavToolbar">
                 <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle" >
-                Agile Digital Services
+                Aigle Digital Services
                 </a>
 
                 <img className="MenuIconMob" alt="menu" src={NavMenu} style={{ width: "2.5%" }} onClick={(e) => SetMenu(!Menu)} />

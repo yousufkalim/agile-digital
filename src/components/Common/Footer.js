@@ -19,7 +19,7 @@ export default function (props) {
         <div className="FooterDiv">
           <div className="FooterLeft">
             <a href={`${process.env.REACT_APP_DEMO}/`} className="LogoTitle" style={{ padding: "5% 0%" }}>
-              Agile Digital Services
+            Aigle Digital Services
             </a>
             <Typography className="FooterTypo" sx={{ color: "#282828", opacity: "50%", margin: "3% 0%" }}>
               The services are provided at a flat rate, or according to a determined daily rate, according to your preference. In
